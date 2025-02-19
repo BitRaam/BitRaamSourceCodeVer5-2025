@@ -40,7 +40,7 @@ class P2PSeedNodes(BitcoinTestFramework):
         # Fill the addrman with unreachable nodes
         for i in range(10):
             ip = f"{random.randrange(128,169)}.{random.randrange(1,255)}.{random.randrange(1,255)}.{random.randrange(1,255)}"
-            port = 31415 + i
+            port = 8333 + i
             node.addpeeraddress(ip, port)
 
         # Restart the node so seednode is processed again.

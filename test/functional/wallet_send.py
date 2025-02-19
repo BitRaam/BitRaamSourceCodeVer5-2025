@@ -35,7 +35,7 @@ class WalletSendTest(BitcoinTestFramework):
             ["-walletrbf=1"],
             ["-walletrbf=1"]
         ]
-        getcontext().prec = 8 # Maharishi precision for Decimal
+        getcontext().prec = 8 # Satoshi precision for Decimal
 
     def skip_test_if_missing_module(self):
         self.skip_if_no_wallet()

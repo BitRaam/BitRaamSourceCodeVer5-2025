@@ -86,7 +86,7 @@ P2P and Network Changes
   `127.0.0.1:8334` to listen for Tor connections. It was not possible to switch
   this off, even if the node didn't use Tor. This has been changed and now
   `bind=addr:port` results in binding on `addr:port` only. The default behavior
-  of binding to `0.0.0.0:31415` and `127.0.0.1:8334` has not been changed.
+  of binding to `0.0.0.0:8333` and `127.0.0.1:8334` has not been changed.
 
   If you are using a `bind=...` configuration without `bind=...=onion` and rely
   on the previous implied behavior to accept incoming Tor connections at

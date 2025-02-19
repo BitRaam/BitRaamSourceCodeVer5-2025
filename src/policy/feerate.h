@@ -33,13 +33,13 @@ class CFeeRate
 {
 private:
     /** Fee rate in sat/kvB (maharishis per 1000 virtualbytes) */
-    CAmount nMaharishisPerK;
+    CAmount nSatoshisPerK;
 
 public:
     /** Fee rate of 0 maharishis per kvB */
-    CFeeRate() : nMaharishisPerK(0) { }
+    CFeeRate() : nSatoshisPerK(0) { }
     template<std::integral I> // Disallow silent float -> int conversion
-    explicit CFeeRate(const I _nMaharishisPerK): nMaharishisPerK(_nMaharishisPerK) {
+    explicit CFeeRate(const I _nSatoshisPerK): nSatoshisPerK(_nSatoshisPerK) {
     }
 
     /**
@@ -60,19 +60,19 @@ public:
     /**
      * Return the fee in maharishis for a vsize of 1000 vbytes
      */
-    CAmount GetFeePerK() const { return nMaharishisPerK; }
-    friend bool operator<(const CFeeRate& a, const CFeeRate& b) { return a.nMaharishisPerK < b.nMaharishisPerK; }
-    friend bool operator>(const CFeeRate& a, const CFeeRate& b) { return a.nMaharishisPerK > b.nMaharishisPerK; }
-    friend bool operator==(const CFeeRate& a, const CFeeRate& b) { return a.nMaharishisPerK == b.nMaharishisPerK; }
-    friend bool operator<=(const CFeeRate& a, const CFeeRate& b) { return a.nMaharishisPerK <= b.nMaharishisPerK; }
-    friend bool operator>=(const CFeeRate& a, const CFeeRate& b) { return a.nMaharishisPerK >= b.nMaharishisPerK; }
-    friend bool operator!=(const CFeeRate& a, const CFeeRate& b) { return a.nMaharishisPerK != b.nMaharishisPerK; }
-    CFeeRate& operator+=(const CFeeRate& a) { nMaharishisPerK += a.nMaharishisPerK; return *this; }
+    CAmount GetFeePerK() const { return nSatoshisPerK; }
+    friend bool operator<(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK < b.nSatoshisPerK; }
+    friend bool operator>(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK > b.nSatoshisPerK; }
+    friend bool operator==(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK == b.nSatoshisPerK; }
+    friend bool operator<=(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK <= b.nSatoshisPerK; }
+    friend bool operator>=(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK >= b.nSatoshisPerK; }
+    friend bool operator!=(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK != b.nSatoshisPerK; }
+    CFeeRate& operator+=(const CFeeRate& a) { nSatoshisPerK += a.nSatoshisPerK; return *this; }
     std::string ToString(const FeeEstimateMode& fee_estimate_mode = FeeEstimateMode::BRM_KVB) const;
-    friend CFeeRate operator*(const CFeeRate& f, int a) { return CFeeRate(a * f.nMaharishisPerK); }
-    friend CFeeRate operator*(int a, const CFeeRate& f) { return CFeeRate(a * f.nMaharishisPerK); }
+    friend CFeeRate operator*(const CFeeRate& f, int a) { return CFeeRate(a * f.nSatoshisPerK); }
+    friend CFeeRate operator*(int a, const CFeeRate& f) { return CFeeRate(a * f.nSatoshisPerK); }
 
-    SERIALIZE_METHODS(CFeeRate, obj) { READWRITE(obj.nMaharishisPerK); }
+    SERIALIZE_METHODS(CFeeRate, obj) { READWRITE(obj.nSatoshisPerK); }
 };
 
 #endif // BITCOIN_POLICY_FEERATE_H

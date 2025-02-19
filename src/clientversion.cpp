@@ -20,7 +20,7 @@ using util::Join;
  * for both bitraamd and bitraam-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string UA_NAME("Maharishi");
+const std::string UA_NAME("Satoshi");
 
 
 #include <bitraam-build-info.h>
