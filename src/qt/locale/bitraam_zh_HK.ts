@@ -192,7 +192,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your bitraams from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">請記得將錢包加密不能完全防止你的 Bitcoins 經被入侵電腦的惡意程式偷取。</translation>
+        <translation type="unfinished">請記得將錢包加密不能完全防止你的 BitRaams 經被入侵電腦的惡意程式偷取。</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>

@@ -28,13 +28,13 @@ Optimize database writes for large (lots of inputs) transactions
 Wallet Encryption
 
 Bitcoin supports native wallet encryption so that people who steal your
-wallet file don't automatically get access to all of your Bitcoins.
+wallet file don't automatically get access to all of your BitRaams.
 In order to enable this feature, choose "Encrypt Wallet" from the
 Options menu.  You will be prompted to enter a passphrase, which
 will be used as the key to encrypt your wallet and will be needed
-every time you wish to send Bitcoins.  If you lose this passphrase,
+every time you wish to send BitRaams.  If you lose this passphrase,
 you will lose access to spend all of the bitraams in your wallet,
-no one, not even the Bitcoin developers can recover your Bitcoins.
+no one, not even the Bitcoin developers can recover your BitRaams.
 This means you are responsible for your own security, store your
 passphrase in a secure location and do not forget it.
 
@@ -60,7 +60,7 @@ able to go back to a version of the Bitcoin client older than 0.4.
 Keep in mind that you are always responsible for your own security.
 All it takes is a slightly more advanced wallet-stealing trojan which
 installs a keylogger to steal your wallet passphrase as you enter it
-in addition to your wallet file and you have lost all your Bitcoins.
+in addition to your wallet file and you have lost all your BitRaams.
 Wallet encryption cannot keep you safe if you do not practice
 good security, such as running up-to-date antivirus software, only
 entering your wallet passphrase in the Bitcoin client and using the

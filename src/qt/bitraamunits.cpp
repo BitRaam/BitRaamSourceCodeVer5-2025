@@ -53,9 +53,9 @@ QString BitcoinUnits::shortName(Unit unit)
 QString BitcoinUnits::description(Unit unit)
 {
     switch (unit) {
-    case Unit::BRM: return QString("Bitcoins");
-    case Unit::mBRM: return QString("Milli-Bitcoins (1 / 1" THIN_SP_UTF8 "000)");
-    case Unit::uBRM: return QString("Micro-Bitcoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case Unit::BRM: return QString("BitRaams");
+    case Unit::mBRM: return QString("Milli-BitRaams (1 / 1" THIN_SP_UTF8 "000)");
+    case Unit::uBRM: return QString("Micro-BitRaams (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case Unit::SAT: return QString("Maharishi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);

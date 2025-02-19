@@ -2532,7 +2532,7 @@ Hvis du får denne feilen burde du be forretningsdrivende om å tilby en BIP21 k
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Send Bitcoins</translation>
+        <translation type="unfinished">Send BitRaams</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3481,7 +3481,7 @@ Gå til Fil &gt; Åpne lommebok for å laste en lommebok.
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Send Bitcoins</translation>
+        <translation type="unfinished">Send BitRaams</translation>
     </message>
     <message>
         <source>Fee bump error</source>

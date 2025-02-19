@@ -1345,7 +1345,7 @@ Om den här plånboken innehåller lösbara</translation>
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 kommer att ladda ner och lagra en kopia av Bitcoins blockkedja.</translation>
+        <translation type="unfinished">%1 kommer att ladda ner och lagra en kopia av BitRaams blockkedja.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -2582,7 +2582,7 @@ Om den här plånboken innehåller lösbara</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Skicka Bitcoins</translation>
+        <translation type="unfinished">Skicka BitRaams</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3511,7 +3511,7 @@ Gå till Fil &gt; Öppna plånbok för att läsa in en plånbok.
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Skicka Bitcoins</translation>
+        <translation type="unfinished">Skicka BitRaams</translation>
     </message>
     <message>
         <source>Fee bump error</source>

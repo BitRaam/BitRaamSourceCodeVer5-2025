@@ -69,7 +69,7 @@ D'Signatur ass nëmmen mat Adressen vum Typ 'legacy' méiglech.</translation>
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your bitraams from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Erënner Iech, dass d'Verschlësselung vun ärer Portemonnaie Är Bitcoins net vollstänneg vir Malware schützen kann, déi Äre Computer infizéiert.</translation>
+        <translation type="unfinished">Erënner Iech, dass d'Verschlësselung vun ärer Portemonnaie Är BitRaams net vollstänneg vir Malware schützen kann, déi Äre Computer infizéiert.</translation>
     </message>
     </context>
 <context>

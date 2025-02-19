@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation type="unfinished">Wählen Sie die Adresse aus, an die Sie Bitcoins senden möchten</translation>
+        <translation type="unfinished">Wählen Sie die Adresse aus, an die Sie BitRaams senden möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation type="unfinished">Wählen Sie die Adresse aus, mit der Sie Bitcoins empfangen wollen</translation>
+        <translation type="unfinished">Wählen Sie die Adresse aus, mit der Sie BitRaams empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -59,7 +59,7 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Dies sind Ihre Bitcoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Adresse des Empfängers, bevor Sie Bitcoins überweisen.</translation>
+        <translation type="unfinished">Dies sind Ihre Bitcoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Adresse des Empfängers, bevor Sie BitRaams überweisen.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
@@ -189,7 +189,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>Remember that encrypting your wallet cannot fully protect your bitraams from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Beachten Sie, dass das Verschlüsseln Ihrer Wallet nicht komplett vor Diebstahl Ihrer Bitcoins durch Malware schützt, die Ihren Computer infiziert hat.</translation>
+        <translation type="unfinished">Beachten Sie, dass das Verschlüsseln Ihrer Wallet nicht komplett vor Diebstahl Ihrer BitRaams durch Malware schützt, die Ihren Computer infiziert hat.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -1440,7 +1440,7 @@ Während des Migrationsprozesses wird vor der Migration ein Backup der Wallet er
     </message>
     <message>
         <source>Attempting to spend bitraams that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Versuche, Bitcoins aus noch nicht angezeigten Transaktionen auszugeben, werden vom Netzwerk nicht akzeptiert.</translation>
+        <translation type="unfinished">Versuche, BitRaams aus noch nicht angezeigten Transaktionen auszugeben, werden vom Netzwerk nicht akzeptiert.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1531,7 +1531,7 @@ Während des Migrationsprozesses wird vor der Migration ein Backup der Wallet er
     </message>
     <message>
         <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
-        <translation type="unfinished">Vollständiger Pfad zu %1 einem Bitcoin Core kompatibelen Script (z.B.: C:\Downloads\hwi.exe oder /Users/you/Downloads/hwi.py). Achtung: Malware kann Bitcoins stehlen!</translation>
+        <translation type="unfinished">Vollständiger Pfad zu %1 einem Bitcoin Core kompatibelen Script (z.B.: C:\Downloads\hwi.exe oder /Users/you/Downloads/hwi.py). Achtung: Malware kann BitRaams stehlen!</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1739,7 +1739,7 @@ Während des Migrationsprozesses wird vor der Migration ein Backup der Wallet er
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation type="unfinished">Wählen Sie die standardmäßige Untereinheit, die in der Benutzeroberfläche und beim Überweisen von Bitcoins angezeigt werden soll.</translation>
+        <translation type="unfinished">Wählen Sie die standardmäßige Untereinheit, die in der Benutzeroberfläche und beim Überweisen von BitRaams angezeigt werden soll.</translation>
     </message>
     <message>
         <source>Third-party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -2896,7 +2896,7 @@ Für weitere Informationen über diese Konsole, tippe %6.
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Bitcoins überweisen</translation>
+        <translation type="unfinished">BitRaams überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3290,7 +3290,7 @@ Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebühre
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitraams than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Die Gebühr wird vom zu überweisenden Betrag abgezogen. Der Empfänger wird also weniger Bitcoins erhalten, als Sie im Betrags-Feld eingegeben haben. Falls mehrere Empfänger ausgewählt wurden, wird die Gebühr gleichmäßig verteilt.</translation>
+        <translation type="unfinished">Die Gebühr wird vom zu überweisenden Betrag abgezogen. Der Empfänger wird also weniger BitRaams erhalten, als Sie im Betrags-Feld eingegeben haben. Falls mehrere Empfänger ausgewählt wurden, wird die Gebühr gleichmäßig verteilt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3607,7 +3607,7 @@ Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebühre
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished">Erzeugte Bitcoins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockchain hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine Bitcoins gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation type="unfinished">Erzeugte BitRaams müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockchain hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine BitRaams gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3940,7 +3940,7 @@ Gehen Sie zu Datei &gt; Wallet Öffnen, um eine Wallet zu laden.
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Bitcoins überweisen</translation>
+        <translation type="unfinished">BitRaams überweisen</translation>
     </message>
     <message>
         <source>Fee bump error</source>
