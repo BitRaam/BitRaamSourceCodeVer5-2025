@@ -187,7 +187,7 @@ class EphemeralDustTest(BitcoinTestFramework):
         assert_equal(self.nodes[0].getrawmempool(), [])
 
     def test_nonzero_dust(self):
-        self.log.info("Test that a single output of any satoshi amount is allowed, not checking spending")
+        self.log.info("Test that a single output of any maharishi amount is allowed, not checking spending")
 
         # We aren't checking spending, allow it in with no fee
         self.restart_node(0, extra_args=["-minrelaytxfee=0"])

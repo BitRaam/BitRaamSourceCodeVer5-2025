@@ -38,7 +38,7 @@ Chat history logs can be found at https://gnusha.org/secp256k1/.
 
 ## Contributor workflow & peer review
 
-The Contributor Workflow & Peer Review in libsecp256k1 are similar to Bitcoin Core's workflow and review processes described in its [CONTRIBUTING.md](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md).
+The Contributor Workflow & Peer Review in libsecp256k1 are similar to Bitcoin Core's workflow and review processes described in its [CONTRIBUTING.md](https://github.com/bitraam/bitraam/blob/master/CONTRIBUTING.md).
 
 ### Coding conventions
 
@@ -48,8 +48,8 @@ In addition, libsecp256k1 tries to maintain the following coding conventions:
 * The tests should cover all lines and branches of the library (see [Test coverage](#coverage)).
 * Operations involving secret data should be tested for being constant time with respect to the secrets (see [src/ctime_tests.c](src/ctime_tests.c)).
 * Local variables containing secret data should be cleared explicitly to try to delete secrets from memory.
-* Use `secp256k1_memcmp_var` instead of `memcmp` (see [#823](https://github.com/bitcoin-core/secp256k1/issues/823)).
-* As a rule of thumb, the default values for configuration options should target standard desktop machines and align with Bitcoin Core's defaults, and the tests should mostly exercise the default configuration (see [#1549](https://github.com/bitcoin-core/secp256k1/issues/1549#issuecomment-2200559257)).
+* Use `secp256k1_memcmp_var` instead of `memcmp` (see [#823](https://github.com/bitraam-core/secp256k1/issues/823)).
+* As a rule of thumb, the default values for configuration options should target standard desktop machines and align with Bitcoin Core's defaults, and the tests should mostly exercise the default configuration (see [#1549](https://github.com/bitraam-core/secp256k1/issues/1549#issuecomment-2200559257)).
 
 #### Style conventions
 

@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 """  Tests the coin_selection:* tracepoint API interface.
-     See https://github.com/bitcoin/bitcoin/blob/master/doc/tracing.md#context-coin_selection
+     See https://github.com/bitraam/bitraam/blob/master/doc/tracing.md#context-coin_selection
 """
 
 # Test will be skipped if we don't have bcc installed
@@ -106,7 +106,7 @@ class CoinSelectionTracepointTest(BitcoinTestFramework):
 
     def skip_test_if_missing_module(self):
         self.skip_if_platform_not_linux()
-        self.skip_if_no_bitcoind_tracepoints()
+        self.skip_if_no_bitraamd_tracepoints()
         self.skip_if_no_python_bcc()
         self.skip_if_no_bpf_permissions()
         self.skip_if_no_wallet()

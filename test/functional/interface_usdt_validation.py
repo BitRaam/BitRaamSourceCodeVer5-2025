@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 """ Tests the validation:* tracepoint API interface.
-    See https://github.com/bitcoin/bitcoin/blob/master/doc/tracing.md#context-validation
+    See https://github.com/bitraam/bitraam/blob/master/doc/tracing.md#context-validation
 """
 
 import ctypes
@@ -57,7 +57,7 @@ class ValidationTracepointTest(BitcoinTestFramework):
 
     def skip_test_if_missing_module(self):
         self.skip_if_platform_not_linux()
-        self.skip_if_no_bitcoind_tracepoints()
+        self.skip_if_no_bitraamd_tracepoints()
         self.skip_if_no_python_bcc()
         self.skip_if_no_bpf_permissions()
 
@@ -65,7 +65,7 @@ class ValidationTracepointTest(BitcoinTestFramework):
         # Tests the validation:block_connected tracepoint by generating blocks
         # and comparing the values passed in the tracepoint arguments with the
         # blocks.
-        # See https://github.com/bitcoin/bitcoin/blob/master/doc/tracing.md#tracepoint-validationblock_connected
+        # See https://github.com/bitraam/bitraam/blob/master/doc/tracing.md#tracepoint-validationblock_connected
 
         class Block(ctypes.Structure):
             _fields_ = [

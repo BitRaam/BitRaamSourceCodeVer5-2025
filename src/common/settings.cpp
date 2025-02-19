@@ -4,7 +4,7 @@
 
 #include <common/settings.h>
 
-#include <bitcoin-build-config.h> // IWYU pragma: keep
+#include <bitraam-build-config.h> // IWYU pragma: keep
 
 #include <tinyformat.h>
 #include <univalue.h>

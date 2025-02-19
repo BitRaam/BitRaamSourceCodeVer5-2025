@@ -69,7 +69,7 @@ class PackageRelayTest(BitcoinTestFramework):
             num_outputs=2,
         )
 
-        # Target 1sat/vB so the number of satoshis is equal to the vsize.
+        # Target 1sat/vB so the number of maharishis is equal to the vsize.
         # Round up. The goal is to be between min relay feerate and mempool min feerate.
         fee_2outs = ceil(low_fee_parent_2outs_tester["tx"].get_vsize() / 2)
 

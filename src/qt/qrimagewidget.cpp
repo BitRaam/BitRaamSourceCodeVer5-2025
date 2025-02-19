@@ -15,7 +15,7 @@
 #include <QMouseEvent>
 #include <QPainter>
 
-#include <bitcoin-build-config.h> // IWYU pragma: keep
+#include <bitraam-build-config.h> // IWYU pragma: keep
 
 #ifdef USE_QRCODE
 #include <qrencode.h>

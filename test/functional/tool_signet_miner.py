@@ -39,7 +39,7 @@ class SignetMinerTest(BitcoinTestFramework):
     def skip_test_if_missing_module(self):
         self.skip_if_no_cli()
         self.skip_if_no_wallet()
-        self.skip_if_no_bitcoin_util()
+        self.skip_if_no_bitraam_util()
 
     def run_test(self):
         node = self.nodes[0]
@@ -55,7 +55,7 @@ class SignetMinerTest(BitcoinTestFramework):
                 f'--cli={node.cli.binary} -datadir={node.cli.datadir}',
                 'generate',
                 f'--address={node.getnewaddress()}',
-                f'--grind-cmd={self.options.bitcoinutil} grind',
+                f'--grind-cmd={self.options.bitraamutil} grind',
                 f'--nbits={DIFF_1_N_BITS:08x}',
                 f'--set-block-time={int(time.time())}',
                 '--poolnum=99',

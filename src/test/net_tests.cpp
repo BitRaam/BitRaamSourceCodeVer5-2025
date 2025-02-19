@@ -451,7 +451,7 @@ BOOST_AUTO_TEST_CASE(cnetaddr_unserialize_v2)
     // Valid IPv6, contains embedded "internal".
     s << "02"                                    // network type (IPv6)
          "10"                                    // address length
-         "fd6b88c08724ca978112ca1bbdcafac2"_hex; // address: 0xfd + sha256("bitcoin")[0:5] +
+         "fd6b88c08724ca978112ca1bbdcafac2"_hex; // address: 0xfd + sha256("bitraam")[0:5] +
                                                  // sha256(name)[0:10]
     s >> ser_params(addr);
     BOOST_CHECK(addr.IsInternal());

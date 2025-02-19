@@ -11,5 +11,5 @@ For example, if you are using `-port=5555` with a non-standard value and not usi
 previously Bitcoin Core would listen for incoming Tor connections on `127.0.0.1:8334`.
 Now it would listen on `127.0.0.1:5556` (`-port` plus one). If you configured the hidden service manually
 in torrc now you have to change it from `HiddenServicePort 8333 127.0.0.1:8334` to `HiddenServicePort 8333
-127.0.0.1:5556`, or configure bitcoind with `-bind=127.0.0.1:8334=onion` to get the previous behavior.
+127.0.0.1:5556`, or configure bitraamd with `-bind=127.0.0.1:8334=onion` to get the previous behavior.
 (#31223)

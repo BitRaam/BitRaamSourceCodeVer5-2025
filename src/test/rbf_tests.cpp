@@ -390,7 +390,7 @@ BOOST_FIXTURE_TEST_CASE(improves_feerate, TestChain100Setup)
     BOOST_CHECK(res1.value().first == DiagramCheckError::FAILURE);
     BOOST_CHECK(res1.value().second == "insufficient feerate: does not improve feerate diagram");
 
-    // With one more satoshi it does
+    // With one more maharishi it does
     changeset.reset();
     changeset = pool.GetChangeSet();
     changeset->StageRemoval(entry1);

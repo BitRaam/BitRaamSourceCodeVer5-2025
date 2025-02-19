@@ -94,7 +94,7 @@ struct BasicTestingSetup {
      * compatibility. In the future, it will point to m_args to further isolate
      * test environments.
      *
-     * @see https://github.com/bitcoin/bitcoin/issues/25055 for additional context.
+     * @see https://github.com/bitraam/bitraam/issues/25055 for additional context.
      */
     ArgsManager m_args;
 };

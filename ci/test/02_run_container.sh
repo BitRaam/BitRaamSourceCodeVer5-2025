@@ -5,7 +5,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 export LC_ALL=C.UTF-8
-export CI_IMAGE_LABEL="bitcoin-ci-test"
+export CI_IMAGE_LABEL="bitraam-ci-test"
 
 set -o errexit -o pipefail -o xtrace
 
@@ -94,7 +94,7 @@ if [ -z "$DANGER_RUN_CI_ON_HOST" ]; then
   fi
 
   if [ "$DANGER_CI_ON_HOST_CCACHE_FOLDER" ]; then
-   # Temporary exclusion for https://github.com/bitcoin/bitcoin/issues/31108
+   # Temporary exclusion for https://github.com/bitraam/bitraam/issues/31108
    # to allow CI configs and envs generated in the past to work for a bit longer.
    # Can be removed in March 2025.
    if [ "${CCACHE_DIR}" != "/tmp/ccache_dir" ]; then

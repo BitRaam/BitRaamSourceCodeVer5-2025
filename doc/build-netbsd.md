@@ -2,7 +2,7 @@
 
 **Updated for NetBSD [10.1](https://netbsd.org/releases/formal-10/NetBSD-10.1.html)**
 
-This guide describes how to build bitcoind, command-line utilities, and GUI on NetBSD.
+This guide describes how to build bitraamd, command-line utilities, and GUI on NetBSD.
 
 ## Preparation
 
@@ -38,18 +38,18 @@ See [dependencies.md](dependencies.md) for a complete overview.
 Clone the Bitcoin Core repository to a directory. All build scripts and commands will run from this directory.
 
 ```bash
-git clone https://github.com/bitcoin/bitcoin.git
+git clone https://github.com/bitraam/bitraam.git
 ```
 
 ### 3. Install Optional Dependencies
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run bitcoind or the GUI.
+It is not necessary to build wallet functionality to run bitraamd or the GUI.
 
 ###### Descriptor Wallet Support
 
-`sqlite3` is required to enable support for [descriptor wallets](https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md).
+`sqlite3` is required to enable support for [descriptor wallets](https://github.com/bitraam/bitraam/blob/master/doc/descriptors.md).
 
 ```bash
 pkgin install sqlite3

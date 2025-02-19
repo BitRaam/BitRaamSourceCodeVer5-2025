@@ -385,9 +385,9 @@ Num3072 Num3072::GetInverse() const
     // Compute a modular inverse based on a variant of the safegcd algorithm:
     // - Paper: https://gcd.cr.yp.to/papers.html
     // - Inspired by this code in libsecp256k1:
-    //   https://github.com/bitcoin-core/secp256k1/blob/master/src/modinv32_impl.h
+    //   https://github.com/bitraam-core/secp256k1/blob/master/src/modinv32_impl.h
     // - Explanation of the algorithm:
-    //   https://github.com/bitcoin-core/secp256k1/blob/master/doc/safegcd_implementation.md
+    //   https://github.com/bitraam-core/secp256k1/blob/master/doc/safegcd_implementation.md
 
     // Local variables d, e, f, g:
     // - f and g are the variables whose gcd we compute (despite knowing the answer is 1):

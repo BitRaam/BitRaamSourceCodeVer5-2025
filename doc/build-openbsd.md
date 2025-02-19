@@ -2,7 +2,7 @@
 
 **Updated for OpenBSD [7.6](https://www.openbsd.org/76.html)**
 
-This guide describes how to build bitcoind, command-line utilities, and GUI on OpenBSD.
+This guide describes how to build bitraamd, command-line utilities, and GUI on OpenBSD.
 
 ## Preparation
 
@@ -18,14 +18,14 @@ See [dependencies.md](dependencies.md) for a complete overview.
 ### 2. Clone Bitcoin Repo
 Clone the Bitcoin Core repository to a directory. All build scripts and commands will run from this directory.
 ``` bash
-git clone https://github.com/bitcoin/bitcoin.git
+git clone https://github.com/bitraam/bitraam.git
 ```
 
 ### 3. Install Optional Dependencies
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run either `bitcoind` or `bitcoin-qt`.
+It is not necessary to build wallet functionality to run either `bitraamd` or `bitraam-qt`.
 
 ###### Descriptor Wallet Support
 
@@ -46,7 +46,7 @@ Refer to [depends/README.md](/depends/README.md) for detailed instructions.
 ```bash
 gmake -C depends NO_BOOST=1 NO_LIBEVENT=1 NO_QT=1 NO_SQLITE=1 NO_ZMQ=1 NO_USDT=1
 ...
-to: /path/to/bitcoin/depends/*-unknown-openbsd*
+to: /path/to/bitraam/depends/*-unknown-openbsd*
 ```
 
 Then set `BDB_PREFIX`:
@@ -133,7 +133,7 @@ data(kbytes)         1572864
 ```
 
 This is, unfortunately, in some cases not enough to compile some `.cpp` files in the project,
-(see issue [#6658](https://github.com/bitcoin/bitcoin/issues/6658)).
+(see issue [#6658](https://github.com/bitraam/bitraam/issues/6658)).
 If your user is in the `staff` group the limit can be raised with:
 ```bash
 ulimit -d 3000000

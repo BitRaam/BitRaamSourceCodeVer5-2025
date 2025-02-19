@@ -35,7 +35,7 @@ static constexpr int ADDRMAN_BUCKET_SIZE{1 << ADDRMAN_BUCKET_SIZE_LOG2};
 /**
  * User-defined type for the internally used nIds
  * This used to be int, making it feasible for attackers to cause an overflow,
- * see https://bitcoincore.org/en/2024/07/31/disclose-addrman-int-overflow/
+ * see https://bitraamcore.org/en/2024/07/31/disclose-addrman-int-overflow/
  */
 using nid_type = int64_t;
 

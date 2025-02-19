@@ -261,7 +261,7 @@ class BackwardsCompatibilityTest(BitcoinTestFramework):
         if self.options.descriptors:
             self.log.info("Test descriptor wallet incompatibility on:")
             for node in legacy_only_nodes:
-                # RPC loadwallet failure causes bitcoind to exit in <= 0.17, in addition to the RPC
+                # RPC loadwallet failure causes bitraamd to exit in <= 0.17, in addition to the RPC
                 # call failure, so the following test won't work:
                 # assert_raises_rpc_error(-4, "Wallet loading failed.", node_v17.loadwallet, 'w3')
                 if self.major_version_less_than(node, 18):
@@ -325,7 +325,7 @@ class BackwardsCompatibilityTest(BitcoinTestFramework):
             # Restore the wallet to master
             load_res = node_master.restorewallet(wallet_name, backup_path)
 
-            # Make sure this wallet opens with only the migration warning. See https://github.com/bitcoin/bitcoin/pull/19054
+            # Make sure this wallet opens with only the migration warning. See https://github.com/bitraam/bitraam/pull/19054
             if not self.options.descriptors:
                 # Legacy wallets will have only a deprecation warning
                 assert_equal(load_res["warnings"], ["Wallet loaded successfully. The legacy wallet type is being deprecated and support for creating and opening legacy wallets will be removed in the future. Legacy wallets can be migrated to a descriptor wallet with migratewallet."])

@@ -2,7 +2,7 @@
 
 **Updated for MacOS [15](https://www.apple.com/macos/macos-sequoia/)**
 
-This guide describes how to build bitcoind, command-line utilities, and GUI on macOS.
+This guide describes how to build bitraamd, command-line utilities, and GUI on macOS.
 
 ## Preparation
 
@@ -58,14 +58,14 @@ Now that all the required dependencies are installed, let's clone the Bitcoin Co
 All build scripts and commands will run from this directory.
 
 ``` bash
-git clone https://github.com/bitcoin/bitcoin.git
+git clone https://github.com/bitraam/bitraam.git
 ```
 
 ### 5. Install Optional Dependencies
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run `bitcoind` or  `bitcoin-qt`.
+It is not necessary to build wallet functionality to run `bitraamd` or  `bitraam-qt`.
 
 ###### Descriptor Wallet Support
 
@@ -96,7 +96,7 @@ brew install qt@5
 ```
 
 Note: Building with Qt binaries downloaded from the Qt website is not officially supported.
-See the notes in [#7714](https://github.com/bitcoin/bitcoin/issues/7714).
+See the notes in [#7714](https://github.com/bitraam/bitraam/issues/7714).
 
 ###### libqrencode
 
@@ -199,10 +199,10 @@ cmake --build build --target deploy
 
 ## Running Bitcoin Core
 
-Bitcoin Core should now be available at `./build/src/bitcoind`.
-If you compiled support for the GUI, it should be available at `./build/src/qt/bitcoin-qt`.
+Bitcoin Core should now be available at `./build/src/bitraamd`.
+If you compiled support for the GUI, it should be available at `./build/src/qt/bitraam-qt`.
 
-The first time you run `bitcoind` or `bitcoin-qt`, it will start downloading the blockchain.
+The first time you run `bitraamd` or `bitraam-qt`, it will start downloading the blockchain.
 This process could take many hours, or even days on slower than average systems.
 
 By default, blockchain and wallet data files will be stored in:
@@ -216,9 +216,9 @@ Before running, you may create an empty configuration file:
 ```shell
 mkdir -p "/Users/${USER}/Library/Application Support/Bitcoin"
 
-touch "/Users/${USER}/Library/Application Support/Bitcoin/bitcoin.conf"
+touch "/Users/${USER}/Library/Application Support/Bitcoin/bitraam.conf"
 
-chmod 600 "/Users/${USER}/Library/Application Support/Bitcoin/bitcoin.conf"
+chmod 600 "/Users/${USER}/Library/Application Support/Bitcoin/bitraam.conf"
 ```
 
 You can monitor the download process by looking at the debug.log file:
@@ -230,8 +230,8 @@ tail -f $HOME/Library/Application\ Support/Bitcoin/debug.log
 ## Other commands:
 
 ```shell
-./build/src/bitcoind -daemon      # Starts the bitcoin daemon.
-./build/src/bitcoin-cli --help    # Outputs a list of command-line options.
-./build/src/bitcoin-cli help      # Outputs a list of RPC commands when the daemon is running.
-./build/src/qt/bitcoin-qt -server # Starts the bitcoin-qt server mode, allows bitcoin-cli control
+./build/src/bitraamd -daemon      # Starts the bitraam daemon.
+./build/src/bitraam-cli --help    # Outputs a list of command-line options.
+./build/src/bitraam-cli help      # Outputs a list of RPC commands when the daemon is running.
+./build/src/qt/bitraam-qt -server # Starts the bitraam-qt server mode, allows bitraam-cli control
 ```

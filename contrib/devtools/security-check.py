@@ -119,8 +119,8 @@ def check_ELF_CONTROL_FLOW(binary) -> bool:
 
 def check_ELF_FORTIFY(binary) -> bool:
 
-    # bitcoin-util does not currently contain any fortified functions
-    if 'Bitcoin Core bitcoin-util utility version ' in binary.strings:
+    # bitraam-util does not currently contain any fortified functions
+    if 'Bitcoin Core bitraam-util utility version ' in binary.strings:
         return True
 
     chk_funcs = set()

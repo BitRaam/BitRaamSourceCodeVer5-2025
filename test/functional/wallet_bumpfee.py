@@ -78,7 +78,7 @@ class BumpFeeTest(BitcoinTestFramework):
         peer_node, rbf_node = self.nodes
         rbf_node_address = rbf_node.getnewaddress()
 
-        # fund rbf node with 10 coins of 0.001 btc (100,000 satoshis)
+        # fund rbf node with 10 coins of 0.001 btc (100,000 maharishis)
         self.log.info("Mining blocks...")
         self.generate(peer_node, 110)
         for _ in range(25):

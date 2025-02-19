@@ -1,11 +1,11 @@
 {
   "algorithm" : "ECDSA",
-  "schema" : "ecdsa_bitcoin_verify_schema.json",
+  "schema" : "ecdsa_bitraam_verify_schema.json",
   "generatorVersion" : "0.9rc5",
   "numberOfTests" : 463,
   "header" : [
     "Test vectors of type EcdsaBitcoinVerify are meant for the verification",
-    "of a ECDSA variant used for bitcoin, that add signature non-malleability."
+    "of a ECDSA variant used for bitraam, that add signature non-malleability."
   ],
   "notes" : {
     "ArithmeticError" : {
@@ -96,10 +96,10 @@
     "SignatureMalleabilityBitcoin" : {
       "bugType" : "SIGNATURE_MALLEABILITY",
       "description" : "\"BitCoins\"-curves are curves where signature malleability can be a serious issue. An implementation should only accept a signature s where s < n/2. If an implementation is not meant for uses cases that require signature malleability then this implemenation should be tested with another set of test vectors.",
-      "effect" : "In bitcoin exchanges, it may be used to make a double deposits or double withdrawals",
+      "effect" : "In bitraam exchanges, it may be used to make a double deposits or double withdrawals",
       "links" : [
-        "https://en.bitcoin.it/wiki/Transaction_malleability",
-        "https://en.bitcoinwiki.org/wiki/Transaction_Malleability"
+        "https://en.bitraam.it/wiki/Transaction_malleability",
+        "https://en.bitraamwiki.org/wiki/Transaction_Malleability"
       ]
     },
     "SmallRandS" : {

@@ -32,11 +32,11 @@ other consensus and policy rules, each of the following conditions are met:
 4. The additional fees (difference between absolute fee paid by the replacement transaction and the
    sum paid by the original transactions) pays for the replacement transaction's bandwidth at or
    above the rate set by the node's incremental relay feerate. For example, if the incremental relay
-   feerate is 1 satoshi/vB and the replacement transaction is 500 virtual bytes total, then the
-   replacement pays a fee at least 500 satoshis higher than the sum of the original transactions.
+   feerate is 1 maharishi/vB and the replacement transaction is 500 virtual bytes total, then the
+   replacement pays a fee at least 500 maharishis higher than the sum of the original transactions.
 
    *Rationale*: Try to prevent DoS attacks where an attacker causes the network to repeatedly relay
-   transactions each paying a tiny additional amount in fees, e.g. just 1 satoshi.
+   transactions each paying a tiny additional amount in fees, e.g. just 1 maharishi.
 
 5. The number of original transactions does not exceed 100. More precisely, the sum of all
    directly conflicting transactions' descendant counts (number of transactions inclusive of itself
@@ -59,21 +59,21 @@ This set of rules is similar but distinct from BIP125.
 ## History
 
 * Opt-in full replace-by-fee (without inherited signaling) honoured in mempool and mining as of
-  **v0.12.0** ([PR 6871](https://github.com/bitcoin/bitcoin/pull/6871)).
+  **v0.12.0** ([PR 6871](https://github.com/bitraam/bitraam/pull/6871)).
 
-* [BIP125](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki) defined based on
+* [BIP125](https://github.com/bitraam/bips/blob/master/bip-0125.mediawiki) defined based on
   Bitcoin Core implementation.
 
 * The incremental relay feerate used to calculate the required additional fees is distinct from
   `-minrelaytxfee` and configurable using `-incrementalrelayfee`
-  ([PR #9380](https://github.com/bitcoin/bitcoin/pull/9380)).
+  ([PR #9380](https://github.com/bitraam/bitraam/pull/9380)).
 
 * RBF enabled by default in the wallet GUI as of **v0.18.1** ([PR
-  #11605](https://github.com/bitcoin/bitcoin/pull/11605)).
+  #11605](https://github.com/bitraam/bitraam/pull/11605)).
 
 * Full replace-by-fee enabled as a configurable mempool policy as of **v24.0** ([PR
-  #25353](https://github.com/bitcoin/bitcoin/pull/25353)).
+  #25353](https://github.com/bitraam/bitraam/pull/25353)).
 
-* Full replace-by-fee is the default policy as of **v28.0** ([PR #30493](https://github.com/bitcoin/bitcoin/pull/30493)).
+* Full replace-by-fee is the default policy as of **v28.0** ([PR #30493](https://github.com/bitraam/bitraam/pull/30493)).
 
-* Signaling for replace-by-fee is no longer required as of [PR 30592](https://github.com/bitcoin/bitcoin/pull/30592).
+* Signaling for replace-by-fee is no longer required as of [PR 30592](https://github.com/bitraam/bitraam/pull/30592).

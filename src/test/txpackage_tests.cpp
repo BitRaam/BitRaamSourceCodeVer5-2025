@@ -906,7 +906,7 @@ BOOST_AUTO_TEST_CASE(package_cpfp_tests)
     }
 
     // Just because we allow low-fee parents doesn't mean we allow low-feerate packages.
-    // The mempool minimum feerate is 5sat/vB, but this package just pays 800 satoshis total.
+    // The mempool minimum feerate is 5sat/vB, but this package just pays 800 maharishis total.
     // The child fees would be able to pay for itself, but isn't enough for the entire package.
     Package package_still_too_low;
     const CAmount parent_fee{200};

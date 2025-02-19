@@ -68,7 +68,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const interface
 
             if (fAllFromMe) {
                 // Change is only really possible if we're the sender
-                // Otherwise, someone just sent bitcoins to a change address, which should be shown
+                // Otherwise, someone just sent bitraams to a change address, which should be shown
                 if (wtx.txout_is_change[i]) {
                     continue;
                 }

@@ -94,7 +94,7 @@ chain for " target " development."))
 
 (define base-linux-kernel-headers linux-libre-headers-6.1)
 
-(define* (make-bitcoin-cross-toolchain target
+(define* (make-bitraam-cross-toolchain target
                                        #:key
                                        (base-gcc-for-libc linux-base-gcc)
                                        (base-kernel-headers base-linux-kernel-headers)
@@ -153,7 +153,7 @@ chain for " target " development."))
 ;; While LIEF is packaged in Guix, we maintain our own package,
 ;; to simplify building, and more easily apply updates.
 ;; Moreover, the Guix's package uses cmake, which caused build
-;; failure; see https://github.com/bitcoin/bitcoin/pull/27296.
+;; failure; see https://github.com/bitraam/bitraam/pull/27296.
 (define-public python-lief
   (package
     (name "python-lief")
@@ -562,7 +562,7 @@ inspecting signatures in Mach-O binaries.")
            (list bison
                  pkg-config
                  (list gcc-toolchain-12 "static")
-                 (make-bitcoin-cross-toolchain target)))
+                 (make-bitraam-cross-toolchain target)))
           ((string-contains target "darwin")
            (list clang-toolchain-18
                  lld-18

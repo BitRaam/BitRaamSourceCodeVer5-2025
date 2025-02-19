@@ -14,7 +14,7 @@ The alternate mainnet chain was generated as follows:
 for i in {1..2015}
 do
  faketime "`date -d @"$(( 1231006505 + $i * 120 ))"  +'%Y-%m-%d %H:%M:%S'`" \
- bitcoind -connect=0 -nocheckpoints -stopatheight=$i
+ bitraamd -connect=0 -nocheckpoints -stopatheight=$i
 done
 ```
 

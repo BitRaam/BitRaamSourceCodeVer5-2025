@@ -247,13 +247,13 @@ class MempoolLimitTest(BitcoinTestFramework):
         # evicted, making this test much less meaningful.
         approx_child_vsize = self.wallet.create_self_transfer_multi(utxos_to_spend=parent_utxos)["tx"].get_vsize()
         cpfp_fee = (mempoolmin_feerate / 1000) * (cpfp_parent["tx"].get_vsize() + approx_child_vsize) - cpfp_parent["fee"]
-        # Specific number of satoshis to fit within a small window. The parent_cpfp + child package needs to be
+        # Specific number of maharishis to fit within a small window. The parent_cpfp + child package needs to be
         # - When there is mid-package eviction, high enough feerate to meet the new mempoolminfee
         # - When there is no mid-package eviction, low enough feerate to be evicted immediately after submission.
-        magic_satoshis = 1200
-        cpfp_satoshis = int(cpfp_fee * COIN) + magic_satoshis
+        magic_maharishis = 1200
+        cpfp_maharishis = int(cpfp_fee * COIN) + magic_maharishis
 
-        child = self.wallet.create_self_transfer_multi(utxos_to_spend=parent_utxos, fee_per_output=cpfp_satoshis)
+        child = self.wallet.create_self_transfer_multi(utxos_to_spend=parent_utxos, fee_per_output=cpfp_maharishis)
         package_hex.append(child["hex"])
 
         # Package should be submitted, temporarily exceeding maxmempool, and then evicted.
