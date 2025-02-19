@@ -83,7 +83,7 @@ For instance:
 
     $ bitraamd -zmqpubhashtx=tcp://127.0.0.1:28332 \
                -zmqpubhashtx=tcp://192.168.1.2:28332 \
-               -zmqpubhashblock="tcp://[::1]:28333" \
+               -zmqpubhashblock="tcp://[::1]:231415" \
                -zmqpubrawtx=ipc:///tmp/bitraamd.tx.raw \
                -zmqpubhashtxhwm=10000
 

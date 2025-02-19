@@ -985,7 +985,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Kann pro Eingabe um +/- %1 Satoshi(s) abweichen.</translation>
+        <translation type="unfinished">Kann pro Eingabe um +/- %1 Maharishi(s) abweichen.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2996,7 +2996,7 @@ Für weitere Informationen über diese Konsole, tippe %6.
 Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 maharishis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 maharishis.</source>
         <translation type="unfinished">Gib manuell eine Gebühr pro kB (1.000 Bytes) der virtuellen Transaktionsgröße an.
 
-Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebührenrate von "100 Satoshis per kvB" für eine Transaktion von 500 virtuellen Bytes (die Hälfte von 1 kvB) letztlich zu einer Gebühr von nur 50 Satoshis.</translation>
+Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebührenrate von "100 Maharishis per kvB" für eine Transaktion von 500 virtuellen Bytes (die Hälfte von 1 kvB) letztlich zu einer Gebühr von nur 50 Maharishis.</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitraam transactions than the network can process.</source>

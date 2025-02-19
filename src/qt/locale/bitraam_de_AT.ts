@@ -154,7 +154,7 @@
     </message>
     <message>
         <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Kann pro Eingabe um +/- %1 Satoshi(s) abweichen.</translation>
+        <translation type="unfinished">Kann pro Eingabe um +/- %1 Maharishi(s) abweichen.</translation>
     </message>
     <message>
         <source>(no label)</source>
