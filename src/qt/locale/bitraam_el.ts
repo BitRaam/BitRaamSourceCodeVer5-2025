@@ -54,13 +54,13 @@
         <translation type="unfinished">Ε&amp;πιλογή</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Αυτές είναι οι Bitcoin διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Αυτές είναι οι BitRaam διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Αυτές είναι οι Bitcoin διευθύνσεις για τη λήψη πληρωμών. Χρησιμοποιήστε το κουμπί  'Δημιουργία νέας διεύθυνσης λήψεων' στο παράθυρο λήψεων για τη δημιουργία νέας διεύθυνσης.
+        <translation type="unfinished">Αυτές είναι οι BitRaam διευθύνσεις για τη λήψη πληρωμών. Χρησιμοποιήστε το κουμπί  'Δημιουργία νέας διεύθυνσης λήψεων' στο παράθυρο λήψεων για τη δημιουργία νέας διεύθυνσης.
 Η υπογραφή είναι διαθέσιμη μόνο σε διευθύνσεις 'παλαιού τύπου'.</translation>
     </message>
     <message>
@@ -248,7 +248,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">Το αρχείο Ρυθμίσεων %1 ενδέχεται να είναι κατεστραμμένο ή μη έγκυρο.</translation>
@@ -303,8 +303,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ποσό</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Εισάγετε μια διεύθυνση Bitcoin (π.χ. %1)</translation>
+        <source>Enter a BitRaam address (e.g. %1)</source>
+        <translation type="unfinished">Εισάγετε μια διεύθυνση BitRaam (π.χ. %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -411,7 +411,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Επισκόπηση</translation>
@@ -478,7 +478,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Proxy είναι&lt;b&gt;ενεργοποιημένος&lt;/b&gt;:%1 </translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a BitRaam address</source>
         <translation type="unfinished">Στείλε νομίσματα σε μια διεύθυνση bitraam</translation>
     </message>
     <message>
@@ -522,7 +522,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Υπογραφή &amp;μηνύματος...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
         <translation type="unfinished">Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
     </message>
     <message>
@@ -530,8 +530,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Επιβεβαίωση μηνύματος...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Ελέγξτε τα μηνύματα για να βεβαιωθείτε ότι υπογράφηκαν με τις καθορισμένες διευθύνσεις Bitcoin</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Ελέγξτε τα μηνύματα για να βεβαιωθείτε ότι υπογράφηκαν με τις καθορισμένες διευθύνσεις BitRaam</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -645,16 +645,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ενημερωμένο</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Φόρτωση συναλλαγής Partially Signed Bitcoin</translation>
+        <source>Load Partially Signed BitRaam Transaction</source>
+        <translation type="unfinished">Φόρτωση συναλλαγής Partially Signed BitRaam</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">Φόρτωσε PSBT από &amp;πρόχειρο...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Φόρτωση συναλλαγής Partially Signed Bitcoin από το πρόχειρο</translation>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
+        <translation type="unfinished">Φόρτωση συναλλαγής Partially Signed BitRaam από το πρόχειρο</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -711,8 +711,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Μετεγκατάσταση ενός πορτοφολιού</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Εμφάνισε το %1 βοηθητικό μήνυμα για λήψη μιας λίστας με διαθέσιμες επιλογές για Bitcoin εντολές </translation>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
+        <translation type="unfinished">Εμφάνισε το %1 βοηθητικό μήνυμα για λήψη μιας λίστας με διαθέσιμες επιλογές για BitRaam εντολές </translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -771,11 +771,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ε&amp;μφάνιση</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
+            <numerusform>%n active connection(s) to BitRaam network.</numerusform>
+            <numerusform>%n active connection(s) to BitRaam network.</numerusform>
         </translation>
     </message>
     <message>
@@ -1293,8 +1293,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">Επεξεργασία διεύθυνσης αποστολής</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">Η διεύθυνση "%1" δεν είναι έγκυρη Bitcoin διεύθυνση.</translation>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
+        <translation type="unfinished">Η διεύθυνση "%1" δεν είναι έγκυρη BitRaam διεύθυνση.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1380,8 +1380,8 @@ The migration process will create a backup of the wallet before migrating. This 
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">Το %1 θα κατεβάσει και θα αποθηκεύσει ένα αντίγραφο της αλυσίδας μπλοκ Bitcoin.</translation>
+        <source>%1 will download and store a copy of the BitRaam block chain.</source>
+        <translation type="unfinished">Το %1 θα κατεβάσει και θα αποθηκεύσει ένα αντίγραφο της αλυσίδας μπλοκ BitRaam.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1466,7 +1466,7 @@ The migration process will create a backup of the wallet before migrating. This 
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitraam network, as detailed below.</source>
-        <translation type="unfinished">Οι πρόσφατες συναλλαγές ενδέχεται να μην είναι ακόμα ορατές και επομένως η ισορροπία του πορτοφολιού σας μπορεί να είναι εσφαλμένη. Αυτές οι πληροφορίες θα είναι σωστές όταν ολοκληρωθεί το συγχρονισμό του πορτοφολιού σας με το δίκτυο Bitcoin, όπως περιγράφεται παρακάτω.</translation>
+        <translation type="unfinished">Οι πρόσφατες συναλλαγές ενδέχεται να μην είναι ακόμα ορατές και επομένως η ισορροπία του πορτοφολιού σας μπορεί να είναι εσφαλμένη. Αυτές οι πληροφορίες θα είναι σωστές όταν ολοκληρωθεί το συγχρονισμό του πορτοφολιού σας με το δίκτυο BitRaam, όπως περιγράφεται παρακάτω.</translation>
     </message>
     <message>
         <source>Attempting to spend bitraams that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1688,16 +1688,16 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">&amp;Διαδρομή σεναρίου εξωτερικού υπογράφοντος</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">Αυτόματο άνοιγμα των θυρών Bitcoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation type="unfinished">Αυτόματο άνοιγμα των θυρών BitRaam στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation type="unfinished">Απόδοση θυρών με χρήση &amp;UPnP</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Ανοίξτε αυτόματα τη πόρτα του Bitcoin client στο router. Αυτό λειτουργεί μόνο όταν το router σας υποστηρίζει NAT-PMP και είναι ενεργοποιημένο. Η εξωτερική πόρτα μπορεί να είναι τυχαία.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Ανοίξτε αυτόματα τη πόρτα του BitRaam client στο router. Αυτό λειτουργεί μόνο όταν το router σας υποστηρίζει NAT-PMP και είναι ενεργοποιημένο. Η εξωτερική πόρτα μπορεί να είναι τυχαία.</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1712,8 +1712,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">Επιτρέπονται εισερχόμενες συνδέσεις</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Σύνδεση στο δίκτυο Bitcoin μέσω διαμεσολαβητή SOCKS5.</translation>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Σύνδεση στο δίκτυο BitRaam μέσω διαμεσολαβητή SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1792,8 +1792,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">Επιλογή κατά πόσο να αναδείχνονται οι δυνατότητες ελέγχου κερμάτων.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Συνδεθείτε στο δίκτυο Bitcoin μέσω ενός ξεχωριστού διακομιστή μεσολάβησης SOCKS5 για τις onion υπηρεσίες του Tor.</translation>
+        <source>Connect to the BitRaam network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Συνδεθείτε στο δίκτυο BitRaam μέσω ενός ξεχωριστού διακομιστή μεσολάβησης SOCKS5 για τις onion υπηρεσίες του Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1890,8 +1890,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">Φόρμα</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Bitcoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο BitRaam μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2126,8 +2126,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
 Εάν λαμβάνετε αυτό το σφάλμα, θα πρέπει να ζητήσετε από τον έμπορο να παρέχει ένα URI συμβατό με το BIP21.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">Δεν είναι δυνατή η ανάλυση του URI! Αυτό μπορεί να προκληθεί από μη έγκυρη διεύθυνση Bitcoin ή παραμορφωμένες παραμέτρους URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid BitRaam address or malformed URI parameters.</source>
+        <translation type="unfinished">Δεν είναι δυνατή η ανάλυση του URI! Αυτό μπορεί να προκληθεί από μη έγκυρη διεύθυνση BitRaam ή παραμορφωμένες παραμέτρους URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2715,8 +2715,8 @@ For more information on using this console, type %6.
         <translation type="unfinished">&amp;Μήνυμα:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Ένα προαιρετικό μήνυμα που επισυνάπτεται στο αίτημα πληρωμής, το οποίο θα εμφανιστεί όταν το αίτημα ανοίξει. Σημείωση: Το μήνυμα δεν θα αποσταλεί με την πληρωμή μέσω του δικτύου Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BitRaam network.</source>
+        <translation type="unfinished">Ένα προαιρετικό μήνυμα που επισυνάπτεται στο αίτημα πληρωμής, το οποίο θα εμφανιστεί όταν το αίτημα ανοίξει. Σημείωση: Το μήνυμα δεν θα αποσταλεί με την πληρωμή μέσω του δικτύου BitRaam.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -3099,8 +3099,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">Δη&amp;μιουργία Ανυπόγραφου</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Δημιουργεί μια συναλλαγή Bitcoin με μερική υπογραφή (PSBT) για χρήση με π.χ. ένα πορτοφόλι%1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
+        <source>Creates a Partially Signed BitRaam Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Δημιουργεί μια συναλλαγή BitRaam με μερική υπογραφή (PSBT) για χρήση με π.χ. ένα πορτοφόλι%1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
     </message>
     <message>
         <source>%1 to '%2'</source>
@@ -3155,9 +3155,9 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished"> Μπορείτε να αυξήσετε αργότερα την αμοιβή (σήματα Αντικατάσταση-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed BitRaam Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">Παρακαλούμε, ελέγξτε την πρόταση συναλλαγής. Θα παραχθεί μια συναλλαγή Bitcoin με μερική υπογραφή (PSBT), την οποία μπορείτε να αντιγράψετε και στη συνέχεια να υπογράψετε με π.χ. ένα πορτοφόλι %1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
+        <translation type="unfinished">Παρακαλούμε, ελέγξτε την πρόταση συναλλαγής. Θα παραχθεί μια συναλλαγή BitRaam με μερική υπογραφή (PSBT), την οποία μπορείτε να αντιγράψετε και στη συνέχεια να υπογράψετε με π.χ. ένα πορτοφόλι %1 εκτός σύνδεσης ή ένα πορτοφόλι υλικού συμβατό με το PSBT.</translation>
     </message>
     <message>
         <source>Do you want to create this transaction?</source>
@@ -3165,9 +3165,9 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">Θέλετε να δημιουργήσετε αυτήν τη συναλλαγή;</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed BitRaam Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
-        <translation type="unfinished">Παρακαλώ, ελέγξτε τη συναλλαγή σας. Μπορείτε να δημιουργήσετε και να στείλετε αυτήν τη συναλλαγή ή να δημιουργήσετε μια μερικώς υπογεγραμμένη συναλλαγή Bitcoin (PSBT), την οποία μπορείτε να αποθηκεύσετε ή να αντιγράψετε και στη συνέχεια να υπογράψετε, π.χ. με ένα πορτοφόλι εκτός σύνδεσης%1ή ένα πορτοφόλι υλικού συμβατό με PSBT.</translation>
+        <translation type="unfinished">Παρακαλώ, ελέγξτε τη συναλλαγή σας. Μπορείτε να δημιουργήσετε και να στείλετε αυτήν τη συναλλαγή ή να δημιουργήσετε μια μερικώς υπογεγραμμένη συναλλαγή BitRaam (PSBT), την οποία μπορείτε να αποθηκεύσετε ή να αντιγράψετε και στη συνέχεια να υπογράψετε, π.χ. με ένα πορτοφόλι εκτός σύνδεσης%1ή ένα πορτοφόλι υλικού συμβατό με PSBT.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -3245,8 +3245,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Προειδοποίηση: Μη έγκυρη διεύθυνση Bitcoin</translation>
+        <source>Warning: Invalid BitRaam address</source>
+        <translation type="unfinished">Προειδοποίηση: Μη έγκυρη διεύθυνση BitRaam</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3284,8 +3284,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">Επιλογή διεύθυνσης που έχει ήδη χρησιμοποιηθεί</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">Η διεύθυνση Bitcoin που θα σταλεί η πληρωμή</translation>
+        <source>The BitRaam address to send the payment to</source>
+        <translation type="unfinished">Η διεύθυνση BitRaam που θα σταλεί η πληρωμή</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -3320,8 +3320,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">Εισάγετε μία ετικέτα για αυτή την διεύθυνση για να προστεθεί στη λίστα με τις χρησιμοποιημένες διευθύνσεις</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">Ένα μήνυμα που επισυνάφθηκε στο bitraam: URI το οποίο θα αποθηκευτεί με τη συναλλαγή για αναφορά. Σημείωση: Αυτό το μήνυμα δεν θα σταλεί μέσω του δικτύου Bitcoin.</translation>
+        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BitRaam network.</source>
+        <translation type="unfinished">Ένα μήνυμα που επισυνάφθηκε στο bitraam: URI το οποίο θα αποθηκευτεί με τη συναλλαγή για αναφορά. Σημείωση: Αυτό το μήνυμα δεν θα σταλεί μέσω του δικτύου BitRaam.</translation>
     </message>
 </context>
 <context>
@@ -3346,8 +3346,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">Διεύθυνση Bitcoin που θα σταλεί το μήνυμα</translation>
+        <source>The BitRaam address to sign the message with</source>
+        <translation type="unfinished">Διεύθυνση BitRaam που θα σταλεί το μήνυμα</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3370,8 +3370,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">Αντιγραφή της επιλεγμένης υπογραφής στο πρόχειρο του συστήματος</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished">Υπογράψτε το μήνυμα για να αποδείξετε πως σας ανήκει η συγκεκριμένη διεύθυνση Bitcoin</translation>
+        <source>Sign the message to prove you own this BitRaam address</source>
+        <translation type="unfinished">Υπογράψτε το μήνυμα για να αποδείξετε πως σας ανήκει η συγκεκριμένη διεύθυνση BitRaam</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3394,8 +3394,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">Εισαγάγετε τη διεύθυνση του παραλήπτη, το μήνυμα (βεβαιωθείτε ότι αντιγράφετε σωστά τα διαλείμματα γραμμής, τα κενά, τις καρτέλες κλπ.) Και την υπογραφή παρακάτω για να επαληθεύσετε το μήνυμα. Προσέξτε να μην διαβάσετε περισσότερα στην υπογραφή από ό,τι είναι στο ίδιο το υπογεγραμμένο μήνυμα, για να αποφύγετε να εξαπατήσετε από μια επίθεση στον άνθρωπο στη μέση. Σημειώστε ότι αυτό αποδεικνύει μόνο ότι η υπογραφή συμβαλλόμενο μέρος λαμβάνει με τη διεύθυνση, δεν μπορεί να αποδειχθεί αποστολή οποιασδήποτε συναλλαγής!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">Διεύθυνση Bitcoin με την οποία έχει υπογραφεί το μήνυμα</translation>
+        <source>The BitRaam address the message was signed with</source>
+        <translation type="unfinished">Διεύθυνση BitRaam με την οποία έχει υπογραφεί το μήνυμα</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -3406,8 +3406,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">Η υπογραφή που δόθηκε όταν υπογράφηκε το μήνυμα</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση Bitcoin</translation>
+        <source>Verify the message to ensure it was signed with the specified BitRaam address</source>
+        <translation type="unfinished">Επαληθεύστε το μήνυμα για να αποδείξετε πως υπογράφθηκε από τη συγκεκριμένη διεύθυνση BitRaam</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

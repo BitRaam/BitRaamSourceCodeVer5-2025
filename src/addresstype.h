@@ -155,7 +155,7 @@ bool IsValidDestination(const CTxDestination& dest);
 bool ExtractDestination(const CScript& scriptPubKey, CTxDestination& addressRet);
 
 /**
- * Generate a Bitcoin scriptPubKey for the given CTxDestination. Returns a P2PKH
+ * Generate a BitRaam scriptPubKey for the given CTxDestination. Returns a P2PKH
  * script for a CKeyID destination, a P2SH script for a CScriptID, and an empty
  * script for CNoDestination.
  */

@@ -58,13 +58,13 @@
         <translation type="unfinished">K&amp;iezen</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Dit zijn uw Bitcoin adressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw bitraams verzendt.</translation>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Dit zijn uw BitRaam adressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw bitraams verzendt.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Dit zijn uw Bitcoin adressen voor het ontvangen van betalingen. Gebruik de 'Nieuw ontvangstadres maken' knop in de ontvangst tab om nieuwe adressen te maken.
+        <translation type="unfinished">Dit zijn uw BitRaam adressen voor het ontvangen van betalingen. Gebruik de 'Nieuw ontvangstadres maken' knop in de ontvangst tab om nieuwe adressen te maken.
 Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation>
     </message>
     <message>
@@ -256,7 +256,7 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">Instellingenbestand %1 is mogelijk beschadigd of ongeldig.</translation>
@@ -319,8 +319,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation type="unfinished">Bedrag</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Voer een Bitcoin adres in (bijv. %1)</translation>
+        <source>Enter a BitRaam address (e.g. %1)</source>
+        <translation type="unfinished">Voer een BitRaam adres in (bijv. %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -429,7 +429,7 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Overzicht</translation>
@@ -496,8 +496,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation type="unfinished">Proxy is &lt;b&gt;ingeschakeld&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Verstuur munten naar een Bitcoin adres</translation>
+        <source>Send coins to a BitRaam address</source>
+        <translation type="unfinished">Verstuur munten naar een BitRaam adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -540,16 +540,16 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation type="unfinished">Onderteken &amp;bericht</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Onderteken berichten met uw Bitcoin adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
+        <translation type="unfinished">Onderteken berichten met uw BitRaam adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verifiëer Bericht...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Bitcoin adressen</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde BitRaam adressen</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -663,16 +663,16 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation type="unfinished">Bijgewerkt</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Laad gedeeltelijk ondertekende Bitcoin-transactie</translation>
+        <source>Load Partially Signed BitRaam Transaction</source>
+        <translation type="unfinished">Laad gedeeltelijk ondertekende BitRaam-transactie</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">Laad PSBT vanaf klembord...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Laad gedeeltelijk ondertekende Bitcoin-transactie vanaf het klembord</translation>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
+        <translation type="unfinished">Laad gedeeltelijk ondertekende BitRaam-transactie vanaf het klembord</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -729,8 +729,8 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation type="unfinished">Een wallet migreren</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Toon het %1 hulpbericht om een lijst te krijgen met mogelijke Bitcoin commandoregelopties</translation>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
+        <translation type="unfinished">Toon het %1 hulpbericht om een lijst te krijgen met mogelijke BitRaam commandoregelopties</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -781,11 +781,11 @@ Ondertekenen is alleen mogelijk met adressen van het type 'legacy'.</translation
         <translation type="unfinished">&amp;Toon</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n actieve verbinding(en) met het Bitcoin netwerk.</numerusform>
-            <numerusform>%n actieve verbinding(en) met het Bitcoin netwerk.</numerusform>
+            <numerusform>%n actieve verbinding(en) met het BitRaam netwerk.</numerusform>
+            <numerusform>%n actieve verbinding(en) met het BitRaam netwerk.</numerusform>
         </translation>
     </message>
     <message>
@@ -1277,8 +1277,8 @@ Het migratieproces maakt voorafgaand aan het migreren een backup van de wallet. 
         <translation type="unfinished">Bewerk verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">Het opgegeven adres "%1" is een ongeldig Bitcoin adres.</translation>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
+        <translation type="unfinished">Het opgegeven adres "%1" is een ongeldig BitRaam adres.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1364,8 +1364,8 @@ Het migratieproces maakt voorafgaand aan het migreren een backup van de wallet. 
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 zal een kopie van de blokketen van Bitcoin downloaden en opslaan.</translation>
+        <source>%1 will download and store a copy of the BitRaam block chain.</source>
+        <translation type="unfinished">%1 zal een kopie van de blokketen van BitRaam downloaden en opslaan.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1458,7 +1458,7 @@ Het migratieproces maakt voorafgaand aan het migreren een backup van de wallet. 
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitraam network, as detailed below.</source>
-        <translation type="unfinished">Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de wallet is daarom mogelijk niet correct. Deze informatie is correct zodra de synchronisatie van de wallet met het Bitcoinnetwerk gereed is, zoals onderaan toegelicht.</translation>
+        <translation type="unfinished">Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de wallet is daarom mogelijk niet correct. Deze informatie is correct zodra de synchronisatie van de wallet met het BitRaamnetwerk gereed is, zoals onderaan toegelicht.</translation>
     </message>
     <message>
         <source>Attempting to spend bitraams that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1671,16 +1671,16 @@ Ongebruikte mempool geheugen is gedeeld voor deze cache.</translation>
         <translation type="unfinished">&amp;Extern ondertekenscript directory</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">Open de Bitcoin poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation type="unfinished">Open de BitRaam poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation type="unfinished">Portmapping via &amp;UPnP</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Automatisch openen van de Bitcoin client poort op de router. Dit werkt alleen als de router NAT-PMP ondersteunt en het is ingeschakeld. De externe poort kan willekeurig zijn.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Automatisch openen van de BitRaam client poort op de router. Dit werkt alleen als de router NAT-PMP ondersteunt en het is ingeschakeld. De externe poort kan willekeurig zijn.</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1695,8 +1695,8 @@ Ongebruikte mempool geheugen is gedeeld voor deze cache.</translation>
         <translation type="unfinished">Sta inkomende verbindingen toe</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Verbind met het Bitcoinnetwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Verbind met het BitRaamnetwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1771,8 +1771,8 @@ Ongebruikte mempool geheugen is gedeeld voor deze cache.</translation>
         <translation type="unfinished">Munt controle functies weergeven of niet.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Maak verbinding met het Bitcoin netwerk via een aparte SOCKS5-proxy voor Tor Onion-services.</translation>
+        <source>Connect to the BitRaam network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Maak verbinding met het BitRaam netwerk via een aparte SOCKS5-proxy voor Tor Onion-services.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1868,8 +1868,8 @@ Ongebruikte mempool geheugen is gedeeld voor deze cache.</translation>
         <translation type="unfinished">Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">De weergegeven informatie kan verouderd zijn. Uw wallet synchroniseert automatisch met het Bitcoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">De weergegeven informatie kan verouderd zijn. Uw wallet synchroniseert automatisch met het BitRaamnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2103,8 +2103,8 @@ Gezien de wijdverspreide beveiligingsproblemen in BIP70 is het sterk aanbevolen 
 Als je deze fout ziet zou je de aanbieder moeten verzoeken om een BIP21-compatibele URI te verstrekken.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig Bitcoin adres of misvormde URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid BitRaam address or malformed URI parameters.</source>
+        <translation type="unfinished">URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig BitRaam adres of misvormde URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2632,8 +2632,8 @@ Voor meer informatie over het gebruik van deze console, type %6.
         <translation type="unfinished">&amp;Bericht</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het Bitcoin netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BitRaam network.</source>
+        <translation type="unfinished">Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het BitRaam netwerk.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2995,8 +2995,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">Cr&amp;eëer Ongetekend</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Creëert een Gedeeltelijk Getekende Bitcoin Transactie (PSBT) om te gebruiken met b.v. een offline %1 wallet, of een PSBT-compatibele hardware wallet.</translation>
+        <source>Creates a Partially Signed BitRaam Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Creëert een Gedeeltelijk Getekende BitRaam Transactie (PSBT) om te gebruiken met b.v. een offline %1 wallet, of een PSBT-compatibele hardware wallet.</translation>
     </message>
     <message>
         <source>%1 to '%2'</source>
@@ -3051,9 +3051,9 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">Je kunt de vergoeding later verhogen (signaleert Replace-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed BitRaam Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">Controleer aub je transactievoorstel. Dit zal een Gedeeltelijk Getekende Bitcoin Transactie (PSBT) produceren die je kan opslaan of kopiëren en vervolgens ondertekenen met bijv. een offline %1 wallet, of een PSBT-combatibele hardware wallet.</translation>
+        <translation type="unfinished">Controleer aub je transactievoorstel. Dit zal een Gedeeltelijk Getekende BitRaam Transactie (PSBT) produceren die je kan opslaan of kopiëren en vervolgens ondertekenen met bijv. een offline %1 wallet, of een PSBT-combatibele hardware wallet.</translation>
     </message>
     <message>
         <source>%1 from wallet '%2'</source>
@@ -3065,9 +3065,9 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">Wilt u deze transactie aanmaken?</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed BitRaam Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
-        <translation type="unfinished">Controleer aub je transactie. Je kan deze transactie creëren en verzenden, of een Gedeeltelijk Getekende Bitcoin Transactie (PSBT) maken, die je kan opslaan of kopiëren en daarna ondertekenen, bijv. met een offline %1 wallet, of een PSBT-combatibele hardware wallet.</translation>
+        <translation type="unfinished">Controleer aub je transactie. Je kan deze transactie creëren en verzenden, of een Gedeeltelijk Getekende BitRaam Transactie (PSBT) maken, die je kan opslaan of kopiëren en daarna ondertekenen, bijv. met een offline %1 wallet, of een PSBT-combatibele hardware wallet.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -3144,8 +3144,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Waarschuwing: Ongeldig Bitcoin adres</translation>
+        <source>Warning: Invalid BitRaam address</source>
+        <translation type="unfinished">Waarschuwing: Ongeldig BitRaam adres</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3179,8 +3179,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">Kies een eerder gebruikt adres</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">Het Bitcoinadres om betaling aan te versturen</translation>
+        <source>The BitRaam address to send the payment to</source>
+        <translation type="unfinished">Het BitRaamadres om betaling aan te versturen</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -3215,8 +3215,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">Vul een label voor dit adres in om het aan de lijst met gebruikte adressen toe te voegen</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">Een bericht dat werd toegevoegd aan de bitraam: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Bitcoin netwerk.</translation>
+        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BitRaam network.</source>
+        <translation type="unfinished">Een bericht dat werd toegevoegd aan de bitraam: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het BitRaam netwerk.</translation>
     </message>
 </context>
 <context>
@@ -3241,8 +3241,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">&amp;Onderteken bericht</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">Het Bitcoin adres om bericht mee te ondertekenen</translation>
+        <source>The BitRaam address to sign the message with</source>
+        <translation type="unfinished">Het BitRaam adres om bericht mee te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3265,8 +3265,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished">Onderteken een bericht om te bewijzen dat u een bepaald Bitcoin adres bezit</translation>
+        <source>Sign the message to prove you own this BitRaam address</source>
+        <translation type="unfinished">Onderteken een bericht om te bewijzen dat u een bepaald BitRaam adres bezit</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3289,8 +3289,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">Voer het adres van de ontvanger in, bericht (zorg ervoor dat de regeleinden, spaties, tabs etc. precies kloppen) en onderteken onderaan om het bericht te verifiëren. Wees voorzicht om niet meer in de ondertekening te lezen dan in het getekende bericht zelf, om te voorkomen dat je wordt aangevallen met een man-in-the-middle attack. Houd er mee rekening dat dit alleen de ondertekende partij bewijst met het ontvangen adres, er kan niet bewezen worden dat er een transactie heeft plaatsgevonden!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">Het Bitcoin adres waarmee het bericht ondertekend is</translation>
+        <source>The BitRaam address the message was signed with</source>
+        <translation type="unfinished">Het BitRaam adres waarmee het bericht ondertekend is</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -3301,8 +3301,8 @@ Notitie: Omdat de vergoeding per byte wordt gerekend, zal een vergoeding van "10
         <translation type="unfinished">De handtekening waarmee het bericht ondertekend werd</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">Controleer een bericht om te verifiëren dat het gespecificeerde Bitcoin adres het bericht heeft ondertekend.</translation>
+        <source>Verify the message to ensure it was signed with the specified BitRaam address</source>
+        <translation type="unfinished">Controleer een bericht om te verifiëren dat het gespecificeerde BitRaam adres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3926,7 +3926,7 @@ Ga naar Bestand &gt; Wallet openen om een wallet te laden.
     </message>
     <message>
         <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
-        <translation type="unfinished">%s verzoekt om te luisteren op poort %u. Deze poort wordt als "slecht" beschouwd en het is daarom onwaarschijnlijk dat Bitcoin Core peers er verbinding mee maken. Zie doc/p2p-bad-ports.md voor details en een volledige lijst.</translation>
+        <translation type="unfinished">%s verzoekt om te luisteren op poort %u. Deze poort wordt als "slecht" beschouwd en het is daarom onwaarschijnlijk dat BitRaam Core peers er verbinding mee maken. Zie doc/p2p-bad-ports.md voor details en een volledige lijst.</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet from version %i to version %i. Wallet version unchanged.</source>

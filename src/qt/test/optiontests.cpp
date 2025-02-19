@@ -107,7 +107,7 @@ void OptionTests::parametersInteraction()
 {
     // Test that the bug https://github.com/bitraam-core/gui/issues/567 does not resurface.
     // It was fixed via https://github.com/bitraam-core/gui/pull/568.
-    // With fListen=false in ~/.config/Bitcoin/Bitcoin-Qt.conf and all else left as default,
+    // With fListen=false in ~/.config/BitRaam/BitRaam-Qt.conf and all else left as default,
     // bitraam-qt should set both -listen and -listenonion to false and start successfully.
     gArgs.LockSettings([&](common::Settings& s) {
         s.forced_settings.erase("listen");

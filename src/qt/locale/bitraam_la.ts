@@ -49,7 +49,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Summarium</translation>
@@ -91,8 +91,8 @@
         <translation type="unfinished">Creare novum cassidilium</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Mitte nummos ad inscriptionem Bitcoin</translation>
+        <source>Send coins to a BitRaam address</source>
+        <translation type="unfinished">Mitte nummos ad inscriptionem BitRaam</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -115,12 +115,12 @@
         <translation type="unfinished">Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Signa nuntios cum tuis inscriptionibus Bitcoin ut demonstres te eas possidere</translation>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
+        <translation type="unfinished">Signa nuntios cum tuis inscriptionibus BitRaam ut demonstres te eas possidere</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Bitcoin</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus BitRaam</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -178,11 +178,11 @@
         <translation type="unfinished">&amp;Fenestra</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
-            <numerusform>%n active connection(s) to Bitcoin network.</numerusform>
+            <numerusform>%n active connection(s) to BitRaam network.</numerusform>
+            <numerusform>%n active connection(s) to BitRaam network.</numerusform>
         </translation>
     </message>
     </context>
@@ -260,8 +260,8 @@
         <translation type="unfinished">Cassidile</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">Aperi per se portam clientis Bitcoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation type="unfinished">Aperi per se portam clientis BitRaam in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -336,8 +336,8 @@
         <translation type="unfinished">Schema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Bitcoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete BitRaam postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -359,7 +359,7 @@
     <name>PaymentServer</name>
     <message>
         <source>Cannot start bitraam: click-to-pay handler</source>
-        <translation type="unfinished">Bitcoin incipere non potest: cliccare-ad-pensandum handler</translation>
+        <translation type="unfinished">BitRaam incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
     <message>
         <source>URI handling</source>

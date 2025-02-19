@@ -43,7 +43,7 @@ static const int CONTINUE_EXECUTION=-1;
 
 const TranslateFn G_TRANSLATION_FUN{nullptr};
 
-static void SetupBitcoinTxArgs(ArgsManager &argsman)
+static void SetupBitRaamTxArgs(ArgsManager &argsman)
 {
     SetupHelpOptions(argsman);
 
@@ -88,7 +88,7 @@ static void SetupBitcoinTxArgs(ArgsManager &argsman)
 //
 static int AppInitRawTx(int argc, char* argv[])
 {
-    SetupBitcoinTxArgs(gArgs);
+    SetupBitRaamTxArgs(gArgs);
     std::string error;
     if (!gArgs.ParseParameters(argc, argv, error)) {
         tfm::format(std::cerr, "Error parsing command line arguments: %s\n", error);

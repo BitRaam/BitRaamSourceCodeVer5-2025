@@ -33,7 +33,7 @@ static inline int PruneMiBtoGB(int64_t mib) { return (mib * 1024 * 1024 + GB_BYT
  */
 static inline int64_t PruneGBtoMiB(int gb) { return gb * GB_BYTES / 1024 / 1024; }
 
-/** Interface from Qt to configuration data structure for Bitcoin client.
+/** Interface from Qt to configuration data structure for BitRaam client.
    To Qt, the options are presented as a list with the different options
    laid out vertically.
    This can be changed to a tree once the settings become sufficiently
@@ -58,7 +58,7 @@ public:
         ProxyUseTor,            // bool
         ProxyIPTor,             // QString
         ProxyPortTor,           // int
-        DisplayUnit,            // BitcoinUnit
+        DisplayUnit,            // BitRaamUnit
         ThirdPartyTxUrls,       // QString
         Language,               // QString
         FontForMoney,           // FontChoice
@@ -100,7 +100,7 @@ public:
     bool getShowTrayIcon() const { return m_show_tray_icon; }
     bool getMinimizeToTray() const { return fMinimizeToTray; }
     bool getMinimizeOnClose() const { return fMinimizeOnClose; }
-    BitcoinUnit getDisplayUnit() const { return m_display_bitraam_unit; }
+    BitRaamUnit getDisplayUnit() const { return m_display_bitraam_unit; }
     QString getThirdPartyTxUrls() const { return strThirdPartyTxUrls; }
     QFont getFontForMoney() const;
     bool getCoinControlFeatures() const { return fCoinControlFeatures; }
@@ -127,7 +127,7 @@ private:
     bool fMinimizeToTray;
     bool fMinimizeOnClose;
     QString language;
-    BitcoinUnit m_display_bitraam_unit;
+    BitRaamUnit m_display_bitraam_unit;
     QString strThirdPartyTxUrls;
     FontChoice m_font_money{FontChoiceAbstract::EmbeddedFont};
     bool fCoinControlFeatures;
@@ -148,7 +148,7 @@ private:
     void checkAndMigrate();
 
 Q_SIGNALS:
-    void displayUnitChanged(BitcoinUnit unit);
+    void displayUnitChanged(BitRaamUnit unit);
     void coinControlFeaturesChanged(bool);
     void showTrayIconChanged(bool);
     void fontForMoneyChanged(const QFont&);

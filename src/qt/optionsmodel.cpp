@@ -57,7 +57,7 @@ static const char* SettingName(OptionsModel::OptionID option)
     }
 }
 
-/** Call node.updateRwSetting() with Bitcoin 22.x workaround. */
+/** Call node.updateRwSetting() with BitRaam 22.x workaround. */
 static void UpdateRwSetting(interfaces::Node& node, OptionsModel::OptionID option, const std::string& suffix, const common::SettingsValue& value)
 {
     if (value.isNum() &&
@@ -66,7 +66,7 @@ static void UpdateRwSetting(interfaces::Node& node, OptionsModel::OptionID optio
          option == OptionsModel::Prune ||
          option == OptionsModel::PruneSize)) {
         // Write certain old settings as strings, even though they are numbers,
-        // because Bitcoin 22.x releases try to read these specific settings as
+        // because BitRaam 22.x releases try to read these specific settings as
         // strings in addOverriddenOption() calls at startup, triggering
         // uncaught exceptions in UniValue::get_str(). These errors were fixed
         // in later releases by https://github.com/bitraam/bitraam/pull/24498.
@@ -188,15 +188,15 @@ bool OptionsModel::Init(bilingual_str& error)
     fMinimizeOnClose = settings.value("fMinimizeOnClose").toBool();
 
     // Display
-    if (!settings.contains("DisplayBitcoinUnit")) {
-        settings.setValue("DisplayBitcoinUnit", QVariant::fromValue(BitcoinUnit::BRM));
+    if (!settings.contains("DisplayBitRaamUnit")) {
+        settings.setValue("DisplayBitRaamUnit", QVariant::fromValue(BitRaamUnit::BRM));
     }
-    QVariant unit = settings.value("DisplayBitcoinUnit");
-    if (unit.canConvert<BitcoinUnit>()) {
-        m_display_bitraam_unit = unit.value<BitcoinUnit>();
+    QVariant unit = settings.value("DisplayBitRaamUnit");
+    if (unit.canConvert<BitRaamUnit>()) {
+        m_display_bitraam_unit = unit.value<BitRaamUnit>();
     } else {
-        m_display_bitraam_unit = BitcoinUnit::BRM;
-        settings.setValue("DisplayBitcoinUnit", QVariant::fromValue(m_display_bitraam_unit));
+        m_display_bitraam_unit = BitRaamUnit::BRM;
+        settings.setValue("DisplayBitRaamUnit", QVariant::fromValue(m_display_bitraam_unit));
     }
 
     if (!settings.contains("strThirdPartyTxUrls"))
@@ -696,10 +696,10 @@ bool OptionsModel::setOption(OptionID option, const QVariant& value, const std::
 
 void OptionsModel::setDisplayUnit(const QVariant& new_unit)
 {
-    if (new_unit.isNull() || new_unit.value<BitcoinUnit>() == m_display_bitraam_unit) return;
-    m_display_bitraam_unit = new_unit.value<BitcoinUnit>();
+    if (new_unit.isNull() || new_unit.value<BitRaamUnit>() == m_display_bitraam_unit) return;
+    m_display_bitraam_unit = new_unit.value<BitRaamUnit>();
     QSettings settings;
-    settings.setValue("DisplayBitcoinUnit", QVariant::fromValue(m_display_bitraam_unit));
+    settings.setValue("DisplayBitRaamUnit", QVariant::fromValue(m_display_bitraam_unit));
     Q_EMIT displayUnitChanged(m_display_bitraam_unit);
 }
 

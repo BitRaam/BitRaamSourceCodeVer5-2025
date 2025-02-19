@@ -835,7 +835,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
                   </widget>
                  </item>
                  <item>
-                  <widget class="BitcoinAmountField" name="customFee"/>
+                  <widget class="BitRaamAmountField" name="customFee"/>
                  </item>
                  <item>
                   <spacer name="horizontalSpacer_6">
@@ -1211,7 +1211,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
    <header>qt/qvalidatedlineedit.h</header>
   </customwidget>
   <customwidget>
-   <class>BitcoinAmountField</class>
+   <class>BitRaamAmountField</class>
    <extends>QLineEdit</extends>
    <header>qt/bitraamamountfield.h</header>
    <container>1</container>

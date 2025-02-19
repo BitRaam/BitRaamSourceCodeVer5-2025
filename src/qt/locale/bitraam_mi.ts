@@ -55,13 +55,13 @@ Right-click to edit address or label</translation>
         <translation type="unfinished">Whiriwhiria te wāhitau hei whiwhi moni</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ko ēnei ngā whakamāoritanga mō ō whakamahi Bitcoin hei tuku moni. Tirohia i te moni me te wāhi whiwhi i mua i te tuku i ngā moni.</translation>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Ko ēnei ngā whakamāoritanga mō ō whakamahi BitRaam hei tuku moni. Tirohia i te moni me te wāhi whiwhi i mua i te tuku i ngā moni.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Ko ēnei ngā whakamāoritanga mō ō whakaaetanga Bitcoin hei whiwhi utu. Whakamahi i te pātene 'Waihanga whakaaronga hōu' i te pae whiwhi ki te whakapūmau i ngā whakaaronga hōu.
+        <translation type="unfinished">Ko ēnei ngā whakamāoritanga mō ō whakaaetanga BitRaam hei whiwhi utu. Whakamahi i te pātene 'Waihanga whakaaronga hōu' i te pae whiwhi ki te whakapūmau i ngā whakaaronga hōu.
 Ko te whakakī i ēnei whakaaronga e taea ana anake ki ngā whakararuraru o te momo 'tawhito'.</translation>
     </message>
     <message>
@@ -237,7 +237,7 @@ Ko te whakakī i ēnei whakaaronga e taea ana anake ki ngā whakararuraru o te m
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">Settings file %1 me whakapōrearea, me whakararuraru rānei.</translation>
@@ -311,7 +311,7 @@ Ko te whakakī i ēnei whakaaronga e taea ana anake ki ngā whakararuraru o te m
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation type="unfinished">
@@ -321,7 +321,7 @@ Ko te whakakī i ēnei whakaaronga e taea ana anake ki ngā whakararuraru o te m
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />

@@ -58,13 +58,13 @@
         <translation type="unfinished">(do you mean: CHOOSE?) ;Pumili,Piliin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ito ang mga ♦address♦ ng ♦Bitcoin♦ mo para pagpapadala ng mga bayad. Palaging suriin mo ang halaga at address kung saan tatanggap bago magpadala ka ng mga ♦coin.</translation>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Ito ang mga ♦address♦ ng ♦BitRaam♦ mo para pagpapadala ng mga bayad. Palaging suriin mo ang halaga at address kung saan tatanggap bago magpadala ka ng mga ♦coin.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Ito ang mga address ng ♦Bitcoin♦ para sa pagtanggap ng mga baya. Gamitin ang 'Create new receiving address' na button sa receive tab para gumawa ng bagong mga address. Ang pag-sign ay posible lamang sa uri ng mga address na 'legacy'.</translation>
+        <translation type="unfinished">Ito ang mga address ng ♦BitRaam♦ para sa pagtanggap ng mga baya. Gamitin ang 'Create new receiving address' na button sa receive tab para gumawa ng bagong mga address. Ang pag-sign ay posible lamang sa uri ng mga address na 'legacy'.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -235,7 +235,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Runaway exception</source>
         <translation type="unfinished">Pagbubukod sa pagtakbo papalayo </translation>
@@ -325,7 +325,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Pangkalahatang ideya</translation>
@@ -388,8 +388,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Na-disable ang aktibidad ng ♦network♦</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Magpadala ng mga ♦coin♦ sa ♦address♦ ng Bitcoin</translation>
+        <source>Send coins to a BitRaam address</source>
+        <translation type="unfinished">Magpadala ng mga ♦coin♦ sa ♦address♦ ng BitRaam</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -432,16 +432,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Pirmahan &amp;magmensahe...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Tanda na mga mensahe sa mga ♦address♦ ng iyong ♦Bitcoin♦ para patunayan na pagmamay-ari mo sila</translation>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
+        <translation type="unfinished">Tanda na mga mensahe sa mga ♦address♦ ng iyong ♦BitRaam♦ para patunayan na pagmamay-ari mo sila</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Patunayan ang mensahe...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Patunayan ang mga mensahe para matiyak na sila ay napirmahan ng may tinukoy na mga ♦Bitcoin address♦</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Patunayan ang mga mensahe para matiyak na sila ay napirmahan ng may tinukoy na mga ♦BitRaam address♦</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -555,12 +555,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">napapapanahon</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Ang ♦Load♦ ay Bahagyang Napirmahan na Transaksyon sa ♦Bitcoin♦</translation>
+        <source>Load Partially Signed BitRaam Transaction</source>
+        <translation type="unfinished">Ang ♦Load♦ ay Bahagyang Napirmahan na Transaksyon sa ♦BitRaam♦</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Ang ♦Load♦ ay Bahagyang Napirmahan na Transaksyon sa ♦Bitcoin♦ mula sa ♦clipboard♦</translation>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
+        <translation type="unfinished">Ang ♦Load♦ ay Bahagyang Napirmahan na Transaksyon sa ♦BitRaam♦ mula sa ♦clipboard♦</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -599,8 +599,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Isarado ang lahat na mga pitaka</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Ipakita ang %1 tumulong sa mensahe na kumuha ng listahan ng posibleng ♦Bitcoin command-line♦ na mga pagpipilian</translation>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
+        <translation type="unfinished">Ipakita ang %1 tumulong sa mensahe na kumuha ng listahan ng posibleng ♦BitRaam command-line♦ na mga pagpipilian</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -640,11 +640,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Itago</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n aktibo na mga ♦connection(s)♦ sa ♦Bitcoin network♦.</numerusform>
-            <numerusform>%n na aktibong mga koneksyon sa ♦Bitcoin network♦</numerusform>
+            <numerusform>%n aktibo na mga ♦connection(s)♦ sa ♦BitRaam network♦.</numerusform>
+            <numerusform>%n na aktibong mga koneksyon sa ♦BitRaam network♦</numerusform>
         </translation>
     </message>
     <message>
@@ -1047,8 +1047,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">I-edit ang pagpapadalhan na ♦address♦</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">Ang naipasok na ♦address♦ "%1" ay hindi wasto na ♦Bitcoin address♦.</translation>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
+        <translation type="unfinished">Ang naipasok na ♦address♦ "%1" ay hindi wasto na ♦BitRaam address♦.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1093,8 +1093,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation type="unfinished">♦Bitcoin♦</translation>
+        <source>BitRaam</source>
+        <translation type="unfinished">♦BitRaam♦</translation>
     </message>
     <message numerus="yes">
         <source>%n GB of space available</source>

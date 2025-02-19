@@ -56,7 +56,7 @@
         <translation type="unfinished">سفارشی...</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a BitRaam address (e.g. %1)</source>
         <translation type="unfinished">آدرس بیت کوین را وارد کنید (به طور مثال %1)</translation>
     </message>
     <message>
@@ -185,7 +185,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">بازبینی</translation>
@@ -250,7 +250,7 @@
         <translation type="unfinished">پراکسی &lt;b&gt;فعال&lt;/b&gt; شده است: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a BitRaam address</source>
         <translation type="unfinished">ارسال کوین به آدرس بیت کوین</translation>
     </message>
     <message>
@@ -292,7 +292,7 @@
         <translation type="unfinished">ثبت &amp;پیام</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
         <translation type="unfinished">پیام‌ها را با آدرس بیت‌کوین خود امضا کنید تا مالکیت آن‌ها را اثبات کنید</translation>
     </message>
     <message>
@@ -488,7 +488,7 @@
         <translation type="unfinished">مخفی کن</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform>%n اتصال(های) فعال به شبکه بیت کوین.</numerusform>
@@ -814,7 +814,7 @@
         <translation type="unfinished">مسیر اسکریپت امضاکنندهٔ جانبی</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished">باز کردن خودکار درگاه شبکهٔ بیت‌کوین روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
     </message>
     <message>
@@ -822,7 +822,7 @@
         <translation type="unfinished">نگاشت درگاه شبکه با استفاده از پروتکل &amp;UPnP</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
         <translation type="unfinished">باز کردن خودکار درگاه شبکهٔ بیت‌کوین روی روتر. این پروسه تنها زمانی کار می‌کند که روتر از پروتکل NAT-PMP  پشتیبانی کند و این پروتکل فعال باشد. پورت خارجی میتواند تصادفی باشد </translation>
     </message>
     <message>
@@ -838,7 +838,7 @@
         <translation type="unfinished">اجازه ورود و اتصالات</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
         <translation type="unfinished">از طریق یک پروکسی SOCKS5 به شبکه بیت کوین متصل شوید.</translation>
     </message>
     <message>
@@ -1010,8 +1010,8 @@
         <translation type="unfinished">فرم</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">اطلاعات نمایش داده شده ممکن است قدیمی باشد. کیف پول شما پس از برقراری اتصال به طور خودکار با شبکه Bitcoin همگام سازی می شود ، اما این روند هنوز کامل نشده است.
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">اطلاعات نمایش داده شده ممکن است قدیمی باشد. کیف پول شما پس از برقراری اتصال به طور خودکار با شبکه BitRaam همگام سازی می شود ، اما این روند هنوز کامل نشده است.
  </translation>
     </message>
     <message>

@@ -4163,7 +4163,7 @@ bool IsBlockMutated(const CBlock& block, bool check_witness_root)
 
     if (block.vtx.empty() || !block.vtx[0]->IsCoinBase()) {
         // Consider the block mutated if any transaction is 64 bytes in size (see 3.1
-        // in "Weaknesses in Bitcoin’s Merkle Root Construction":
+        // in "Weaknesses in BitRaam’s Merkle Root Construction":
         // https://lists.linuxfoundation.org/pipermail/bitraam-dev/attachments/20190225/a27d8837/attachment-0001.pdf).
         //
         // Note: This is not a consensus change as this only applies to blocks that

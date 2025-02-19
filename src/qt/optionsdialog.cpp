@@ -151,7 +151,7 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet)
     ui->bitraamAtStartup->setToolTip(ui->bitraamAtStartup->toolTip().arg(CLIENT_NAME));
     ui->bitraamAtStartup->setText(ui->bitraamAtStartup->text().arg(CLIENT_NAME));
 
-    ui->openBitcoinConfButton->setToolTip(ui->openBitcoinConfButton->toolTip().arg(CLIENT_NAME));
+    ui->openBitRaamConfButton->setToolTip(ui->openBitRaamConfButton->toolTip().arg(CLIENT_NAME));
 
     ui->lang->setToolTip(ui->lang->toolTip().arg(CLIENT_NAME));
     ui->lang->addItem(QString("(") + tr("default") + QString(")"), QVariant(""));
@@ -178,7 +178,7 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet)
             ui->lang->addItem(locale.nativeLanguageName() + QString(" (") + langStr + QString(")"), QVariant(langStr));
         }
     }
-    ui->unit->setModel(new BitcoinUnits(this));
+    ui->unit->setModel(new BitRaamUnits(this));
 
     /* Widget-to-option mapper */
     mapper = new QDataWidgetMapper(this);
@@ -356,7 +356,7 @@ void OptionsDialog::on_resetButton_clicked()
     }
 }
 
-void OptionsDialog::on_openBitcoinConfButton_clicked()
+void OptionsDialog::on_openBitRaamConfButton_clicked()
 {
     QMessageBox config_msgbox(this);
     config_msgbox.setIcon(QMessageBox::Information);
@@ -376,7 +376,7 @@ void OptionsDialog::on_openBitcoinConfButton_clicked()
     if (config_msgbox.clickedButton() != open_button) return;
 
     /* show an error if there was some problem opening the file */
-    if (!GUIUtil::openBitcoinConf())
+    if (!GUIUtil::openBitRaamConf())
         QMessageBox::critical(this, tr("Error"), tr("The configuration file could not be opened."));
 }
 

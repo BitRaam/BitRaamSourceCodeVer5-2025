@@ -50,13 +50,13 @@
         <translation type="unfinished">Vy&amp;brať</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Toto sú Vaše Bitcoin adresy pre posielanie platieb. Vždy skontrolujte sumu a prijímaciu adresu pred poslaním mincí.</translation>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Toto sú Vaše BitRaam adresy pre posielanie platieb. Vždy skontrolujte sumu a prijímaciu adresu pred poslaním mincí.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Toto sú vaše Bitcoin adresy pre prijímanie platieb. Pre vytvorenie nových adries kliknite na "Vytvoriť novú prijímaciu adresu" na karte "Prijať". Podpisovanie je možné iba s adresami typu "legacy".</translation>
+        <translation type="unfinished">Toto sú vaše BitRaam adresy pre prijímanie platieb. Pre vytvorenie nových adries kliknite na "Vytvoriť novú prijímaciu adresu" na karte "Prijať". Podpisovanie je možné iba s adresami typu "legacy".</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -243,7 +243,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">Súbor s nastaveniami %1 môže byť poškodený alebo neplatný.</translation>
@@ -294,7 +294,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Suma</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a BitRaam address (e.g. %1)</source>
         <translation type="unfinished">Zadajte bitraam adresu (napr. %1)</translation>
     </message>
     <message>
@@ -397,7 +397,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Prehľad</translation>
@@ -464,7 +464,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Proxy sú &lt;b&gt;zapnuté&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a BitRaam address</source>
         <translation type="unfinished">Poslať bitraams na adresu</translation>
     </message>
     <message>
@@ -508,16 +508,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Podpísať &amp;správu…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Podpísať správu s vašou Bitcoin adresou, aby ste preukázali, že ju vlastníte</translation>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
+        <translation type="unfinished">Podpísať správu s vašou BitRaam adresou, aby ste preukázali, že ju vlastníte</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">O&amp;veriť správu…</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Overiť, či boli správy podpísané uvedenou Bitcoin adresou</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Overiť, či boli správy podpísané uvedenou BitRaam adresou</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -632,16 +632,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Aktualizovaný</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Načítať sčasti podpísanú Bitcoin transakciu</translation>
+        <source>Load Partially Signed BitRaam Transaction</source>
+        <translation type="unfinished">Načítať sčasti podpísanú BitRaam transakciu</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">Načítať PSBT zo s&amp;chránky…</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Načítať čiastočne podpísanú Bitcoin transakciu, ktorú ste skopírovali</translation>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
+        <translation type="unfinished">Načítať čiastočne podpísanú BitRaam transakciu, ktorú ste skopírovali</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -690,8 +690,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Zatvoriť všetky peňaženky</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Ukáž %1 zoznam možných nastavení Bitcoinu pomocou príkazového riadku</translation>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
+        <translation type="unfinished">Ukáž %1 zoznam možných nastavení BitRaamu pomocou príkazového riadku</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -750,12 +750,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Z&amp;obraziť</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n aktívne pripojenie do siete Bitcoin</numerusform>
-            <numerusform>%n aktívne pripojenia do siete Bitcoin</numerusform>
-            <numerusform>%n aktívnych pripojení do siete Bitcoin</numerusform>
+            <numerusform>%n aktívne pripojenie do siete BitRaam</numerusform>
+            <numerusform>%n aktívne pripojenia do siete BitRaam</numerusform>
+            <numerusform>%n aktívnych pripojení do siete BitRaam</numerusform>
         </translation>
     </message>
     <message>
@@ -1205,8 +1205,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Upraviť odosielaciu adresu</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">Vložená adresa "%1" nieje platnou adresou Bitcoin.</translation>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
+        <translation type="unfinished">Vložená adresa "%1" nieje platnou adresou BitRaam.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1292,7 +1292,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the BitRaam block chain.</source>
         <translation type="unfinished">%1 bude sťahovať kopiu reťazca blokov.</translation>
     </message>
     <message>
@@ -1580,16 +1580,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Cesta k &amp;externému skriptu podpisovateľa</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">Automaticky otvoriť port pre Bitcoin na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation type="unfinished">Automaticky otvoriť port pre BitRaam na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation type="unfinished">Mapovať port pomocou &amp;UPnP</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Automaticky otvoriť port pre Bitcoin na routeri. Toto funguje len ak router podporuje NAT-PMP a je táto podpora aktivovaná. Externý port môže byť náhodný.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Automaticky otvoriť port pre BitRaam na routeri. Toto funguje len ak router podporuje NAT-PMP a je táto podpora aktivovaná. Externý port môže byť náhodný.</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1604,8 +1604,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Povoliť prichá&amp;dzajúce spojenia</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Pripojiť do siete Bitcoin cez proxy server SOCKS5.</translation>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Pripojiť do siete BitRaam cez proxy server SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1676,8 +1676,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Či zobrazovať možnosti kontroly mincí alebo nie.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Pripojiť k Bitcoin sieti skrz samostatnú SOCKS5 proxy pre službu Tor.</translation>
+        <source>Connect to the BitRaam network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Pripojiť k BitRaam sieti skrz samostatnú SOCKS5 proxy pre službu Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1757,8 +1757,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Formulár</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou Bitcoin po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou BitRaam po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1965,7 +1965,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Cannot start bitraam: click-to-pay handler</source>
-        <translation type="unfinished">Nemôžeme spustiť Bitcoin: obsluha click-to-pay</translation>
+        <translation type="unfinished">Nemôžeme spustiť BitRaam: obsluha click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1984,8 +1984,8 @@ Kvôli bezpečnostným chybám v BIP70 sa odporúča ignorovať pokyny obchodní
 Ak ste dostali túto chybu mali by ste požiadať obchodníka o URI kompatibilné s BIP21.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">URI sa nedá analyzovať! To môže byť spôsobené neplatnou Bitcoin adresou alebo zle nastavenými vlastnosťami URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid BitRaam address or malformed URI parameters.</source>
+        <translation type="unfinished">URI sa nedá analyzovať! To môže byť spôsobené neplatnou BitRaam adresou alebo zle nastavenými vlastnosťami URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2546,8 +2546,8 @@ Pre viac informácií o používaní tejto konzoly napíšte %6.
         <translation type="unfinished">&amp;Správa:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BitRaam network.</source>
+        <translation type="unfinished">Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť BitRaam.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2917,8 +2917,8 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">Vy&amp;tvoriť bez podpisu</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Vytvorí čiastočne podpísanú Bitcoin transakciu (Partially Signed Bitcoin Transaction - PSBT) na použitie napríklad s offline %1 peňaženkou alebo v hardvérovej peňaženke kompatibilnej s PSBT.</translation>
+        <source>Creates a Partially Signed BitRaam Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Vytvorí čiastočne podpísanú BitRaam transakciu (Partially Signed BitRaam Transaction - PSBT) na použitie napríklad s offline %1 peňaženkou alebo v hardvérovej peňaženke kompatibilnej s PSBT.</translation>
     </message>
     <message>
         <source>%1 to '%2'</source>
@@ -2973,7 +2973,7 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">Poplatok môžete navýšiť neskôr (vysiela sa "Replace-By-Fee" - nahradenie poplatkom, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed BitRaam Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
         <translation type="unfinished">Prečítajte si prosím svoj návrh transakcie. Výsledkom bude čiastočne podpísaná bitraamová transakcia (PSBT), ktorú môžete uložiť alebo skopírovať a potom podpísať napr. cez offline peňaženku %1 alebo hardvérovú peňaženku kompatibilnú s PSBT.</translation>
     </message>
@@ -2983,7 +2983,7 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">Chcete vytvoriť túto transakciu?</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed BitRaam Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
         <translation type="unfinished">Skontrolujte prosím svoj návrh transakcie. Môžete vytvoriť a odoslať túto transakciu alebo vytvoriť čiastočne podpísanú bitraamovú transakciu (PSBT), ktorú môžete uložiť alebo skopírovať a potom podpísať napr. cez offline peňaženku %1 alebo hardvérovú peňaženku kompatibilnú s PSBT.</translation>
     </message>
@@ -3049,8 +3049,8 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Varovanie: Neplatná Bitcoin adresa</translation>
+        <source>Warning: Invalid BitRaam address</source>
+        <translation type="unfinished">Varovanie: Neplatná BitRaam adresa</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3088,7 +3088,7 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">Vybrať predtým použitú adresu</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The BitRaam address to send the payment to</source>
         <translation type="unfinished">Zvoľte adresu kam poslať platbu</translation>
     </message>
     <message>
@@ -3124,8 +3124,8 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">Správa ktorá bola pripojená k bitraam: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Bitcoin.</translation>
+        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BitRaam network.</source>
+        <translation type="unfinished">Správa ktorá bola pripojená k bitraam: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť BitRaam.</translation>
     </message>
 </context>
 <context>
@@ -3150,8 +3150,8 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">&amp;Podpísať Správu</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">Bitcoin adresa pre podpísanie správy s</translation>
+        <source>The BitRaam address to sign the message with</source>
+        <translation type="unfinished">BitRaam adresa pre podpísanie správy s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3174,7 +3174,7 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">Kopírovať tento podpis do systémovej schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this BitRaam address</source>
         <translation type="unfinished">Podpíšte správu aby ste dokázali že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -3198,8 +3198,8 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">Vložte adresu príjemcu, správu (uistite sa, že presne kopírujete ukončenia riadkov, medzery, odrážky, atď.) a podpis pre potvrdenie správy. Buďte opatrní a nedomýšľajte si viac než je uvedené v samotnej podpísanej správe a môžete sa tak vyhnúť podvodu MITM útokom. Toto len potvrdzuje, že podpisujúca strana môže prijímať na tejto adrese, nepotvrdzuje to vlastníctvo žiadnej transakcie!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">Adresa Bitcoin, ktorou bola podpísaná správa</translation>
+        <source>The BitRaam address the message was signed with</source>
+        <translation type="unfinished">Adresa BitRaam, ktorou bola podpísaná správa</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -3210,8 +3210,8 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 mah
         <translation type="unfinished">Poskytnutý podpis pri podpísaní správy</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">Overím správy sa uistiť že bola podpísaná označenou Bitcoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified BitRaam address</source>
+        <translation type="unfinished">Overím správy sa uistiť že bola podpísaná označenou BitRaam adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

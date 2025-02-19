@@ -32,7 +32,7 @@ SendCoinsEntry::SendCoinsEntry(const PlatformStyle *_platformStyle, QWidget *par
     GUIUtil::setupAddressWidget(ui->payTo, this);
 
     // Connect signals
-    connect(ui->payAmount, &BitcoinAmountField::valueChanged, this, &SendCoinsEntry::payAmountChanged);
+    connect(ui->payAmount, &BitRaamAmountField::valueChanged, this, &SendCoinsEntry::payAmountChanged);
     connect(ui->checkboxSubtractFeeFromAmount, &QCheckBox::toggled, this, &SendCoinsEntry::subtractFeeFromAmountChanged);
     connect(ui->deleteButton, &QPushButton::clicked, this, &SendCoinsEntry::deleteClicked);
     connect(ui->useAvailableBalanceButton, &QPushButton::clicked, this, &SendCoinsEntry::useAvailableBalanceClicked);

@@ -15,7 +15,7 @@ class ArgsManager;
 
 /**
  * CBaseChainParams defines the base parameters (shared between bitraam-cli and bitraamd)
- * of a given instance of the Bitcoin system.
+ * of a given instance of the BitRaam system.
  */
 class CBaseChainParams
 {

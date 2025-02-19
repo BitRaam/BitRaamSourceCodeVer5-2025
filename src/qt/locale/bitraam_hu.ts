@@ -58,13 +58,13 @@
         <translation type="unfinished">K&amp;iválaszt</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Ezek az Ön Bitcoin címei kifizetések küldéséhez. Mindig ellenőrizze az összeget és a fogadó címet mielőtt érméket küldene.</translation>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Ezek az Ön BitRaam címei kifizetések küldéséhez. Mindig ellenőrizze az összeget és a fogadó címet mielőtt érméket küldene.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Ezek az Ön Bitcoin címei amelyeken fogadni tud Bitcoin utalásokat. Az "Új cím létrehozása" gombbal tud új címet létrehozni.
+        <translation type="unfinished">Ezek az Ön BitRaam címei amelyeken fogadni tud BitRaam utalásokat. Az "Új cím létrehozása" gombbal tud új címet létrehozni.
 Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
     </message>
     <message>
@@ -264,7 +264,7 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">A beállítások fájl %1 sérült vagy érvénytelen.</translation>
@@ -327,8 +327,8 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
         <translation type="unfinished">Összeg</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Adjon meg egy Bitcoin címet (pl: %1)</translation>
+        <source>Enter a BitRaam address (e.g. %1)</source>
+        <translation type="unfinished">Adjon meg egy BitRaam címet (pl: %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -439,7 +439,7 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Áttekintés</translation>
@@ -506,8 +506,8 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
         <translation type="unfinished">A proxy &lt;b&gt;aktív&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Bitcoin küldése megadott címre</translation>
+        <source>Send coins to a BitRaam address</source>
+        <translation type="unfinished">BitRaam küldése megadott címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -550,16 +550,16 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
         <translation type="unfinished">Üzenet &amp;aláírása…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Üzenetek aláírása a Bitcoin-címeivel, amivel bizonyíthatja hogy a cím az Öné</translation>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
+        <translation type="unfinished">Üzenetek aláírása a BitRaam-címeivel, amivel bizonyíthatja hogy a cím az Öné</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">Üzenet &amp;ellenőrzése…</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Üzenetek ellenőrzése, hogy valóban a megjelölt Bitcoin-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Üzenetek ellenőrzése, hogy valóban a megjelölt BitRaam-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -672,16 +672,16 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
         <translation type="unfinished">Naprakész</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Részlegesen aláírt Bitcoin tranzakció (PSBT) betöltése</translation>
+        <source>Load Partially Signed BitRaam Transaction</source>
+        <translation type="unfinished">Részlegesen aláírt BitRaam tranzakció (PSBT) betöltése</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">PSBT betöltése &amp;vágólapról...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Részlegesen aláírt Bitcoin tranzakció (PSBT) betöltése vágólapról</translation>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
+        <translation type="unfinished">Részlegesen aláírt BitRaam tranzakció (PSBT) betöltése vágólapról</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -701,7 +701,7 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
     </message>
     <message>
         <source>Open a bitraam: URI</source>
-        <translation type="unfinished">Bitcoin URI megnyitása</translation>
+        <translation type="unfinished">BitRaam URI megnyitása</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -738,8 +738,8 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
         <translation type="unfinished">Egy tárca migrálása</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">A %1 súgó megjelenítése a Bitcoin lehetséges parancssori kapcsolóinak listájával</translation>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
+        <translation type="unfinished">A %1 súgó megjelenítése a BitRaam lehetséges parancssori kapcsolóinak listájával</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -798,10 +798,10 @@ Aláírni csak régi típusú, egyessel kezdődő címekkel lehet.</translation>
         <translation type="unfinished">&amp;Mutat</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n aktív kapcsolat a Bitcoin hálózathoz.</numerusform>
+            <numerusform>%n aktív kapcsolat a BitRaam hálózathoz.</numerusform>
         </translation>
     </message>
     <message>
@@ -1323,8 +1323,8 @@ A migrációs folyamat készít biztonsági mentést a tárcáról migrálás el
         <translation type="unfinished">Küldő cím szerkesztése</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">A megadott "%1" cím nem egy érvényes Bitcoin-cím.</translation>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
+        <translation type="unfinished">A megadott "%1" cím nem egy érvényes BitRaam-cím.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1406,8 +1406,8 @@ A migrációs folyamat készít biztonsági mentést a tárcáról migrálás el
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 fog letöltődni és a Bitcoin blokklánc egy másolatát fogja tárolni.</translation>
+        <source>%1 will download and store a copy of the BitRaam block chain.</source>
+        <translation type="unfinished">%1 fog letöltődni és a BitRaam blokklánc egy másolatát fogja tárolni.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1559,7 +1559,7 @@ A migrációs folyamat készít biztonsági mentést a tárcáról migrálás el
     <name>OpenURIDialog</name>
     <message>
         <source>Open bitraam URI</source>
-        <translation type="unfinished">Bitcoin URI megnyitása</translation>
+        <translation type="unfinished">BitRaam URI megnyitása</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1722,16 +1722,16 @@ A migrációs folyamat készít biztonsági mentést a tárcáról migrálás el
         <translation type="unfinished">&amp;Külső aláíró szkript elérési útvonala</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">A Bitcoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a router támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation type="unfinished">A BitRaam-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a router támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation type="unfinished">&amp;UPnP port-feltérképezés</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">A Bitcoin kliens port automatikus megnyitása a routeren. Ez csak akkor működik ha a router támogatja a NAT-PMP-t és ez engedélyezve is van. A külső port lehet véletlenszerűen választott.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">A BitRaam kliens port automatikus megnyitása a routeren. Ez csak akkor működik ha a router támogatja a NAT-PMP-t és ez engedélyezve is van. A külső port lehet véletlenszerűen választott.</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1746,8 +1746,8 @@ A migrációs folyamat készít biztonsági mentést a tárcáról migrálás el
         <translation type="unfinished">Be&amp;jövő kapcsolatok engedélyezése</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Csatlakozás a Bitcoin hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Csatlakozás a BitRaam hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1818,8 +1818,8 @@ A migrációs folyamat készít biztonsági mentést a tárcáról migrálás el
         <translation type="unfinished">Mutassa-e a pénzküldés beállításait.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Csatlakozás a Bitcoin hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
+        <source>Connect to the BitRaam network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Csatlakozás a BitRaam hálózathoz külön SOCKS5 proxy használatával a Tor rejtett szolgáltatásainak eléréséhez.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1911,8 +1911,8 @@ A migrációs folyamat készít biztonsági mentést a tárcáról migrálás el
         <translation type="unfinished">Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">A kijelzett információ lehet, hogy elavult. A kapcsolat létrehozatalát követően tárcája automatikusan szinkronba kerül a Bitcoin hálózattal, de ez a folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">A kijelzett információ lehet, hogy elavult. A kapcsolat létrehozatalát követően tárcája automatikusan szinkronba kerül a BitRaam hálózattal, de ez a folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2144,8 +2144,8 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation type="unfinished">A fizetési kérelmet nem lehet feldolgozni, mert a BIP70 nem támogatott. A jól ismert biztonsági hiányosságok miatt a BIP70-re való váltásra történő felhívásokat hagyja figyelmen kívül. Amennyiben ezt az üzenetet látja kérjen egy új, BIP21 kompatibilis URI-t.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">Nem sikerült az URI értelmezése! Ezt okozhatja érvénytelen Bitcoin cím, vagy rossz URI paraméterezés.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid BitRaam address or malformed URI parameters.</source>
+        <translation type="unfinished">Nem sikerült az URI értelmezése! Ezt okozhatja érvénytelen BitRaam cím, vagy rossz URI paraméterezés.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2739,8 +2739,8 @@ Gépeljen %5 az elérhető parancsok áttekintéséhez. Több információért a
         <translation type="unfinished">&amp;Üzenet:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Egy opcionális üzenet csatolása a fizetési kérelemhez, amely megjelenik a kérelem megnyitásakor. Megjegyzés: Az üzenet nem lesz elküldve a fizetséggel a Bitcoin hálózaton keresztül.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BitRaam network.</source>
+        <translation type="unfinished">Egy opcionális üzenet csatolása a fizetési kérelemhez, amely megjelenik a kérelem megnyitásakor. Megjegyzés: Az üzenet nem lesz elküldve a fizetséggel a BitRaam hálózaton keresztül.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -3126,8 +3126,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">&amp;Aláíratlan létrehozása</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Létrehoz egy Részlegesen Aláírt Bitcoin Tranzakciót (PSBT) melyet offline %1 tárcával vagy egy PSBT kompatibilis hardver tárcával használhat.</translation>
+        <source>Creates a Partially Signed BitRaam Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Létrehoz egy Részlegesen Aláírt BitRaam Tranzakciót (PSBT) melyet offline %1 tárcával vagy egy PSBT kompatibilis hardver tárcával használhat.</translation>
     </message>
     <message>
         <source>%1 to '%2'</source>
@@ -3182,7 +3182,7 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">Később növelheti a tranzakció díját (Replace-By-Fee-t jelez, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed BitRaam Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
         <translation type="unfinished">Kérjük nézze át a tranzakciós javaslatot. Ez létrehoz egy részlegesen aláírt bitraam tranzakciót (PSBT) amit elmenthet vagy kimásolhat amit később aláírhatja offline %1 tárcával vagy egy PSBT kompatibilis hardvertárcával.</translation>
     </message>
@@ -3196,7 +3196,7 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">Biztosan létrehozza ezt a tranzakciót?</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed BitRaam Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
         <translation type="unfinished">Kérjük nézze át a tranzakció részleteit. Véglegesítheti és elküldheti ezt a tranzakciót vagy létrehozhat egy részlegesen aláírt bitraam tranzakciót (PSBT) amit elmentve vagy átmásolva aláírhat egy offline %1 tárcával, vagy PSBT-t támogató hardvertárcával.</translation>
     </message>
@@ -3274,8 +3274,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Figyelmeztetés: Érvénytelen Bitcoin cím</translation>
+        <source>Warning: Invalid BitRaam address</source>
+        <translation type="unfinished">Figyelmeztetés: Érvénytelen BitRaam cím</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3313,8 +3313,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">Válasszon egy korábban már használt címet</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">Erre a Bitcoin címre küldje az összeget</translation>
+        <source>The BitRaam address to send the payment to</source>
+        <translation type="unfinished">Erre a BitRaam címre küldje az összeget</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -3349,8 +3349,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">Adjon egy címkét ehhez a címhez, hogy bekerüljön a használt címek közé</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">Egy üzenet a bitraam: URI-hoz csatolva, amely a tranzakciócal együtt lesz eltárolva az Ön számára. Megjegyzés: Ez az üzenet nem kerül elküldésre a Bitcoin hálózaton keresztül.</translation>
+        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BitRaam network.</source>
+        <translation type="unfinished">Egy üzenet a bitraam: URI-hoz csatolva, amely a tranzakciócal együtt lesz eltárolva az Ön számára. Megjegyzés: Ez az üzenet nem kerül elküldésre a BitRaam hálózaton keresztül.</translation>
     </message>
 </context>
 <context>
@@ -3379,8 +3379,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">Aláírhat üzeneteket/megállapodásokat a régí típusú (P2PKH) címeivel amivel bizonyítja, hogy fogadni és elkölteni is tudja az oda küldött bitraamt. Legyen óvatos és ne írjon alá semmilyen ködös vagy véletlenszerű üzenetet, mivel adathalászok megkísérelhetik rávenni a személyazonosságának átruházására. Csak olyan alaposan részletezett állításokat írjon alá amivel teljesen egyetért.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">Bitcoin cím, amivel alá kívánja írni az üzenetet</translation>
+        <source>The BitRaam address to sign the message with</source>
+        <translation type="unfinished">BitRaam cím, amivel alá kívánja írni az üzenetet</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3403,8 +3403,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">A jelenleg kiválasztott aláírás másolása a rendszer-vágólapra</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished">Üzenet aláírása, ezzel bizonyítva, hogy Öné ez a Bitcoin cím</translation>
+        <source>Sign the message to prove you own this BitRaam address</source>
+        <translation type="unfinished">Üzenet aláírása, ezzel bizonyítva, hogy Öné ez a BitRaam cím</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3427,8 +3427,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">Adja meg a fogadó címét, az üzenetet (megbizonyosodva arról, hogy az új-sor, szóköz, tab, stb. karaktereket is pontosan adta meg) és az aláírást az üzenet ellenőrzéséhez. Ügyeljen arra, ne gondoljon bele többet az aláírásba, mint amennyi az aláírt szövegben ténylegesen áll, hogy elkerülje a köztes-ember (man-in-the-middle) támadást. Megjegyzendő, hogy ez csak azt bizonyítja hogy az aláíró fél az adott címen tud fogadni, de azt nem tudja igazolni hogy képes-e akár egyetlen tranzakció feladására is!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">Bitcoin cím, amivel aláírta az üzenetet</translation>
+        <source>The BitRaam address the message was signed with</source>
+        <translation type="unfinished">BitRaam cím, amivel aláírta az üzenetet</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -3439,8 +3439,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 maharishi kvB-
         <translation type="unfinished">A kapott aláírás amikor az üzenet alá lett írva.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">Ellenőrizze az üzenetet, hogy valóban a megjelölt Bitcoin címmel van-e aláírva</translation>
+        <source>Verify the message to ensure it was signed with the specified BitRaam address</source>
+        <translation type="unfinished">Ellenőrizze az üzenetet, hogy valóban a megjelölt BitRaam címmel van-e aláírva</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

@@ -58,13 +58,13 @@
         <translation type="unfinished">Seç</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Bunlar ödənişləri göndərmək üçün Bitcoin ünvanlarınızdır. pul göndərməzdən əvvəl həmişə miqdarı və göndəriləcək ünvanı yoxlayın.</translation>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Bunlar ödənişləri göndərmək üçün BitRaam ünvanlarınızdır. pul göndərməzdən əvvəl həmişə miqdarı və göndəriləcək ünvanı yoxlayın.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Bunlar ödəniş almaq üçün Bitcoin ünvanlarınızdır. Yeni ünvan yaratmaq üçün alacaqlar vərəqində 'Yeni alacaq ünvan yarat' düyməsini istifadə edin.
+        <translation type="unfinished">Bunlar ödəniş almaq üçün BitRaam ünvanlarınızdır. Yeni ünvan yaratmaq üçün alacaqlar vərəqində 'Yeni alacaq ünvan yarat' düyməsini istifadə edin.
 Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
@@ -236,7 +236,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">Ola bilsin ki, %1 faylı zədələnib və ya yararsızdır.</translation>
@@ -334,7 +334,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;İcmal</translation>
@@ -401,8 +401,8 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">Proksi &lt;b&gt;işə salınıb&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Pulları Bitcoin ünvanına göndərin</translation>
+        <source>Send coins to a BitRaam address</source>
+        <translation type="unfinished">Pulları BitRaam ünvanına göndərin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -445,16 +445,16 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">İs&amp;marıcı imzalayın...</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Bitcoin ünvanlarınızın sahibi olduğunuzu sübut etmək üçün ismarıcları imzalayın</translation>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
+        <translation type="unfinished">BitRaam ünvanlarınızın sahibi olduğunuzu sübut etmək üçün ismarıcları imzalayın</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;İsmarıcı doğrulayın...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Göstərilmiş Bitcoin ünvanları ilə imzalandıqlarına əmin olmaq üçün ismarıcları doğrulayın</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Göstərilmiş BitRaam ünvanları ilə imzalandıqlarına əmin olmaq üçün ismarıcları doğrulayın</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -514,7 +514,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitraam: URIs)</source>
-        <translation type="unfinished">Ödəmə tələbi (QR-kodlar və Bitcoin URI-ləri yaradılır):</translation>
+        <translation type="unfinished">Ödəmə tələbi (QR-kodlar və BitRaam URI-ləri yaradılır):</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -568,16 +568,16 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">Eyniləşdirildi</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Qismən imzalanmış Bitcoin köçürmələrini yükləyin</translation>
+        <source>Load Partially Signed BitRaam Transaction</source>
+        <translation type="unfinished">Qismən imzalanmış BitRaam köçürmələrini yükləyin</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">PSBT-i &amp;mübadilə yaddaşından yükləyin...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Qismən İmzalanmış Bitcoin Köçürməsini (PSBT) mübadilə yaddaşından yükləmək</translation>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
+        <translation type="unfinished">Qismən İmzalanmış BitRaam Köçürməsini (PSBT) mübadilə yaddaşından yükləmək</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -597,7 +597,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
     </message>
     <message>
         <source>Open a bitraam: URI</source>
-        <translation type="unfinished">Bitcoin açın: URI</translation>
+        <translation type="unfinished">BitRaam açın: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -626,8 +626,8 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">Bütün cüzdanları bağlayın</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Mümkün Bitcoin əmr sətri əməliyyatları siyahısını almaq üçün %1 kömək ismarıcı göstərilsin</translation>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
+        <translation type="unfinished">Mümkün BitRaam əmr sətri əməliyyatları siyahısını almaq üçün %1 kömək ismarıcı göstərilsin</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -686,11 +686,11 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">&amp;Göstərin</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>Bitcoin şəbəkəsinə %n aktiv bağlantı.</numerusform>
-            <numerusform>Bitcoin şəbəkəsinə %n aktiv bağlantı.</numerusform>
+            <numerusform>BitRaam şəbəkəsinə %n aktiv bağlantı.</numerusform>
+            <numerusform>BitRaam şəbəkəsinə %n aktiv bağlantı.</numerusform>
         </translation>
     </message>
     <message>

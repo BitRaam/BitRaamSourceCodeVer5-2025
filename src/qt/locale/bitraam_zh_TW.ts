@@ -54,11 +54,11 @@
         <translation type="unfinished">選擇 (&amp;h)</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">這些是你要發送過去的 比特幣地址。在發送幣之前，務必要檢查金額和接收地址是否正確。</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">這些是您的比特幣接收地址。使用“接收”標籤中的“產生新的接收地址”按鈕產生新的地址。只能使用“傳統”類型的地址進行簽名。</translation>
     </message>
@@ -160,7 +160,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">警告: 如果把錢包加密後又忘記密碼，你就會從此&lt;b&gt;失去其中所有的 Bitcoin 了&lt;/b&gt;！</translation>
+        <translation type="unfinished">警告: 如果把錢包加密後又忘記密碼，你就會從此&lt;b&gt;失去其中所有的 BitRaam 了&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -259,7 +259,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">設定檔%1可能已經失效或無效</translation>
@@ -322,7 +322,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">金額</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a BitRaam address (e.g. %1)</source>
         <translation type="unfinished">輸入 比特幣地址 (比如說 %1)</translation>
     </message>
     <message>
@@ -450,7 +450,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;總覽</translation>
@@ -513,7 +513,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">代理伺服器&lt;b&gt;已經啟用&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a BitRaam address</source>
         <translation type="unfinished">發送幣給一個比特幣地址</translation>
     </message>
     <message>
@@ -549,11 +549,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">修改密码(&amp;C)</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
         <translation type="unfinished">用比特幣地址簽名訊息來證明位址是你的</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
         <translation type="unfinished">驗證訊息是用來確定訊息是用指定的比特幣地址簽名的</translation>
     </message>
     <message>
@@ -655,7 +655,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">最新狀態</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
+        <source>Load Partially Signed BitRaam Transaction</source>
         <translation type="unfinished">載入部分簽名的比特幣交易</translation>
     </message>
     <message>
@@ -663,7 +663,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">從剪貼簿載入PSBT</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
         <translation type="unfinished">從剪貼簿載入部分簽名的比特幣交易</translation>
     </message>
     <message>
@@ -721,7 +721,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">遷移一個錢包</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
         <translation type="unfinished">顯示 %1 的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>
@@ -781,7 +781,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;顯示</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform>已處理%n個區塊的交易歷史。</numerusform>
@@ -1271,7 +1271,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">編輯發送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
         <translation type="unfinished">輸入的地址 %1 並不是有效的比特幣地址。</translation>
     </message>
     <message>
@@ -1350,8 +1350,8 @@ The migration process will create a backup of the wallet before migrating. This 
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 會下載 Bitcoin 區塊鏈並且儲存一份副本。</translation>
+        <source>%1 will download and store a copy of the BitRaam block chain.</source>
+        <translation type="unfinished">%1 會下載 BitRaam 區塊鏈並且儲存一份副本。</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1662,15 +1662,15 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">外接簽證設備執行檔路徑(&amp;E)</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">自動在路由器上開放 Bitcoin 的客戶端通訊埠。只有在你的路由器支援且開啓「通用即插即用」協定(UPnP)時才有作用。</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation type="unfinished">自動在路由器上開放 BitRaam 的客戶端通訊埠。只有在你的路由器支援且開啓「通用即插即用」協定(UPnP)時才有作用。</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation type="unfinished">用 &amp;UPnP 設定通訊埠對應</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
         <translation type="unfinished">自动在路由器中为比特币客户端打开端口。只有当您的路由器支持 NAT-PMP 功能并开启它，这个功能才会正常工作。外边端口可以是随机的。</translation>
     </message>
     <message>
@@ -1686,8 +1686,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">接受外來連線(&amp;G)</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">透過 SOCKS5 代理伺服器來連線到 Bitcoin 網路。</translation>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">透過 SOCKS5 代理伺服器來連線到 BitRaam 網路。</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1766,7 +1766,7 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">是否要顯示錢幣控制功能。</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the BitRaam network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation type="unfinished">通過用於Tor洋蔥服務個別的SOCKS5代理連接到比特幣網路。</translation>
     </message>
     <message>
@@ -1863,8 +1863,8 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation type="unfinished">表單</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">顯示的資訊可能是過期的。跟 Bitcoin 網路的連線建立後，你的錢包會自動和網路同步，但是這個步驟還沒完成。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">顯示的資訊可能是過期的。跟 BitRaam 網路的連線建立後，你的錢包會自動和網路同步，但是這個步驟還沒完成。</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2074,7 +2074,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
 如果您看到了這個錯誤，您應該要求商家提供與BIP21相容的URI。</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid BitRaam address or malformed URI parameters.</source>
         <translation type="unfinished">沒辦法解析 URI ！可能是因為無效比特幣地址，或是 URI 參數格式錯誤。</translation>
     </message>
     <message>
@@ -2671,8 +2671,8 @@ For more information on using this console, type %6.
         <translation type="unfinished">訊息(&amp;M):</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到 Bitcoin 網路上。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BitRaam network.</source>
+        <translation type="unfinished">附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到 BitRaam 網路上。</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -3058,7 +3058,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">Cr＆eate未簽名</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Creates a Partially Signed BitRaam Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation type="unfinished">產生一個部分簽名的比特幣交易（PSBT）以用於例如離線%1錢包或與PSBT相容的硬體錢包。</translation>
     </message>
     <message>
@@ -3114,7 +3114,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">你可以之後再提高手續費(有 BIP-125 手續費追加的標記)</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed BitRaam Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
         <translation type="unfinished">請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
     </message>
@@ -3128,7 +3128,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">要創建這筆交易嗎？</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed BitRaam Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
         <translation type="unfinished">請務必仔細檢查您的交易。 你可以創建並發送這筆交易；也可以創建一個“部分簽名比特幣交易(PSBT)”，它可以被保存下來或被複製出去，然後就可以對它進行簽名，比如用離線%1錢包，或 是用相容PSBT的硬體錢包。</translation>
     </message>
@@ -3206,7 +3206,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
+        <source>Warning: Invalid BitRaam address</source>
         <translation type="unfinished">警告: 比特幣地址無效</translation>
     </message>
     <message>
@@ -3245,7 +3245,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">選擇先前使用過的地址</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
+        <source>The BitRaam address to send the payment to</source>
         <translation type="unfinished">將支付發送到的比特幣地址給</translation>
     </message>
     <message>
@@ -3281,8 +3281,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">請輸入這個地址的標籤，來把它加進去已使用過地址清單。</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">附加在 Bitcoin 付款協議的資源識別碼(URI)中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到 Bitcoin 網路上。</translation>
+        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BitRaam network.</source>
+        <translation type="unfinished">附加在 BitRaam 付款協議的資源識別碼(URI)中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到 BitRaam 網路上。</translation>
     </message>
 </context>
 <context>
@@ -3307,7 +3307,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">簽署訊息(&amp;S)</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
+        <source>The BitRaam address to sign the message with</source>
         <translation type="unfinished">用來簽名訊息的 比特幣地址</translation>
     </message>
     <message>
@@ -3331,7 +3331,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">複製目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this BitRaam address</source>
         <translation type="unfinished">簽名這個訊息來證明這個比特幣地址是你的</translation>
     </message>
     <message>
@@ -3355,7 +3355,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">請在下面輸入收款人的地址，訊息(請確定完整複製了所包含的換行、空格、tabs...等)，以及簽名，來驗證這個訊息。請小心，除了訊息內容以外，不要對簽名本身過度解讀，以避免被用「中間人攻擊法」詐騙。請注意，通過驗證的簽名只能證明簽名人確實可以從該地址收款，不能證明任何交易中的付款人身份！</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
+        <source>The BitRaam address the message was signed with</source>
         <translation type="unfinished">簽名這個訊息的 比特幣地址</translation>
     </message>
     <message>
@@ -3367,7 +3367,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 mahar
         <translation type="unfinished">簽名訊息時給出的簽名</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified BitRaam address</source>
         <translation type="unfinished">驗證這個訊息來確定是用指定的比特幣地址簽名的</translation>
     </message>
     <message>

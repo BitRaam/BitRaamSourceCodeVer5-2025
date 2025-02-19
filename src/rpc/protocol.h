@@ -20,7 +20,7 @@ enum HTTPStatusCode
     HTTP_SERVICE_UNAVAILABLE   = 503,
 };
 
-//! Bitcoin RPC error codes
+//! BitRaam RPC error codes
 enum RPCErrorCode
 {
     //! Standard JSON-RPC 2.0 errors
@@ -55,7 +55,7 @@ enum RPCErrorCode
     RPC_TRANSACTION_REJECTED        = RPC_VERIFY_REJECTED,
 
     //! P2P client errors
-    RPC_CLIENT_NOT_CONNECTED        = -9,  //!< Bitcoin is not connected
+    RPC_CLIENT_NOT_CONNECTED        = -9,  //!< BitRaam is not connected
     RPC_CLIENT_IN_INITIAL_DOWNLOAD  = -10, //!< Still downloading initial blocks
     RPC_CLIENT_NODE_ALREADY_ADDED   = -23, //!< Node is already added
     RPC_CLIENT_NODE_NOT_ADDED       = -24, //!< Node has not been added before

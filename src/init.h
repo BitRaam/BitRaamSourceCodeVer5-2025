@@ -65,7 +65,7 @@ bool AppInitLockDirectories();
  */
 bool AppInitInterfaces(node::NodeContext& node);
 /**
- * Bitcoin core main initialization.
+ * BitRaam core main initialization.
  * @note This should only be done after daemonization. Call Shutdown() if this function fails.
  * @pre Parameters should be parsed and config file should be read, AppInitLockDirectories should have been called.
  */

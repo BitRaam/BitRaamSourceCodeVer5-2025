@@ -10,19 +10,19 @@
 #include <string>
 #include <utility>
 
-class BitcoinApplication;
-class BitcoinGUI;
+class BitRaamApplication;
+class BitRaamGUI;
 class RPCConsole;
 
 class AppTests : public QObject
 {
     Q_OBJECT
 public:
-    explicit AppTests(BitcoinApplication& app) : m_app(app) {}
+    explicit AppTests(BitRaamApplication& app) : m_app(app) {}
 
 private Q_SLOTS:
     void appTests();
-    void guiTests(BitcoinGUI* window);
+    void guiTests(BitRaamGUI* window);
     void consoleTests(RPCConsole* console);
 
 private:
@@ -37,8 +37,8 @@ private:
         ~HandleCallback();
     };
 
-    //! Bitcoin application.
-    BitcoinApplication& m_app;
+    //! BitRaam application.
+    BitRaamApplication& m_app;
 
     //! Set of pending callback names. Used to track expected callbacks and shut
     //! down the app after the last callback has been handled and all tests have

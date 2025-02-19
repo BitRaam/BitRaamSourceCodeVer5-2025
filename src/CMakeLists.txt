@@ -305,7 +305,7 @@ target_link_libraries(bitraam_node
 )
 
 
-# Bitcoin Core bitraamd.
+# BitRaam Core bitraamd.
 if(BUILD_DAEMON)
   add_executable(bitraamd
     bitraamd.cpp
@@ -361,7 +361,7 @@ target_link_libraries(bitraam_cli
 )
 
 
-# Bitcoin Core RPC client
+# BitRaam Core RPC client
 if(BUILD_CLI)
   add_executable(bitraam-cli bitraam-cli.cpp)
   add_windows_resources(bitraam-cli bitraam-cli-res.rc)

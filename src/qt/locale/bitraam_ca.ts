@@ -58,13 +58,13 @@
         <translation type="unfinished">&amp;Tria</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Aquestes són les vostres adreces de Bitcoin per a enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation type="unfinished">Aquestes són les vostres adreces de BitRaam per a enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Aquestes son les teves adreces de Bitcoin per a rebre pagaments. Utilitza el botó "Crear nova adreça de recepció" de la pestanya de recepció per a crear una nova adreça.
+        <translation type="unfinished">Aquestes son les teves adreces de BitRaam per a rebre pagaments. Utilitza el botó "Crear nova adreça de recepció" de la pestanya de recepció per a crear una nova adreça.
 Només és possible firmar amb adreces del tipus "legacy".</translation>
     </message>
     <message>
@@ -260,7 +260,7 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">El fitxer de configuració %1 pot estar corrupte o invàlid.</translation>
@@ -311,8 +311,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Import</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Introduïu una adreça de Bitcoin (p. ex. %1)</translation>
+        <source>Enter a BitRaam address (e.g. %1)</source>
+        <translation type="unfinished">Introduïu una adreça de BitRaam (p. ex. %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -410,7 +410,7 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Visió general</translation>
@@ -477,8 +477,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">El servidor proxy està &lt;b&gt;activat&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Envia monedes a una adreça Bitcoin</translation>
+        <source>Send coins to a BitRaam address</source>
+        <translation type="unfinished">Envia monedes a una adreça BitRaam</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -521,16 +521,16 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Signa el &amp;missatge</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Signa els missatges amb la seva adreça de Bitcoin per a provar que les posseeixes</translation>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
+        <translation type="unfinished">Signa els missatges amb la seva adreça de BitRaam per a provar que les posseeixes</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verifica el missatge</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verifiqueu els missatges per a assegurar-vos que han estat signats amb una adreça Bitcoin específica.</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Verifiqueu els missatges per a assegurar-vos que han estat signats amb una adreça BitRaam específica.</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -640,16 +640,16 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Actualitzat</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation type="unfinished">Carrega la transacció Bitcoin signada parcialment</translation>
+        <source>Load Partially Signed BitRaam Transaction</source>
+        <translation type="unfinished">Carrega la transacció BitRaam signada parcialment</translation>
     </message>
     <message>
         <source>Load PSBT from &amp;clipboard…</source>
         <translation type="unfinished">Carrega la PSBT des del porta-retalls.</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Carrega la transacció de Bitcoin signada parcialment des del porta-retalls</translation>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
+        <translation type="unfinished">Carrega la transacció de BitRaam signada parcialment des del porta-retalls</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -706,8 +706,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Migrar una cartera</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
+        <translation type="unfinished">Mostra el missatge d'ajuda del %1 per obtenir una llista amb les possibles opcions de línia d'ordres de BitRaam</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -766,11 +766,11 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">&amp;Mostra</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n connexió activa a la xarxa Bitcoin</numerusform>
-            <numerusform>%n connexions actives a la xarxa Bitcoin</numerusform>
+            <numerusform>%n connexió activa a la xarxa BitRaam</numerusform>
+            <numerusform>%n connexions actives a la xarxa BitRaam</numerusform>
         </translation>
     </message>
     <message>
@@ -1289,8 +1289,8 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation type="unfinished">Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation type="unfinished">L'adreça introduïda «%1» no és una adreça de Bitcoin vàlida.</translation>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
+        <translation type="unfinished">L'adreça introduïda «%1» no és una adreça de BitRaam vàlida.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1376,8 +1376,8 @@ Això és ideal per a carteres de mode només lectura.</translation>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 descarregarà i emmagatzemarà una còpia de la cadena de blocs Bitcoin.</translation>
+        <source>%1 will download and store a copy of the BitRaam block chain.</source>
+        <translation type="unfinished">%1 descarregarà i emmagatzemarà una còpia de la cadena de blocs BitRaam.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1517,7 +1517,7 @@ Això és ideal per a carteres de mode només lectura.</translation>
     <name>OpenURIDialog</name>
     <message>
         <source>Open bitraam URI</source>
-        <translation type="unfinished">Obre Bitcoin URI</translation>
+        <translation type="unfinished">Obre BitRaam URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1557,7 +1557,7 @@ Això és ideal per a carteres de mode només lectura.</translation>
     </message>
     <message>
         <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
-        <translation type="unfinished">Camí complet a %1 script compatible amb Bitcoin Core (per exemple, C:\Downloads\hwi.exe o /Users/you/Downloads/hwi.py). Aneu amb compte: el programari maliciós pot robar-vos les monedes!</translation>
+        <translation type="unfinished">Camí complet a %1 script compatible amb BitRaam Core (per exemple, C:\Downloads\hwi.exe o /Users/you/Downloads/hwi.py). Aneu amb compte: el programari maliciós pot robar-vos les monedes!</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1642,16 +1642,16 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation type="unfinished">&amp;Camí de l'script del signatari extern</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">Obre el port del client de Bitcoin al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation type="unfinished">Obre el port del client de BitRaam al router de forma automàtica. Això només funciona quan el router implementa UPnP i l'opció està activada.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation type="unfinished">Port obert amb &amp;UPnP</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Obriu automàticament el port client de Bitcoin al router. Això només funciona quan el vostre router admet NAT-PMP i està activat. El port extern podria ser aleatori.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation type="unfinished">Obriu automàticament el port client de BitRaam al router. Això només funciona quan el vostre router admet NAT-PMP i està activat. El port extern podria ser aleatori.</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -1666,8 +1666,8 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation type="unfinished">Permet connexions entrants</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Connecta a la xarxa Bitcoin a través d'un proxy SOCKS5.</translation>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Connecta a la xarxa BitRaam a través d'un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1742,8 +1742,8 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation type="unfinished">Si voleu mostrar les funcions de control de monedes o no.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Connecteu-vos a la xarxa Bitcoin mitjançant un servidor intermediari SOCKS5 separat per als serveis de ceba Tor.</translation>
+        <source>Connect to the BitRaam network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Connecteu-vos a la xarxa BitRaam mitjançant un servidor intermediari SOCKS5 separat per als serveis de ceba Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1823,8 +1823,8 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation type="unfinished">Formulari</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">La informació mostrada pot no estar al dia. El vostra cartera se sincronitza automàticament amb la xarxa Bitcoin un cop s'ha establert connexió, però aquest proces encara no ha finalitzat.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">La informació mostrada pot no estar al dia. El vostra cartera se sincronitza automàticament amb la xarxa BitRaam un cop s'ha establert connexió, però aquest proces encara no ha finalitzat.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2038,8 +2038,8 @@ A causa dels defectes generalitzats de seguretat del BIP70, es recomana que s'ig
 Si rebeu aquest error, haureu de sol·licitar al comerciant que proporcioni un URI compatible amb BIP21.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation type="unfinished">L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de Bitcoin no vàlida o per paràmetres URI amb mal format.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid BitRaam address or malformed URI parameters.</source>
+        <translation type="unfinished">L'URI no pot ser analitzat! Això pot ser a causa d'una adreça de BitRaam no vàlida o per paràmetres URI amb mal format.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2532,8 +2532,8 @@ No utilitzeu aquesta consola sense entendre completament les ramificacions d'una
         <translation type="unfinished">&amp;Missatge:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BitRaam network.</source>
+        <translation type="unfinished">Un missatge opcional que s'adjuntarà a la sol·licitud de pagament, que es mostrarà quan s'obri la sol·licitud. Nota: El missatge no s'enviarà amb el pagament per la xarxa BitRaam.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2890,7 +2890,7 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         <translation type="unfinished">Creació sense firmar</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Creates a Partially Signed BitRaam Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation type="unfinished">Crea una transacció bitraam parcialment signada (PSBT) per a utilitzar, per exemple,  amb una cartera %1 fora de línia o amb una cartera compatible amb PSBT.</translation>
     </message>
     <message>
@@ -2946,9 +2946,9 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         <translation type="unfinished">Pot incrementar la tarifa més tard (senyala Replace-By-Fee o substitució per tarifa, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed BitRaam Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">Si us plau, revisa la teva proposta de transacció. Es produirà una transacció de Bitcoin amb firma parcial (PSBT) que podeu guardar o copiar i després firmar, per exemple, amb una cartera %1, o amb una cartera física compatible amb PSBT.</translation>
+        <translation type="unfinished">Si us plau, revisa la teva proposta de transacció. Es produirà una transacció de BitRaam amb firma parcial (PSBT) que podeu guardar o copiar i després firmar, per exemple, amb una cartera %1, o amb una cartera física compatible amb PSBT.</translation>
     </message>
     <message>
         <source>Do you want to create this transaction?</source>
@@ -3022,8 +3022,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Avís: adreça Bitcoin no vàlida</translation>
+        <source>Warning: Invalid BitRaam address</source>
+        <translation type="unfinished">Avís: adreça BitRaam no vàlida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3061,8 +3061,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         <translation type="unfinished">Escull una adreça feta servir anteriorment</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">L'adreça Bitcoin on enviar el pagament</translation>
+        <source>The BitRaam address to send the payment to</source>
+        <translation type="unfinished">L'adreça BitRaam on enviar el pagament</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -3101,8 +3101,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         <translation type="unfinished">Introduïu una etiqueta per a aquesta adreça per afegir-la a la llista d'adreces utilitzades</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">Un missatge que s'ha adjuntat al bitraam: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Bitcoin.</translation>
+        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BitRaam network.</source>
+        <translation type="unfinished">Un missatge que s'ha adjuntat al bitraam: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa BitRaam.</translation>
     </message>
 </context>
 <context>
@@ -3127,8 +3127,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         <translation type="unfinished">&amp;Signa el missatge</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">L'adreça Bitcoin amb què signar el missatge</translation>
+        <source>The BitRaam address to sign the message with</source>
+        <translation type="unfinished">L'adreça BitRaam amb què signar el missatge</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3155,8 +3155,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         <translation type="unfinished">Copia la signatura actual al porta-retalls del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished">Signa el missatge per a provar que ets propietari d'aquesta adreça Bitcoin</translation>
+        <source>Sign the message to prove you own this BitRaam address</source>
+        <translation type="unfinished">Signa el missatge per a provar que ets propietari d'aquesta adreça BitRaam</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3179,8 +3179,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         <translation type="unfinished">Introduïu l'adreça del receptor, el missatge (assegureu-vos de copiar els salts de línia, espais, tabuladors, etc. exactament) i signatura de sota per a verificar el missatge. Tingueu cura de no llegir més en la signatura del que està al missatge signat, per a evitar ser enganyat per un atac d'home-en-el-mig. Tingueu en compte que això només demostra que la part que signa rep amb l'adreça, i no es pot provar l'enviament de qualsevol transacció!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">L'adreça Bitcoin amb què va ser signat el missatge</translation>
+        <source>The BitRaam address the message was signed with</source>
+        <translation type="unfinished">L'adreça BitRaam amb què va ser signat el missatge</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -3191,8 +3191,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 maharishis per
         <translation type="unfinished">La signatura donada quan es va signar el missatge</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">Verificar el missatge per a assegurar-se que ha estat signat amb una adreça Bitcoin específica</translation>
+        <source>Verify the message to ensure it was signed with the specified BitRaam address</source>
+        <translation type="unfinished">Verificar el missatge per a assegurar-se que ha estat signat amb una adreça BitRaam específica</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

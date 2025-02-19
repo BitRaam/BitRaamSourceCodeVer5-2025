@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2021 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
 #include <qt/bitraamunits.h>
 
 #include <consensus/amount.h>
@@ -12,15 +11,15 @@
 
 static constexpr auto MAX_DIGITS_BRM = 16;
 
-BitcoinUnits::BitcoinUnits(QObject *parent):
+BitRaamUnits::BitRaamUnits(QObject *parent):
         QAbstractListModel(parent),
         unitlist(availableUnits())
 {
 }
 
-QList<BitcoinUnit> BitcoinUnits::availableUnits()
+QList<BitRaamUnit> BitRaamUnits::availableUnits()
 {
-    QList<BitcoinUnit> unitlist;
+    QList<BitRaamUnit> unitlist;
     unitlist.append(Unit::BRM);
     unitlist.append(Unit::mBRM);
     unitlist.append(Unit::uBRM);
@@ -28,7 +27,7 @@ QList<BitcoinUnit> BitcoinUnits::availableUnits()
     return unitlist;
 }
 
-QString BitcoinUnits::longName(Unit unit)
+QString BitRaamUnits::longName(Unit unit)
 {
     switch (unit) {
     case Unit::BRM: return QString("BRM");
@@ -39,7 +38,7 @@ QString BitcoinUnits::longName(Unit unit)
     assert(false);
 }
 
-QString BitcoinUnits::shortName(Unit unit)
+QString BitRaamUnits::shortName(Unit unit)
 {
     switch (unit) {
     case Unit::BRM: return longName(unit);
@@ -50,7 +49,7 @@ QString BitcoinUnits::shortName(Unit unit)
     assert(false);
 }
 
-QString BitcoinUnits::description(Unit unit)
+QString BitRaamUnits::description(Unit unit)
 {
     switch (unit) {
     case Unit::BRM: return QString("BitRaams");
@@ -61,7 +60,7 @@ QString BitcoinUnits::description(Unit unit)
     assert(false);
 }
 
-qint64 BitcoinUnits::factor(Unit unit)
+qint64 BitRaamUnits::factor(Unit unit)
 {
     switch (unit) {
     case Unit::BRM: return 100'000'000;
@@ -72,7 +71,7 @@ qint64 BitcoinUnits::factor(Unit unit)
     assert(false);
 }
 
-int BitcoinUnits::decimals(Unit unit)
+int BitRaamUnits::decimals(Unit unit)
 {
     switch (unit) {
     case Unit::BRM: return 8;
@@ -83,7 +82,7 @@ int BitcoinUnits::decimals(Unit unit)
     assert(false);
 }
 
-QString BitcoinUnits::format(Unit unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators, bool justify)
+QString BitRaamUnits::format(Unit unit, const CAmount& nIn, bool fPlus, SeparatorStyle separators, bool justify)
 {
     // Note: not using straight sprintf here because we do NOT want
     // localized number formatting.
@@ -128,19 +127,19 @@ QString BitcoinUnits::format(Unit unit, const CAmount& nIn, bool fPlus, Separato
 // Please take care to use formatHtmlWithUnit instead, when
 // appropriate.
 
-QString BitcoinUnits::formatWithUnit(Unit unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
+QString BitRaamUnits::formatWithUnit(Unit unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
     return format(unit, amount, plussign, separators) + QString(" ") + shortName(unit);
 }
 
-QString BitcoinUnits::formatHtmlWithUnit(Unit unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
+QString BitRaamUnits::formatHtmlWithUnit(Unit unit, const CAmount& amount, bool plussign, SeparatorStyle separators)
 {
     QString str(formatWithUnit(unit, amount, plussign, separators));
     str.replace(QChar(THIN_SP_CP), QString(THIN_SP_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
-QString BitcoinUnits::formatWithPrivacy(Unit unit, const CAmount& amount, SeparatorStyle separators, bool privacy)
+QString BitRaamUnits::formatWithPrivacy(Unit unit, const CAmount& amount, SeparatorStyle separators, bool privacy)
 {
     assert(amount >= 0);
     QString value;
@@ -152,7 +151,7 @@ QString BitcoinUnits::formatWithPrivacy(Unit unit, const CAmount& amount, Separa
     return value + QString(" ") + shortName(unit);
 }
 
-bool BitcoinUnits::parse(Unit unit, const QString& value, CAmount* val_out)
+bool BitRaamUnits::parse(Unit unit, const QString& value, CAmount* val_out)
 {
     if (value.isEmpty()) {
         return false; // Refuse to parse invalid unit or empty string
@@ -192,18 +191,18 @@ bool BitcoinUnits::parse(Unit unit, const QString& value, CAmount* val_out)
     return ok;
 }
 
-QString BitcoinUnits::getAmountColumnTitle(Unit unit)
+QString BitRaamUnits::getAmountColumnTitle(Unit unit)
 {
     return QObject::tr("Amount") + " (" + shortName(unit) + ")";
 }
 
-int BitcoinUnits::rowCount(const QModelIndex &parent) const
+int BitRaamUnits::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
     return unitlist.size();
 }
 
-QVariant BitcoinUnits::data(const QModelIndex &index, int role) const
+QVariant BitRaamUnits::data(const QModelIndex &index, int role) const
 {
     int row = index.row();
     if(row >= 0 && row < unitlist.size())
@@ -223,41 +222,41 @@ QVariant BitcoinUnits::data(const QModelIndex &index, int role) const
     return QVariant();
 }
 
-CAmount BitcoinUnits::maxMoney()
+CAmount BitRaamUnits::maxMoney()
 {
     return MAX_MONEY;
 }
 
 namespace {
-qint8 ToQint8(BitcoinUnit unit)
+qint8 ToQint8(BitRaamUnit unit)
 {
     switch (unit) {
-    case BitcoinUnit::BRM: return 0;
-    case BitcoinUnit::mBRM: return 1;
-    case BitcoinUnit::uBRM: return 2;
-    case BitcoinUnit::SAT: return 3;
+    case BitRaamUnit::BRM: return 0;
+    case BitRaamUnit::mBRM: return 1;
+    case BitRaamUnit::uBRM: return 2;
+    case BitRaamUnit::SAT: return 3;
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
 
-BitcoinUnit FromQint8(qint8 num)
+BitRaamUnit FromQint8(qint8 num)
 {
     switch (num) {
-    case 0: return BitcoinUnit::BRM;
-    case 1: return BitcoinUnit::mBRM;
-    case 2: return BitcoinUnit::uBRM;
-    case 3: return BitcoinUnit::SAT;
+    case 0: return BitRaamUnit::BRM;
+    case 1: return BitRaamUnit::mBRM;
+    case 2: return BitRaamUnit::uBRM;
+    case 3: return BitRaamUnit::SAT;
     }
     assert(false);
 }
 } // namespace
 
-QDataStream& operator<<(QDataStream& out, const BitcoinUnit& unit)
+QDataStream& operator<<(QDataStream& out, const BitRaamUnit& unit)
 {
     return out << ToQint8(unit);
 }
 
-QDataStream& operator>>(QDataStream& in, BitcoinUnit& unit)
+QDataStream& operator>>(QDataStream& in, BitRaamUnit& unit)
 {
     qint8 input;
     in >> input;

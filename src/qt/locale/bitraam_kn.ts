@@ -14,11 +14,11 @@
         <translation type="unfinished">ಹುಡುಕಲು ವಿಳಾಸ ಅಥವಾ ಲೇಬಲ್ ನಮೂದಿಸಿ.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">ಕಾಣಿಕೆಗಳು ಕಳುಹಿಸಲು ನೀವು ಬಳಸಬಹುದಿರುವ ಬಿಟ್‌ಕಾಯಿನ್ ವಿಳಾಸಗಳು ಇವು. ನಾಣ್ಯದ ಹಣವನ್ನು ಕಳುಹಿಸುವ ಮುಂದೆ ಹಣದ ಮೊತ್ತವನ್ನು ಮತ್ತು ಪ್ರಾಪ್ತಿ ವಿಳಾಸವನ್ನು ಯಾವಾಗಲೂ ಪರಿಶೀಲಿಸಿ.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">ನೀವು ಪಡೆಯಲು ಬಯಸುವ ಪಾವತಿಗಳನ್ನು ಸೇರಿಸಲು ನಿಮ್ಮ ಬಿಟ್‌ಕಾಯಿನ್ ವಿಳಾಸಗಳು ಇವು. ಹೊಸ ವಿಳಾಸಗಳನ್ನು ರಚಿಸಲು ಪಡೆಯುವ ಉಪಕರಣವಾಗಿ 'ಪಡೆಯುವ' ಟ್ಯಾಬ್ ನಲ್ಲಿರುವ 'ಹೊಸ ಪಾವತಿಯನ್ನು ರಚಿಸಿ' ಬಟನ್ ಅನ್ನು ಬಳಸಿ. ಸಹಿ ಮಾಡುವುದು ಕೇವಲ 'ಲೆಗೆಸಿ' ವಿಳಾಸಗಳ ವರ್ಗಕ್ಕೆ ಸೇರಿದ ವಿಳಾಸಗಳೊಂದಿಗೆ ಮಾತ್ರ ಸಾಧ್ಯ.</translation>
     </message>
@@ -92,7 +92,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
         <translation type="unfinished">
@@ -101,7 +101,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         </translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform />

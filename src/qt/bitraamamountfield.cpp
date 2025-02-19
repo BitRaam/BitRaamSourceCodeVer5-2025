@@ -59,7 +59,7 @@ public:
 
         if (valid) {
             val = qBound(m_min_amount, val, m_max_amount);
-            input = BitcoinUnits::format(currentUnit, val, false, BitcoinUnits::SeparatorStyle::ALWAYS);
+            input = BitRaamUnits::format(currentUnit, val, false, BitRaamUnits::SeparatorStyle::ALWAYS);
             lineEdit()->setText(input);
         }
     }
@@ -71,7 +71,7 @@ public:
 
     void setValue(const CAmount& value)
     {
-        lineEdit()->setText(BitcoinUnits::format(currentUnit, value, false, BitcoinUnits::SeparatorStyle::ALWAYS));
+        lineEdit()->setText(BitRaamUnits::format(currentUnit, value, false, BitRaamUnits::SeparatorStyle::ALWAYS));
         Q_EMIT valueChanged();
     }
 
@@ -99,13 +99,13 @@ public:
         setValue(val);
     }
 
-    void setDisplayUnit(BitcoinUnit unit)
+    void setDisplayUnit(BitRaamUnit unit)
     {
         bool valid = false;
         CAmount val = value(&valid);
 
         currentUnit = unit;
-        lineEdit()->setPlaceholderText(BitcoinUnits::format(currentUnit, m_min_amount, false, BitcoinUnits::SeparatorStyle::ALWAYS));
+        lineEdit()->setPlaceholderText(BitRaamUnits::format(currentUnit, m_min_amount, false, BitRaamUnits::SeparatorStyle::ALWAYS));
         if(valid)
             setValue(val);
         else
@@ -125,7 +125,7 @@ public:
 
             const QFontMetrics fm(fontMetrics());
             int h = lineEdit()->minimumSizeHint().height();
-            int w = GUIUtil::TextWidth(fm, BitcoinUnits::format(BitcoinUnit::BRM, BitcoinUnits::maxMoney(), false, BitcoinUnits::SeparatorStyle::ALWAYS));
+            int w = GUIUtil::TextWidth(fm, BitRaamUnits::format(BitRaamUnit::BRM, BitRaamUnits::maxMoney(), false, BitRaamUnits::SeparatorStyle::ALWAYS));
             w += 2; // cursor blinking space
 
             QStyleOptionSpinBox opt;
@@ -150,12 +150,12 @@ public:
     }
 
 private:
-    BitcoinUnit currentUnit{BitcoinUnit::BRM};
+    BitRaamUnit currentUnit{BitRaamUnit::BRM};
     CAmount singleStep{CAmount(100000)}; // maharishis
     mutable QSize cachedMinimumSizeHint;
     bool m_allow_empty{true};
     CAmount m_min_amount{CAmount(0)};
-    CAmount m_max_amount{BitcoinUnits::maxMoney()};
+    CAmount m_max_amount{BitRaamUnits::maxMoney()};
 
     /**
      * Parse a string into a number of base monetary units and
@@ -165,10 +165,10 @@ private:
     CAmount parse(const QString &text, bool *valid_out=nullptr) const
     {
         CAmount val = 0;
-        bool valid = BitcoinUnits::parse(currentUnit, text, &val);
+        bool valid = BitRaamUnits::parse(currentUnit, text, &val);
         if(valid)
         {
-            if(val < 0 || val > BitcoinUnits::maxMoney())
+            if(val < 0 || val > BitRaamUnits::maxMoney())
                 valid = false;
         }
         if(valid_out)
@@ -217,7 +217,7 @@ Q_SIGNALS:
 
 #include <qt/bitraamamountfield.moc>
 
-BitcoinAmountField::BitcoinAmountField(QWidget* parent)
+BitRaamAmountField::BitRaamAmountField(QWidget* parent)
     : QWidget(parent)
 {
     amount = new AmountSpinBox(this);
@@ -228,7 +228,7 @@ BitcoinAmountField::BitcoinAmountField(QWidget* parent)
     QHBoxLayout *layout = new QHBoxLayout(this);
     layout->addWidget(amount);
     unit = new QValueComboBox(this);
-    unit->setModel(new BitcoinUnits(this));
+    unit->setModel(new BitRaamUnits(this));
     layout->addWidget(unit);
     layout->addStretch(1);
     layout->setContentsMargins(0,0,0,0);
@@ -239,26 +239,26 @@ BitcoinAmountField::BitcoinAmountField(QWidget* parent)
     setFocusProxy(amount);
 
     // If one if the widgets changes, the combined content changes as well
-    connect(amount, &AmountSpinBox::valueChanged, this, &BitcoinAmountField::valueChanged);
-    connect(unit, qOverload<int>(&QComboBox::currentIndexChanged), this, &BitcoinAmountField::unitChanged);
+    connect(amount, &AmountSpinBox::valueChanged, this, &BitRaamAmountField::valueChanged);
+    connect(unit, qOverload<int>(&QComboBox::currentIndexChanged), this, &BitRaamAmountField::unitChanged);
 
     // Set default based on configuration
     unitChanged(unit->currentIndex());
 }
 
-void BitcoinAmountField::clear()
+void BitRaamAmountField::clear()
 {
     amount->clear();
     unit->setCurrentIndex(0);
 }
 
-void BitcoinAmountField::setEnabled(bool fEnabled)
+void BitRaamAmountField::setEnabled(bool fEnabled)
 {
     amount->setEnabled(fEnabled);
     unit->setEnabled(fEnabled);
 }
 
-bool BitcoinAmountField::validate()
+bool BitRaamAmountField::validate()
 {
     bool valid = false;
     value(&valid);
@@ -266,7 +266,7 @@ bool BitcoinAmountField::validate()
     return valid;
 }
 
-void BitcoinAmountField::setValid(bool valid)
+void BitRaamAmountField::setValid(bool valid)
 {
     if (valid)
         amount->setStyleSheet("");
@@ -274,7 +274,7 @@ void BitcoinAmountField::setValid(bool valid)
         amount->setStyleSheet(STYLE_INVALID);
 }
 
-bool BitcoinAmountField::eventFilter(QObject *object, QEvent *event)
+bool BitRaamAmountField::eventFilter(QObject *object, QEvent *event)
 {
     if (event->type() == QEvent::FocusIn)
     {
@@ -284,60 +284,60 @@ bool BitcoinAmountField::eventFilter(QObject *object, QEvent *event)
     return QWidget::eventFilter(object, event);
 }
 
-QWidget *BitcoinAmountField::setupTabChain(QWidget *prev)
+QWidget *BitRaamAmountField::setupTabChain(QWidget *prev)
 {
     QWidget::setTabOrder(prev, amount);
     QWidget::setTabOrder(amount, unit);
     return unit;
 }
 
-CAmount BitcoinAmountField::value(bool *valid_out) const
+CAmount BitRaamAmountField::value(bool *valid_out) const
 {
     return amount->value(valid_out);
 }
 
-void BitcoinAmountField::setValue(const CAmount& value)
+void BitRaamAmountField::setValue(const CAmount& value)
 {
     amount->setValue(value);
 }
 
-void BitcoinAmountField::SetAllowEmpty(bool allow)
+void BitRaamAmountField::SetAllowEmpty(bool allow)
 {
     amount->SetAllowEmpty(allow);
 }
 
-void BitcoinAmountField::SetMinValue(const CAmount& value)
+void BitRaamAmountField::SetMinValue(const CAmount& value)
 {
     amount->SetMinValue(value);
 }
 
-void BitcoinAmountField::SetMaxValue(const CAmount& value)
+void BitRaamAmountField::SetMaxValue(const CAmount& value)
 {
     amount->SetMaxValue(value);
 }
 
-void BitcoinAmountField::setReadOnly(bool fReadOnly)
+void BitRaamAmountField::setReadOnly(bool fReadOnly)
 {
     amount->setReadOnly(fReadOnly);
 }
 
-void BitcoinAmountField::unitChanged(int idx)
+void BitRaamAmountField::unitChanged(int idx)
 {
     // Use description tooltip for current unit for the combobox
     unit->setToolTip(unit->itemData(idx, Qt::ToolTipRole).toString());
 
     // Determine new unit ID
-    QVariant new_unit = unit->currentData(BitcoinUnits::UnitRole);
+    QVariant new_unit = unit->currentData(BitRaamUnits::UnitRole);
     assert(new_unit.isValid());
-    amount->setDisplayUnit(new_unit.value<BitcoinUnit>());
+    amount->setDisplayUnit(new_unit.value<BitRaamUnit>());
 }
 
-void BitcoinAmountField::setDisplayUnit(BitcoinUnit new_unit)
+void BitRaamAmountField::setDisplayUnit(BitRaamUnit new_unit)
 {
     unit->setValue(QVariant::fromValue(new_unit));
 }
 
-void BitcoinAmountField::setSingleStep(const CAmount& step)
+void BitRaamAmountField::setSingleStep(const CAmount& step)
 {
     amount->setSingleStep(step);
 }

@@ -58,11 +58,11 @@
         <translation type="unfinished">S&amp;aýla</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">Tölegleri ibermek üçin siziň Bitkoin salgylaryňyz şulardyr. Teňňeleri ibermezden ozal hemişe möçberi we kabul edýän salgyny barlaň.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Tölegleri kabul etmek üçin siziň Bitkoin salgylaryňyz şulardyr. Täze salgylary döretmek üçin kabul etmek bölüminde "Täze kabul ediji salgyny döret" düwmesini ulan.
 Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
@@ -248,7 +248,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">%1 Sazlamalar faýly bozulan ýa-da ýalňyş.</translation>
@@ -299,7 +299,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">Möçber</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <source>Enter a BitRaam address (e.g. %1)</source>
         <translation type="unfinished">(Bitkoin salgysyny giriziň (meselem, %1)</translation>
     </message>
     <message>
@@ -409,7 +409,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Umumy syn</translation>
@@ -476,7 +476,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">Proksi &lt;b&gt;işleýär&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
+        <source>Send coins to a BitRaam address</source>
         <translation type="unfinished">Bitkoin salgysyna teňňeleri iber</translation>
     </message>
     <message>
@@ -520,7 +520,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">&amp;Habara gol çek…</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
         <translation type="unfinished">Bitkoin salgylarynyň eýesidigini subut etmek üçin habarlara öz Bitkoin salgylaryň bilen gol çek</translation>
     </message>
     <message>
@@ -528,7 +528,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">&amp;Habary tassykla…</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
         <translation type="unfinished">Habarlaryň görkezilen Bitkoin salgylary bilen gol çekilendigini kepillendirmek üçin habarlary tassykla</translation>
     </message>
     <message>
@@ -643,7 +643,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">Döwrebap</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
+        <source>Load Partially Signed BitRaam Transaction</source>
         <translation type="unfinished">Bölekleýýin gol çekilen bitkoin geleşigini ýükle</translation>
     </message>
     <message>
@@ -651,7 +651,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">&amp;alyş-çalyş panelinden BGÇBA ýükle…</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
         <translation type="unfinished">Bölekleýin gol çekilen bitkoin geleşigini alyş-çalyş panelinden ýükle</translation>
     </message>
     <message>
@@ -701,7 +701,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">Ähli gapjyklary ýap</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
         <translation type="unfinished">Mümkin bolan Bitkoin buýruk setiri opsiýalarynyň sanawyny görmek üçin %1 goldaw habaryny görkez</translation>
     </message>
     <message>
@@ -761,7 +761,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">G&amp;örkez</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
             <numerusform>Bitkoin toruna %n işjeň arabaglanyşyk.</numerusform>
@@ -1220,7 +1220,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">Iberýän salgyny rejele</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
         <translation type="unfinished">Ýazylan salgy %1 ýaly Bitkoin salgysy ýok.</translation>
     </message>
     <message>
@@ -1266,7 +1266,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>BitRaam</source>
         <translation type="unfinished">Bitkoin</translation>
     </message>
     <message numerus="yes">
@@ -1311,7 +1311,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <source>%1 will download and store a copy of the BitRaam block chain.</source>
         <translation type="unfinished">%1 Bitkoin blok zynjyrynyň nusgasyny ýükläp alar we göçürer.</translation>
     </message>
     <message>
@@ -1623,7 +1623,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">&amp;Daşyndan gol çekijiniň skript ýoly</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished">Bitkoin müşderi portuny routerde awtomatik usulda aç. Bu diňe routeriňiz UPnP goldaýan bolsa we ol işjeň bolsa işleýär.</translation>
     </message>
     <message>
@@ -1631,7 +1631,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">&amp;UPnP ulanyp porty aşyryň</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
         <translation type="unfinished">Bitkoin müşderi portuny routerde awtomatik usulda açýar. Bu diňe routeriňiz NAT-PMP goldaýan we ol işjeňleşdirilen bolsa işleýär. Daşarky router tötänleýin bolup biler.</translation>
     </message>
     <message>
@@ -1647,7 +1647,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">Gele&amp;n birikmelere rugsat ber</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
         <translation type="unfinished">SOCKS5 proksi arkaly Bitkoin toruna baglan.</translation>
     </message>
     <message>
@@ -1723,7 +1723,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">Teňňe dolandyryş aýratynlyklary görkezilmelimi ýa-da ýok.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <source>Connect to the BitRaam network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation type="unfinished">Tor onion hyzmatlary üçin aýratyn SOCKS5 proksi arkaly Bitkoin toruna baglan.</translation>
     </message>
     <message>
@@ -1816,7 +1816,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished">Görkezilýän maglumat könelen bolup biler. birikme ýerine ýetirilenden soň siziň gapjygyňyz awtomatiki usulda Bitkoin tory bilen sinhronlaşar, ýöne bu iş entäk gutarmady.</translation>
     </message>
     <message>
@@ -2043,7 +2043,7 @@ BIP70-däki howpsuzlygyň giňden ýaýran gowşak taraplary sebäpli, täjirler
 Size bu ýalňyşlyk gelýän bolsa, siz täjirden BIP21-e gabat gelýän URI-ni üpjün etmegini talap etmeli.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid BitRaam address or malformed URI parameters.</source>
         <translation type="unfinished">URI-ni işläp bolmady! Munuň sebäbi nädogry Bitkoin salgysy ýa-da ýalňyş emele getirilen URI parametrleri bolup biler.</translation>
     </message>
     <message>

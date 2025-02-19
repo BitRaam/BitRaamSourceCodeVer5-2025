@@ -14,8 +14,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Bitcoin"
-            VALUE "FileDescription",    "bitraam-util (CLI Bitcoin utility)"
+            VALUE "CompanyName",        "BitRaam"
+            VALUE "FileDescription",    "bitraam-util (CLI BitRaam utility)"
             VALUE "FileVersion",        CLIENT_VERSION_STRING
             VALUE "InternalName",       "bitraam-util"
             VALUE "LegalCopyright",     COPYRIGHT_STR

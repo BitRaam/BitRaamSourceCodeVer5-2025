@@ -16,7 +16,7 @@
 
 #include <QApplication>
 
-class BitcoinGUI;
+class BitRaamGUI;
 class ClientModel;
 class NetworkStyle;
 class OptionsModel;
@@ -30,13 +30,13 @@ class Init;
 } // namespace interfaces
 
 
-/** Main Bitcoin application object */
-class BitcoinApplication: public QApplication
+/** Main BitRaam application object */
+class BitRaamApplication: public QApplication
 {
     Q_OBJECT
 public:
-    explicit BitcoinApplication();
-    ~BitcoinApplication();
+    explicit BitRaamApplication();
+    ~BitRaamApplication();
 
 #ifdef ENABLE_WALLET
     /// Create payment server
@@ -60,7 +60,7 @@ public:
     /// Request core initialization
     void requestInitialize();
 
-    /// Get window identifier of QMainWindow (BitcoinGUI)
+    /// Get window identifier of QMainWindow (BitRaamGUI)
     WId getMainWinId() const;
 
     /// Setup platform style
@@ -84,7 +84,7 @@ public Q_SLOTS:
 Q_SIGNALS:
     void requestedInitialize();
     void requestedShutdown();
-    void windowShown(BitcoinGUI* window);
+    void windowShown(BitRaamGUI* window);
 
 protected:
     bool event(QEvent* e) override;
@@ -93,7 +93,7 @@ private:
     std::optional<InitExecutor> m_executor;
     OptionsModel* optionsModel{nullptr};
     ClientModel* clientModel{nullptr};
-    BitcoinGUI* window{nullptr};
+    BitRaamGUI* window{nullptr};
     QTimer* pollShutdownTimer{nullptr};
 #ifdef ENABLE_WALLET
     PaymentServer* paymentServer{nullptr};

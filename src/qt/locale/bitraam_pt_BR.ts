@@ -58,13 +58,13 @@
         <translation type="unfinished">E&amp;scolher</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your BitRaam addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished">Estes são os seus endereços para enviar pagamentos. Sempre confira o valor e o endereço do destinatário antes de enviar bitraams.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+        <source>These are your BitRaam addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Estes são seus endereços Bitcoin para receber pagamentos. Use o botão 'Criar novo endereço de recebimento' na barra receber para criar novos endereços.
+        <translation type="unfinished">Estes são seus endereços BitRaam para receber pagamentos. Use o botão 'Criar novo endereço de recebimento' na barra receber para criar novos endereços.
 Só é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
     <message>
@@ -260,7 +260,7 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinApplication</name>
+    <name>BitRaamApplication</name>
     <message>
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation type="unfinished">Arquivos de configurações %1 podem estar corrompidos ou inválidos</translation>
@@ -319,8 +319,8 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
         <translation type="unfinished">Quantia</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation type="unfinished">Informe um endereço Bitcoin (ex: %1)</translation>
+        <source>Enter a BitRaam address (e.g. %1)</source>
+        <translation type="unfinished">Informe um endereço BitRaam (ex: %1)</translation>
     </message>
     <message>
         <source>Ctrl+W</source>
@@ -392,7 +392,7 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BitRaamGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation type="unfinished">&amp;Visão geral</translation>
@@ -459,8 +459,8 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
         <translation type="unfinished">Proxy &lt;b&gt;ativado&lt;/b&gt;: %1</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation type="unfinished">Enviar moedas para um endereço Bitcoin</translation>
+        <source>Send coins to a BitRaam address</source>
+        <translation type="unfinished">Enviar moedas para um endereço BitRaam</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -503,16 +503,16 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
         <translation type="unfinished">Assinar &amp;mensagem</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation type="unfinished">Assine mensagens com seus endereços Bitcoin para provar que você é dono delas</translation>
+        <source>Sign messages with your BitRaam addresses to prove you own them</source>
+        <translation type="unfinished">Assine mensagens com seus endereços BitRaam para provar que você é dono delas</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
         <translation type="unfinished">&amp;Verificar mensagem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation type="unfinished">Verificar mensagens para se assegurar que elas foram assinadas pelo dono de Endereços Bitcoin específicos</translation>
+        <source>Verify messages to ensure they were signed with specified BitRaam addresses</source>
+        <translation type="unfinished">Verificar mensagens para se assegurar que elas foram assinadas pelo dono de Endereços BitRaam específicos</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -626,7 +626,7 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
         <translation type="unfinished">Atualizado</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction</source>
+        <source>Load Partially Signed BitRaam Transaction</source>
         <translation type="unfinished">Carregar</translation>
     </message>
     <message>
@@ -634,8 +634,8 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
         <translation type="unfinished">&amp;Carregar PSBT da área de transferência...</translation>
     </message>
     <message>
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation type="unfinished">Carregar Transação de Bitcoin Parcialmente Assinada da área de transferência</translation>
+        <source>Load Partially Signed BitRaam Transaction from clipboard</source>
+        <translation type="unfinished">Carregar Transação de BitRaam Parcialmente Assinada da área de transferência</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -692,8 +692,8 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
         <translation type="unfinished">Migrar uma carteira</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation type="unfinished">Mostrar a mensagem de ajuda do %1 para obter uma lista com possíveis opções de linha de comando Bitcoin</translation>
+        <source>Show the %1 help message to get a list with possible BitRaam command-line options</source>
+        <translation type="unfinished">Mostrar a mensagem de ajuda do %1 para obter uma lista com possíveis opções de linha de comando BitRaam</translation>
     </message>
     <message>
         <source>&amp;Mask values</source>
@@ -747,11 +747,11 @@ Só é possível assinar com endereços do tipo 'legado'.</translation>
         <translation type="unfinished">Mo&amp;strar</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bitcoin network.</source>
+        <source>%n active connection(s) to BitRaam network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n conexão ativa na rede Bitcoin.</numerusform>
-            <numerusform>%nconexões ativas na rede Bitcoin.</numerusform>
+            <numerusform>%n conexão ativa na rede BitRaam.</numerusform>
+            <numerusform>%nconexões ativas na rede BitRaam.</numerusform>
         </translation>
     </message>
     <message>
@@ -1244,7 +1244,7 @@ O processo de migração criará um backup da carteira antes da migração. Este
         <translation type="unfinished">Editar endereço de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <source>The entered address "%1" is not a valid BitRaam address.</source>
         <translation type="unfinished">O endereço digitado "%1" não é um endereço válido.</translation>
     </message>
     <message>
@@ -1331,8 +1331,8 @@ O processo de migração criará um backup da carteira antes da migração. Este
         </translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation type="unfinished">%1 irá baixar e armazenar uma cópia da block chain do Bitcoin.</translation>
+        <source>%1 will download and store a copy of the BitRaam block chain.</source>
+        <translation type="unfinished">%1 irá baixar e armazenar uma cópia da block chain do BitRaam.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1516,7 +1516,7 @@ O processo de migração criará um backup da carteira antes da migração. Este
     </message>
     <message>
         <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
-        <translation type="unfinished">Caminho completo para %1 um script compatível com Bitcoin Core (exemplo: C: \ Downloads \ hwi.exe ou /Users/you/Downloads/hwi.py). Cuidado: um malware pode roubar suas moedas!</translation>
+        <translation type="unfinished">Caminho completo para %1 um script compatível com BitRaam Core (exemplo: C: \ Downloads \ hwi.exe ou /Users/you/Downloads/hwi.py). Cuidado: um malware pode roubar suas moedas!</translation>
     </message>
     <message>
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -1628,11 +1628,11 @@ O processo de migração criará um backup da carteira antes da migração. Este
     <message>
         <source>Whether to show PSBT controls.</source>
         <extracomment>Tooltip text for options window setting that enables PSBT controls.</extracomment>
-        <translation type="unfinished">Mostrar os controles de PSBT (Transação de Bitcoin Parcialmente Assinada).</translation>
+        <translation type="unfinished">Mostrar os controles de PSBT (Transação de BitRaam Parcialmente Assinada).</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">Abrir automaticamente no roteador as portas do cliente Bitcoin. Isto só funcionará se seu roteador suportar UPnP e esta função estiver habilitada.</translation>
+        <source>Automatically open the BitRaam client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation type="unfinished">Abrir automaticamente no roteador as portas do cliente BitRaam. Isto só funcionará se seu roteador suportar UPnP e esta função estiver habilitada.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1647,8 +1647,8 @@ O processo de migração criará um backup da carteira antes da migração. Este
         <translation type="unfinished">Permitir conexões de entrada</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation type="unfinished">Conectar na rede Bitcoin através de um proxy SOCKS5.</translation>
+        <source>Connect to the BitRaam network through a SOCKS5 proxy.</source>
+        <translation type="unfinished">Conectar na rede BitRaam através de um proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1719,8 +1719,8 @@ O processo de migração criará um backup da carteira antes da migração. Este
         <translation type="unfinished">Mostrar ou não opções de controle da moeda.</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
-        <translation type="unfinished">Conectar à rede Bitcoin através de um proxy SOCKS5 separado para serviços Tor onion.</translation>
+        <source>Connect to the BitRaam network through a separate SOCKS5 proxy for Tor onion services.</source>
+        <translation type="unfinished">Conectar à rede BitRaam através de um proxy SOCKS5 separado para serviços Tor onion.</translation>
     </message>
     <message>
         <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
@@ -1803,8 +1803,8 @@ O processo de migração criará um backup da carteira antes da migração. Este
         <translation type="unfinished">Formulário</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede Bitcoin depois que a conexão é estabelecida, mas este processo ainda não está completo.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BitRaam network after a connection is established, but this process has not completed yet.</source>
+        <translation type="unfinished">A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede BitRaam depois que a conexão é estabelecida, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -2021,7 +2021,7 @@ O processo de migração criará um backup da carteira antes da migração. Este
         <translation type="unfinished">'bitraam://' não é um URI válido. Use 'bitraam:'.</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid BitRaam address or malformed URI parameters.</source>
         <translation type="unfinished">A URI não pode ser analisada! Isto pode ser causado por um endereço inválido ou um parâmetro URI malformado.</translation>
     </message>
     <message>
@@ -2160,8 +2160,8 @@ O processo de migração criará um backup da carteira antes da migração. Este
         <translation type="unfinished">Endereços locais</translation>
     </message>
     <message>
-        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
-        <translation type="unfinished">Endereços de rede que seu nó Bitcoin está usando atualmente para se comunicar com outros nós.</translation>
+        <source>Network addresses that your BitRaam node is currently using to communicate with other nodes.</source>
+        <translation type="unfinished">Endereços de rede que seu nó BitRaam está usando atualmente para se comunicar com outros nós.</translation>
     </message>
     <message>
         <source>Block chain</source>
@@ -2536,8 +2536,8 @@ Para mais informações sobre a utilização desse console. digite %6.
         <translation type="unfinished">&amp;Mensagem:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation type="unfinished">Uma mensagem opcional que será anexada na cobrança e será mostrada quando ela for aberta. Nota: A mensagem não será enviada com o pagamento pela rede Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BitRaam network.</source>
+        <translation type="unfinished">Uma mensagem opcional que será anexada na cobrança e será mostrada quando ela for aberta. Nota: A mensagem não será enviada com o pagamento pela rede BitRaam.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2889,8 +2889,8 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">Cr&amp;iar Não Assinado</translation>
     </message>
     <message>
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Cria uma Transação de Bitcoin Parcialmente Assinada (PSBT) para usar com, por exemplo, uma carteira %1 offline ou uma carteira física compatível com PSBTs.</translation>
+        <source>Creates a Partially Signed BitRaam Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <translation type="unfinished">Cria uma Transação de BitRaam Parcialmente Assinada (PSBT) para usar com, por exemplo, uma carteira %1 offline ou uma carteira física compatível com PSBTs.</translation>
     </message>
     <message>
         <source>%1 to '%2'</source>
@@ -2926,9 +2926,9 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">Você pode aumentar a taxa depois (sinaliza Replace-By-Fee, BIP-125).</translation>
     </message>
     <message>
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction proposal. This will produce a Partially Signed BitRaam Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">Por favor, revise a transação. Será produzido uma Transação de Bitcoin Parcialmente Assinada (PSBT) que você pode copiar e assinar com, por exemplo, uma carteira %1 offline, ou uma carteira física compatível com PSBTs.</translation>
+        <translation type="unfinished">Por favor, revise a transação. Será produzido uma Transação de BitRaam Parcialmente Assinada (PSBT) que você pode copiar e assinar com, por exemplo, uma carteira %1 offline, ou uma carteira física compatível com PSBTs.</translation>
     </message>
     <message>
         <source>%1 from wallet '%2'</source>
@@ -2940,9 +2940,9 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">Deseja criar esta transação?</translation>
     </message>
     <message>
-        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed BitRaam Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
-        <translation type="unfinished">Por favor, revise a transação. Você pode assinar e enviar a transação ou criar uma Transação de Bitcoin Parcialmente Assinada (PSBT), que você pode copiar e assinar com, por exemplo, uma carteira %1 offline ou uma carteira física compatível com PSBTs.</translation>
+        <translation type="unfinished">Por favor, revise a transação. Você pode assinar e enviar a transação ou criar uma Transação de BitRaam Parcialmente Assinada (PSBT), que você pode copiar e assinar com, por exemplo, uma carteira %1 offline ou uma carteira física compatível com PSBTs.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -3019,8 +3019,8 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         </translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation type="unfinished">Aviso: Endereço Bitcoin inválido</translation>
+        <source>Warning: Invalid BitRaam address</source>
+        <translation type="unfinished">Aviso: Endereço BitRaam inválido</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3058,8 +3058,8 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">Escolha um endereço usado anteriormente</translation>
     </message>
     <message>
-        <source>The Bitcoin address to send the payment to</source>
-        <translation type="unfinished">O endereço Bitcoin para enviar o pagamento</translation>
+        <source>The BitRaam address to send the payment to</source>
+        <translation type="unfinished">O endereço BitRaam para enviar o pagamento</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -3094,8 +3094,8 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">Digite um rótulo para este endereço para adicioná-lo no catálogo</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished">A mensagem que foi anexada ao bitraam: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Bitcoin.</translation>
+        <source>A message that was attached to the bitraam: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BitRaam network.</source>
+        <translation type="unfinished">A mensagem que foi anexada ao bitraam: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede BitRaam.</translation>
     </message>
 </context>
 <context>
@@ -3124,8 +3124,8 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">Você pode assinar mensagens com seus endereços legados (P2PKH) para provar que pode receber bitraams enviados a eles. Tenha cuidado para não assinar nada vago ou aleatório, pois ataques de phishing podem tentar enganá-lo para assinar sua identidade para eles. Assine apenas declarações totalmente detalhadas com as quais você concorda.</translation>
     </message>
     <message>
-        <source>The Bitcoin address to sign the message with</source>
-        <translation type="unfinished">O endereço Bitcoin que assinará a mensagem</translation>
+        <source>The BitRaam address to sign the message with</source>
+        <translation type="unfinished">O endereço BitRaam que assinará a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3148,8 +3148,8 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">Copiar a assinatura para a área de transferência do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation type="unfinished">Assinar mensagem para provar que você é dono deste endereço Bitcoin</translation>
+        <source>Sign the message to prove you own this BitRaam address</source>
+        <translation type="unfinished">Assinar mensagem para provar que você é dono deste endereço BitRaam</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3172,8 +3172,8 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">Coloque o endereço do autor, a mensagem (certifique-se de copiar toda a mensagem, incluindo quebras de linha, espaços, tabulações, etc.) e a assinatura abaixo para verificar a mensagem. Cuidado para não compreender mais da assinatura do que está na mensagem assinada de fato, para evitar ser enganado por um ataque man-in-the-middle. Note que isso somente prova que o signatário recebe com este endereço, não pode provar que é o remetente de nenhuma transação!</translation>
     </message>
     <message>
-        <source>The Bitcoin address the message was signed with</source>
-        <translation type="unfinished">O endereço Bitcoin que foi usado para assinar a mensagem</translation>
+        <source>The BitRaam address the message was signed with</source>
+        <translation type="unfinished">O endereço BitRaam que foi usado para assinar a mensagem</translation>
     </message>
     <message>
         <source>The signed message to verify</source>
@@ -3184,8 +3184,8 @@ Nota: Como a taxa é calculada por byte, uma taxa de "100 maharishis por kvB" pa
         <translation type="unfinished">A assinatura fornecida quando a mensagem foi assinada</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation type="unfinished">Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço Bitcoin específico</translation>
+        <source>Verify the message to ensure it was signed with the specified BitRaam address</source>
+        <translation type="unfinished">Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço BitRaam específico</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
