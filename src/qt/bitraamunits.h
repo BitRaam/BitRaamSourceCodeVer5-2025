@@ -40,9 +40,9 @@ public:
       @note Source: https://en.bitraam.it/wiki/Units . Please add only sensible ones
      */
     enum class Unit {
-        BTC,
-        mBTC,
-        uBTC,
+        BRM,
+        mBRM,
+        uBRM,
         SAT
     };
     Q_ENUM(Unit)

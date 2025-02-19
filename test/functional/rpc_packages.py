@@ -424,9 +424,9 @@ class RPCPackagesTest(BitcoinTestFramework):
 
         self.log.info("Submitpackage maxfeerate arg testing")
         chained_txns = self.wallet.create_self_transfer_chain(chain_length=2)
-        minrate_btc_kvb = min([chained_txn["fee"] / chained_txn["tx"].get_vsize() * 1000 for chained_txn in chained_txns])
+        minrate_brm_kvb = min([chained_txn["fee"] / chained_txn["tx"].get_vsize() * 1000 for chained_txn in chained_txns])
         chain_hex = [t["hex"] for t in chained_txns]
-        pkg_result = node.submitpackage(chain_hex, maxfeerate=minrate_btc_kvb - Decimal("0.00000001"))
+        pkg_result = node.submitpackage(chain_hex, maxfeerate=minrate_brm_kvb - Decimal("0.00000001"))
 
         # First tx failed in single transaction evaluation, so package message is generic
         assert_equal(pkg_result["package_msg"], "transaction failed")
@@ -492,10 +492,10 @@ class RPCPackagesTest(BitcoinTestFramework):
         assert_raises_rpc_error(-25, "Unspendable output exceeds maximum configured by user", node.submitpackage, chained_burn_hex, 0, chained_txns_burn[1]["new_utxo"]["value"] - Decimal("0.00000001"))
         assert_equal(node.getrawmempool(), [])
 
-        minrate_btc_kvb_burn = min([chained_txn_burn["fee"] / chained_txn_burn["tx"].get_vsize() * 1000 for chained_txn_burn in chained_txns_burn])
+        minrate_brm_kvb_burn = min([chained_txn_burn["fee"] / chained_txn_burn["tx"].get_vsize() * 1000 for chained_txn_burn in chained_txns_burn])
 
         # Relax the restrictions for both and send it; parent gets through as own subpackage
-        pkg_result = node.submitpackage(chained_burn_hex, maxfeerate=minrate_btc_kvb_burn, maxburnamount=chained_txns_burn[1]["new_utxo"]["value"])
+        pkg_result = node.submitpackage(chained_burn_hex, maxfeerate=minrate_brm_kvb_burn, maxburnamount=chained_txns_burn[1]["new_utxo"]["value"])
         assert "error" not in pkg_result["tx-results"][chained_txns_burn[0]["wtxid"]]
         assert_equal(pkg_result["tx-results"][tx.getwtxid()]["error"], "scriptpubkey")
         assert_equal(node.getrawmempool(), [chained_txns_burn[0]["txid"]])

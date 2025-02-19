@@ -491,7 +491,7 @@ static RPCHelpMan getmininginfo()
 }
 
 
-// NOTE: Unlike wallet RPC (which use BTC values), mining RPCs follow GBT (BIP 22) in using maharishi amounts
+// NOTE: Unlike wallet RPC (which use BRM values), mining RPCs follow GBT (BIP 22) in using maharishi amounts
 static RPCHelpMan prioritisetransaction()
 {
     return RPCHelpMan{"prioritisetransaction",

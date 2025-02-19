@@ -61,7 +61,7 @@ To run:
 
 * UI elements like BitcoinAmountField, which inherit from QWidget.
 * `bitraamstrings.cpp`: automatically generated
-* `bitraamunits.(h/cpp)`: BTC / mBTC / etc. handling
+* `bitraamunits.(h/cpp)`: BRM / mBRM / etc. handling
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc.
 * `guiutil.h`: several helper functions
