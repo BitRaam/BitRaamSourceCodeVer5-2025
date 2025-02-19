@@ -273,7 +273,7 @@ class MiniWallet:
         """
         Create and send a tx with an output to a given scriptPubKey/amount,
         plus a change output to our internal address. To keep things simple, a
-        fixed fee given in Satoshi is used.
+        fixed fee given in Maharishi is used.
 
         Note that this method fails if there is no single internal utxo
         available that can cover the cost for the amount and the fixed fee
