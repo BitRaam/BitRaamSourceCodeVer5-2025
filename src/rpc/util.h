@@ -120,7 +120,7 @@ int ParseVerbosity(const UniValue& arg, int default_verbosity, bool allow_bool);
  */
 CAmount AmountFromValue(const UniValue& value, int decimals = 8);
 /**
- * Parse a json number or string, denoting BRM/kvB, into a CFeeRate (sat/kvB).
+ * Parse a json number or string, denoting BRM/kvB, into a CFeeRate (sit/kvB).
  * Reject negative values or rates larger than 1BRM/kvB.
  */
 CFeeRate ParseFeeRate(const UniValue& json);

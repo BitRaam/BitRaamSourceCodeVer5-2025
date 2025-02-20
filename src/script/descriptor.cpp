@@ -1092,13 +1092,13 @@ public:
     std::optional<int64_t> ScriptSize() const override { return 1 + 1 + 20 + 1; }
 
     std::optional<int64_t> MaxSatisfactionWeight(bool use_max_sig) const override {
-        if (const auto sat_size = m_subdescriptor_args[0]->MaxSatSize(use_max_sig)) {
+        if (const auto sit_size = m_subdescriptor_args[0]->MaxSatSize(use_max_sig)) {
             if (const auto subscript_size = m_subdescriptor_args[0]->ScriptSize()) {
                 // The subscript is never witness data.
                 const auto subscript_weight = (1 + *subscript_size) * WITNESS_SCALE_FACTOR;
                 // The weight depends on whether the inner descriptor is satisfied using the witness stack.
-                if (IsSegwit()) return subscript_weight + *sat_size;
-                return subscript_weight + *sat_size * WITNESS_SCALE_FACTOR;
+                if (IsSegwit()) return subscript_weight + *sit_size;
+                return subscript_weight + *sit_size * WITNESS_SCALE_FACTOR;
             }
         }
         return {};
@@ -1133,9 +1133,9 @@ public:
     std::optional<int64_t> ScriptSize() const override { return 1 + 1 + 32; }
 
     std::optional<int64_t> MaxSatSize(bool use_max_sig) const override {
-        if (const auto sat_size = m_subdescriptor_args[0]->MaxSatSize(use_max_sig)) {
+        if (const auto sit_size = m_subdescriptor_args[0]->MaxSatSize(use_max_sig)) {
             if (const auto subscript_size = m_subdescriptor_args[0]->ScriptSize()) {
-                return GetSizeOfCompactSize(*subscript_size) + *subscript_size + *sat_size;
+                return GetSizeOfCompactSize(*subscript_size) + *subscript_size + *sit_size;
             }
         }
         return {};
@@ -2109,7 +2109,7 @@ std::vector<std::unique_ptr<DescriptorImpl>> ParseScript(uint32_t& key_exp_index
                         error += ": needs witnesses that may exceed resource limits";
                     }
                 } else {
-                    error += " is not satisfiable";
+                    error += " is not sitisfiable";
                 }
                 return {};
             }

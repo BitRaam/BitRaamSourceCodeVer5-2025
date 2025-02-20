@@ -32,7 +32,7 @@ enum class FeeEstimateMode {
 class CFeeRate
 {
 private:
-    /** Fee rate in sat/kvB (sitashis per 1000 virtualbytes) */
+    /** Fee rate in sit/kvB (sitashis per 1000 virtualbytes) */
     CAmount nSatoshisPerK;
 
 public:

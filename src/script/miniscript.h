@@ -343,7 +343,7 @@ struct InputResult {
     InputStack nsat, sat;
 
     template<typename A, typename B>
-    InputResult(A&& in_nsat, B&& in_sit) : nsat(std::forward<A>(in_nsit)), sat(std::forward<B>(in_sit)) {}
+    InputResult(A&& in_nsat, B&& in_sat) : nsat(std::forward<A>(in_nsat)), sat(std::forward<B>(in_sat)) {}
 };
 
 //! Class whose objects represent the maximum of a list of integers.
@@ -375,7 +375,7 @@ struct Ops {
     //! Number of keys in possibly executed OP_CHECKMULTISIG(VERIFY)s to dissatisfy.
     MaxInt<uint32_t> dsat;
 
-    Ops(uint32_t in_count, MaxInt<uint32_t> in_sat, MaxInt<uint32_t> in_dsit) : count(in_count), sat(in_sit), dsat(in_dsit) {};
+    Ops(uint32_t in_count, MaxInt<uint32_t> in_sat, MaxInt<uint32_t> in_dsat) : count(in_count), sat(in_sat), dsat(in_dsat) {};
 };
 
 /** A data structure to help the calculation of stack size limits.
@@ -482,7 +482,7 @@ struct SatInfo {
 struct StackSize {
     const SatInfo sat, dsat;
 
-    constexpr StackSize(SatInfo in_sat, SatInfo in_dsit) noexcept : sat(in_sit), dsat(in_dsit) {};
+    constexpr StackSize(SatInfo in_sat, SatInfo in_dsat) noexcept : sat(in_sat), dsat(in_dsat) {};
     constexpr StackSize(SatInfo in_both) noexcept : sat(in_both), dsat(in_both) {};
 };
 
@@ -492,7 +492,7 @@ struct WitnessSize {
     //! Maximum witness size to dissatisfy;
     MaxInt<uint32_t> dsat;
 
-    WitnessSize(MaxInt<uint32_t> in_sat, MaxInt<uint32_t> in_dsit) : sat(in_sit), dsat(in_dsit) {};
+    WitnessSize(MaxInt<uint32_t> in_sat, MaxInt<uint32_t> in_dsat) : sat(in_sat), dsat(in_dsat) {};
 };
 
 struct NoDupCheck {};
@@ -962,19 +962,19 @@ private:
             }
             case Fragment::OR_B: {
                 const auto count{1 + subs[0]->ops.count + subs[1]->ops.count};
-                const auto sat{(subs[0]->ops.sat + subs[1]->ops.dsit) | (subs[1]->ops.sat + subs[0]->ops.dsit)};
+                const auto sat{(subs[0]->ops.sat + subs[1]->ops.dsat) | (subs[1]->ops.sat + subs[0]->ops.dsat)};
                 const auto dsat{subs[0]->ops.dsat + subs[1]->ops.dsat};
                 return {count, sat, dsat};
             }
             case Fragment::OR_D: {
                 const auto count{3 + subs[0]->ops.count + subs[1]->ops.count};
-                const auto sat{subs[0]->ops.sat | (subs[1]->ops.sat + subs[0]->ops.dsit)};
+                const auto sat{subs[0]->ops.sat | (subs[1]->ops.sat + subs[0]->ops.dsat)};
                 const auto dsat{subs[0]->ops.dsat + subs[1]->ops.dsat};
                 return {count, sat, dsat};
             }
             case Fragment::OR_C: {
                 const auto count{2 + subs[0]->ops.count + subs[1]->ops.count};
-                const auto sat{subs[0]->ops.sat | (subs[1]->ops.sat + subs[0]->ops.dsit)};
+                const auto sat{subs[0]->ops.sat | (subs[1]->ops.sat + subs[0]->ops.dsat)};
                 return {count, sat, {}};
             }
             case Fragment::OR_I: {
@@ -985,7 +985,7 @@ private:
             }
             case Fragment::ANDOR: {
                 const auto count{3 + subs[0]->ops.count + subs[1]->ops.count + subs[2]->ops.count};
-                const auto sat{(subs[1]->ops.sat + subs[0]->ops.sit) | (subs[0]->ops.dsat + subs[2]->ops.sit)};
+                const auto sat{(subs[1]->ops.sat + subs[0]->ops.sat) | (subs[0]->ops.dsat + subs[2]->ops.sat)};
                 const auto dsat{subs[0]->ops.dsat + subs[2]->ops.dsat};
                 return {count, sat, dsat};
             }
@@ -1000,16 +1000,16 @@ private:
             case Fragment::WRAP_V: return {subs[0]->ops.count + (subs[0]->GetType() << "x"_mst), subs[0]->ops.sat, {}};
             case Fragment::THRESH: {
                 uint32_t count = 0;
-                auto sits = Vector(internal::MaxInt<uint32_t>(0));
+                auto sats = Vector(internal::MaxInt<uint32_t>(0));
                 for (const auto& sub : subs) {
                     count += sub->ops.count + 1;
-                    auto next_sits = Vector(sits[0] + sub->ops.dsit);
-                    for (size_t j = 1; j < sits.size(); ++j) next_sits.push_back((sits[j] + sub->ops.dsit) | (sits[j - 1] + sub->ops.sit));
-                    next_sits.push_back(sits[sits.size() - 1] + sub->ops.sit);
-                    sits = std::move(next_sits);
+                    auto next_sats = Vector(sats[0] + sub->ops.dsat);
+                    for (size_t j = 1; j < sats.size(); ++j) next_sats.push_back((sats[j] + sub->ops.dsat) | (sats[j - 1] + sub->ops.sat));
+                    next_sats.push_back(sats[sats.size() - 1] + sub->ops.sat);
+                    sats = std::move(next_sats);
                 }
-                assert(k <= sits.size());
-                return {count, sits[k], sits[0]};
+                assert(k <= sats.size());
+                return {count, sats[k], sats[0]};
             }
         }
         assert(false);
@@ -1036,7 +1036,7 @@ private:
                 const auto& y{subs[1]->ss};
                 const auto& z{subs[2]->ss};
                 return {
-                    (x.sat + SatInfo::If() + y.sit) | (x.dsat + SatInfo::If() + z.sit),
+                    (x.sat + SatInfo::If() + y.sat) | (x.dsat + SatInfo::If() + z.sat),
                     x.dsat + SatInfo::If() + z.dsat
                 };
             }
@@ -1054,27 +1054,27 @@ private:
                 const auto& x{subs[0]->ss};
                 const auto& y{subs[1]->ss};
                 return {
-                    ((x.sat + y.dsit) | (x.dsat + y.sit)) + SatInfo::BinaryOp(),
+                    ((x.sat + y.dsat) | (x.dsat + y.sat)) + SatInfo::BinaryOp(),
                     x.dsat + y.dsat + SatInfo::BinaryOp()
                 };
             }
             case Fragment::OR_C: {
                 const auto& x{subs[0]->ss};
                 const auto& y{subs[1]->ss};
-                return {(x.sat + SatInfo::If()) | (x.dsat + SatInfo::If() + y.sit), {}};
+                return {(x.sat + SatInfo::If()) | (x.dsat + SatInfo::If() + y.sat), {}};
             }
             case Fragment::OR_D: {
                 const auto& x{subs[0]->ss};
                 const auto& y{subs[1]->ss};
                 return {
-                    (x.sat + SatInfo::OP_IFDUP(true) + SatInfo::If()) | (x.dsat + SatInfo::OP_IFDUP(false) + SatInfo::If() + y.sit),
+                    (x.sat + SatInfo::OP_IFDUP(true) + SatInfo::If()) | (x.dsat + SatInfo::OP_IFDUP(false) + SatInfo::If() + y.sat),
                     x.dsat + SatInfo::OP_IFDUP(false) + SatInfo::If() + y.dsat
                 };
             }
             case Fragment::OR_I: {
                 const auto& x{subs[0]->ss};
                 const auto& y{subs[1]->ss};
-                return {SatInfo::If() + (x.sat | y.sit), SatInfo::If() + (x.dsat | y.dsit)};
+                return {SatInfo::If() + (x.sat | y.sat), SatInfo::If() + (x.dsat | y.dsat)};
             }
             // multi(k, key1, key2, ..., key_n) starts off with k+1 stack elements (a 0, plus k
             // signatures), then reaches n+k+3 stack elements after pushing the n keys, plus k and
@@ -1102,28 +1102,28 @@ private:
                 SatInfo::OP_SIZE() + SatInfo::OP_0NOTEQUAL() + SatInfo::If()
             };
             case Fragment::THRESH: {
-                // sits[j] is the SatInfo corresponding to all traces reaching j satisfactions.
-                auto sits = Vector(SatInfo::Empty());
+                // sats[j] is the SatInfo corresponding to all traces reaching j satisfactions.
+                auto sats = Vector(SatInfo::Empty());
                 for (size_t i = 0; i < subs.size(); ++i) {
                     // Loop over the subexpressions, processing them one by one. After adding
                     // element i we need to add OP_ADD (if i>0).
                     auto add = i ? SatInfo::BinaryOp() : SatInfo::Empty();
-                    // Construct a variable that will become the next sits, starting with index 0.
-                    auto next_sits = Vector(sits[0] + subs[i]->ss.dsat + add);
-                    // Then loop to construct next_sits[1..i].
-                    for (size_t j = 1; j < sits.size(); ++j) {
-                        next_sits.push_back(((sits[j] + subs[i]->ss.dsit) | (sits[j - 1] + subs[i]->ss.sit)) + add);
+                    // Construct a variable that will become the next sats, starting with index 0.
+                    auto next_sats = Vector(sats[0] + subs[i]->ss.dsat + add);
+                    // Then loop to construct next_sats[1..i].
+                    for (size_t j = 1; j < sats.size(); ++j) {
+                        next_sats.push_back(((sats[j] + subs[i]->ss.dsat) | (sats[j - 1] + subs[i]->ss.sat)) + add);
                     }
-                    // Finally construct next_sits[i+1].
-                    next_sits.push_back(sits[sits.size() - 1] + subs[i]->ss.sat + add);
+                    // Finally construct next_sats[i+1].
+                    next_sats.push_back(sats[sats.size() - 1] + subs[i]->ss.sat + add);
                     // Switch over.
-                    sits = std::move(next_sits);
+                    sats = std::move(next_sats);
                 }
                 // To satisfy thresh we need k satisfactions; to dissatisfy we need 0. In both
                 // cases a push of k and an OP_EQUAL follow.
                 return {
-                    sits[k] + SatInfo::Push() + SatInfo::OP_EQUAL(),
-                    sits[0] + SatInfo::Push() + SatInfo::OP_EQUAL()
+                    sats[k] + SatInfo::Push() + SatInfo::OP_EQUAL(),
+                    sats[0] + SatInfo::Push() + SatInfo::OP_EQUAL()
                 };
             }
         }
@@ -1145,19 +1145,19 @@ private:
             case Fragment::HASH256:
             case Fragment::HASH160: return {1 + 32, {}};
             case Fragment::ANDOR: {
-                const auto sat{(subs[0]->ws.sat + subs[1]->ws.sit) | (subs[0]->ws.dsat + subs[2]->ws.sit)};
+                const auto sat{(subs[0]->ws.sat + subs[1]->ws.sat) | (subs[0]->ws.dsat + subs[2]->ws.sat)};
                 const auto dsat{subs[0]->ws.dsat + subs[2]->ws.dsat};
                 return {sat, dsat};
             }
             case Fragment::AND_V: return {subs[0]->ws.sat + subs[1]->ws.sat, {}};
             case Fragment::AND_B: return {subs[0]->ws.sat + subs[1]->ws.sat, subs[0]->ws.dsat + subs[1]->ws.dsat};
             case Fragment::OR_B: {
-                const auto sat{(subs[0]->ws.dsat + subs[1]->ws.sit) | (subs[0]->ws.sat + subs[1]->ws.dsit)};
+                const auto sat{(subs[0]->ws.dsat + subs[1]->ws.sat) | (subs[0]->ws.sat + subs[1]->ws.dsat)};
                 const auto dsat{subs[0]->ws.dsat + subs[1]->ws.dsat};
                 return {sat, dsat};
             }
-            case Fragment::OR_C: return {subs[0]->ws.sat | (subs[0]->ws.dsat + subs[1]->ws.sit), {}};
-            case Fragment::OR_D: return {subs[0]->ws.sat | (subs[0]->ws.dsat + subs[1]->ws.sit), subs[0]->ws.dsat + subs[1]->ws.dsat};
+            case Fragment::OR_C: return {subs[0]->ws.sat | (subs[0]->ws.dsat + subs[1]->ws.sat), {}};
+            case Fragment::OR_D: return {subs[0]->ws.sat | (subs[0]->ws.dsat + subs[1]->ws.sat), subs[0]->ws.dsat + subs[1]->ws.dsat};
             case Fragment::OR_I: return {(subs[0]->ws.sat + 1 + 1) | (subs[1]->ws.sat + 1), (subs[0]->ws.dsat + 1 + 1) | (subs[1]->ws.dsat + 1)};
             case Fragment::MULTI: return {k * sig_size + 1, k + 1};
             case Fragment::MULTI_A: return {k * sig_size + static_cast<uint32_t>(keys.size()) - k, static_cast<uint32_t>(keys.size())};
@@ -1169,15 +1169,15 @@ private:
             case Fragment::WRAP_V: return {subs[0]->ws.sat, {}};
             case Fragment::WRAP_J: return {subs[0]->ws.sat, 1};
             case Fragment::THRESH: {
-                auto sits = Vector(internal::MaxInt<uint32_t>(0));
+                auto sats = Vector(internal::MaxInt<uint32_t>(0));
                 for (const auto& sub : subs) {
-                    auto next_sits = Vector(sits[0] + sub->ws.dsit);
-                    for (size_t j = 1; j < sits.size(); ++j) next_sits.push_back((sits[j] + sub->ws.dsit) | (sits[j - 1] + sub->ws.sit));
-                    next_sits.push_back(sits[sits.size() - 1] + sub->ws.sit);
-                    sits = std::move(next_sits);
+                    auto next_sats = Vector(sats[0] + sub->ws.dsat);
+                    for (size_t j = 1; j < sats.size(); ++j) next_sats.push_back((sats[j] + sub->ws.dsat) | (sats[j - 1] + sub->ws.sat));
+                    next_sats.push_back(sats[sats.size() - 1] + sub->ws.sat);
+                    sats = std::move(next_sats);
                 }
-                assert(k <= sits.size());
-                return {sits[k], sits[0]};
+                assert(k <= sats.size());
+                return {sats[k], sats[0]};
             }
         }
         assert(false);
@@ -1202,93 +1202,93 @@ private:
                     return {ZERO + InputStack(key), (InputStack(std::move(sig)).SetWithSig() + InputStack(key)).SetAvailable(avail)};
                 }
                 case Fragment::MULTI_A: {
-                    // sits[j] represents the best stack containing j valid signatures (out of the first i keys).
+                    // sats[j] represents the best stack containing j valid signatures (out of the first i keys).
                     // In the loop below, these stacks are built up using a dynamic programming approach.
-                    std::vector<InputStack> sits = Vector(EMPTY);
+                    std::vector<InputStack> sats = Vector(EMPTY);
                     for (size_t i = 0; i < node.keys.size(); ++i) {
                         // Get the signature for the i'th key in reverse order (the signature for the first key needs to
                         // be at the top of the stack, contrary to CHECKMULTISIG's satisfaction).
                         std::vector<unsigned char> sig;
                         Availability avail = ctx.Sign(node.keys[node.keys.size() - 1 - i], sig);
                         // Compute signature stack for just this key.
-                        auto sit = InputStack(std::move(sig)).SetWithSig().SetAvailable(avail);
-                        // Compute the next sits vector: next_sits[0] is a copy of sits[0] (no signatures). All further
-                        // next_sits[j] are equal to either the existing sits[j] + ZERO, or sits[j-1] plus a signature
+                        auto sat = InputStack(std::move(sig)).SetWithSig().SetAvailable(avail);
+                        // Compute the next sats vector: next_sats[0] is a copy of sats[0] (no signatures). All further
+                        // next_sats[j] are equal to either the existing sats[j] + ZERO, or sats[j-1] plus a signature
                         // for the current (i'th) key. The very last element needs all signatures filled.
-                        std::vector<InputStack> next_sits;
-                        next_sits.push_back(sits[0] + ZERO);
-                        for (size_t j = 1; j < sits.size(); ++j) next_sits.push_back((sits[j] + ZERO) | (std::move(sits[j - 1]) + sit));
-                        next_sits.push_back(std::move(sits[sits.size() - 1]) + std::move(sit));
+                        std::vector<InputStack> next_sats;
+                        next_sats.push_back(sats[0] + ZERO);
+                        for (size_t j = 1; j < sats.size(); ++j) next_sats.push_back((sats[j] + ZERO) | (std::move(sats[j - 1]) + sat));
+                        next_sats.push_back(std::move(sats[sats.size() - 1]) + std::move(sat));
                         // Switch over.
-                        sits = std::move(next_sits);
+                        sats = std::move(next_sats);
                     }
                     // The dissatisfaction consists of as many empty vectors as there are keys, which is the same as
                     // satisfying 0 keys.
-                    auto& nsat{sits[0]};
+                    auto& nsat{sats[0]};
                     assert(node.k != 0);
-                    assert(node.k <= sits.size());
-                    return {std::move(nsit), std::move(sits[node.k])};
+                    assert(node.k <= sats.size());
+                    return {std::move(nsat), std::move(sats[node.k])};
                 }
                 case Fragment::MULTI: {
-                    // sits[j] represents the best stack containing j valid signatures (out of the first i keys).
+                    // sats[j] represents the best stack containing j valid signatures (out of the first i keys).
                     // In the loop below, these stacks are built up using a dynamic programming approach.
-                    // sits[0] starts off being {0}, due to the CHECKMULTISIG bug that pops off one element too many.
-                    std::vector<InputStack> sits = Vector(ZERO);
+                    // sats[0] starts off being {0}, due to the CHECKMULTISIG bug that pops off one element too many.
+                    std::vector<InputStack> sats = Vector(ZERO);
                     for (size_t i = 0; i < node.keys.size(); ++i) {
                         std::vector<unsigned char> sig;
                         Availability avail = ctx.Sign(node.keys[i], sig);
                         // Compute signature stack for just the i'th key.
-                        auto sit = InputStack(std::move(sig)).SetWithSig().SetAvailable(avail);
-                        // Compute the next sits vector: next_sits[0] is a copy of sits[0] (no signatures). All further
-                        // next_sits[j] are equal to either the existing sits[j], or sits[j-1] plus a signature for the
+                        auto sat = InputStack(std::move(sig)).SetWithSig().SetAvailable(avail);
+                        // Compute the next sats vector: next_sats[0] is a copy of sats[0] (no signatures). All further
+                        // next_sats[j] are equal to either the existing sats[j], or sats[j-1] plus a signature for the
                         // current (i'th) key. The very last element needs all signatures filled.
-                        std::vector<InputStack> next_sits;
-                        next_sits.push_back(sits[0]);
-                        for (size_t j = 1; j < sits.size(); ++j) next_sits.push_back(sits[j] | (std::move(sits[j - 1]) + sit));
-                        next_sits.push_back(std::move(sits[sits.size() - 1]) + std::move(sit));
+                        std::vector<InputStack> next_sats;
+                        next_sats.push_back(sats[0]);
+                        for (size_t j = 1; j < sats.size(); ++j) next_sats.push_back(sats[j] | (std::move(sats[j - 1]) + sat));
+                        next_sats.push_back(std::move(sats[sats.size() - 1]) + std::move(sat));
                         // Switch over.
-                        sits = std::move(next_sits);
+                        sats = std::move(next_sats);
                     }
                     // The dissatisfaction consists of k+1 stack elements all equal to 0.
-                    InputStack nsit= ZERO;
-                    for (size_t i = 0; i < node.k; ++i) nsit= std::move(nsit) + ZERO;
-                    assert(node.k <= sits.size());
-                    return {std::move(nsit), std::move(sits[node.k])};
+                    InputStack nsat = ZERO;
+                    for (size_t i = 0; i < node.k; ++i) nsat = std::move(nsat) + ZERO;
+                    assert(node.k <= sats.size());
+                    return {std::move(nsat), std::move(sats[node.k])};
                 }
                 case Fragment::THRESH: {
-                    // sits[k] represents the best stack that satisfies k out of the *last* i subexpressions.
+                    // sats[k] represents the best stack that satisfies k out of the *last* i subexpressions.
                     // In the loop below, these stacks are built up using a dynamic programming approach.
-                    // sits[0] starts off empty.
-                    std::vector<InputStack> sits = Vector(EMPTY);
+                    // sats[0] starts off empty.
+                    std::vector<InputStack> sats = Vector(EMPTY);
                     for (size_t i = 0; i < subres.size(); ++i) {
                         // Introduce an alias for the i'th last satisfaction/dissatisfaction.
                         auto& res = subres[subres.size() - i - 1];
-                        // Compute the next sits vector: next_sits[0] is sits[0] plus res.nsit(thus containing all dissatisfactions
-                        // so far. next_sits[j] is either sits[j] + res.nsit(reusing j earlier satisfactions) or sits[j-1] + res.sat
-                        // (reusing j-1 earlier satisfactions plus a new one). The very last next_sits[j] is all satisfactions.
-                        std::vector<InputStack> next_sits;
-                        next_sits.push_back(sits[0] + res.nsit);
-                        for (size_t j = 1; j < sits.size(); ++j) next_sits.push_back((sits[j] + res.nsit) | (std::move(sits[j - 1]) + res.sit));
-                        next_sits.push_back(std::move(sits[sits.size() - 1]) + std::move(res.sit));
+                        // Compute the next sats vector: next_sats[0] is sats[0] plus res.nsat (thus containing all dissatisfactions
+                        // so far. next_sats[j] is either sats[j] + res.nsat (reusing j earlier satisfactions) or sats[j-1] + res.sat
+                        // (reusing j-1 earlier satisfactions plus a new one). The very last next_sats[j] is all satisfactions.
+                        std::vector<InputStack> next_sats;
+                        next_sats.push_back(sats[0] + res.nsat);
+                        for (size_t j = 1; j < sats.size(); ++j) next_sats.push_back((sats[j] + res.nsat) | (std::move(sats[j - 1]) + res.sat));
+                        next_sats.push_back(std::move(sats[sats.size() - 1]) + std::move(res.sat));
                         // Switch over.
-                        sits = std::move(next_sits);
+                        sats = std::move(next_sats);
                     }
-                    // At this point, sits[k].sat is the best satisfaction for the overall thresh() node. The best dissatisfaction
-                    // is computed by gathering all sits[i].nsitfor i != k.
-                    InputStack nsit= INVALID;
-                    for (size_t i = 0; i < sits.size(); ++i) {
+                    // At this point, sats[k].sat is the best satisfaction for the overall thresh() node. The best dissatisfaction
+                    // is computed by gathering all sats[i].nsat for i != k.
+                    InputStack nsat = INVALID;
+                    for (size_t i = 0; i < sats.size(); ++i) {
                         // i==k is the satisfaction; i==0 is the canonical dissatisfaction;
                         // the rest are non-canonical (a no-signature dissatisfaction - the i=0
                         // form - is always available) and malleable (due to overcompleteness).
                         // Marking the solutions malleable here is not strictly necessary, as they
                         // should already never be picked in non-malleable solutions due to the
                         // availability of the i=0 form.
-                        if (i != 0 && i != node.k) sits[i].SetMalleable().SetNonCanon();
+                        if (i != 0 && i != node.k) sats[i].SetMalleable().SetNonCanon();
                         // Include all dissatisfactions (even these non-canonical ones) in nsat.
-                        if (i != node.k) nsit= std::move(nsit) | std::move(sits[i]);
+                        if (i != node.k) nsat = std::move(nsat) | std::move(sats[i]);
                     }
-                    assert(node.k <= sits.size());
-                    return {std::move(nsit), std::move(sits[node.k])};
+                    assert(node.k <= sats.size());
+                    return {std::move(nsat), std::move(sats[node.k])};
                 }
                 case Fragment::OLDER: {
                     return {INVALID, ctx.CheckOlder(node.k) ? EMPTY : INVALID};
@@ -1324,7 +1324,7 @@ private:
                     // to satisfy the type V left subexpression). It's still listed here for
                     // completeness, as a hypothetical (not currently implemented) satisfier that doesn't
                     // care about malleability might in some cases prefer it still.
-                    return {(y.nsit+ x.sit).SetNonCanon(), y.sat + x.sat};
+                    return {(y.nsat + x.sat).SetNonCanon(), y.sat + x.sat};
                 }
                 case Fragment::AND_B: {
                     auto& x = subres[0], &y = subres[1];
@@ -1333,28 +1333,28 @@ private:
                     // to the guaranteed existence of a no-signature other dissatisfaction (the 1st)
                     // option. Because of that, the 2nd and 3rd option will never be chosen, even if they
                     // weren't marked as malleable.
-                    return {(y.nsit+ x.nsit) | (y.sat + x.nsit).SetMalleable().SetNonCanon() | (y.nsit+ x.sit).SetMalleable().SetNonCanon(), y.sat + x.sat};
+                    return {(y.nsat + x.nsat) | (y.sat + x.nsat).SetMalleable().SetNonCanon() | (y.nsat + x.sat).SetMalleable().SetNonCanon(), y.sat + x.sat};
                 }
                 case Fragment::OR_B: {
                     auto& x = subres[0], &z = subres[1];
-                    // The (sat(Z) sat(X)) solution is overcomplete (attacker can change either into dsit).
-                    return {z.nsit+ x.nsat, (z.nsit+ x.sit) | (z.sat + x.nsit) | (z.sat + x.sit).SetMalleable().SetNonCanon()};
+                    // The (sat(Z) sat(X)) solution is overcomplete (attacker can change either into dsat).
+                    return {z.nsat + x.nsat, (z.nsat + x.sat) | (z.sat + x.nsat) | (z.sat + x.sat).SetMalleable().SetNonCanon()};
                 }
                 case Fragment::OR_C: {
                     auto& x = subres[0], &z = subres[1];
-                    return {INVALID, std::move(x.sit) | (z.sat + x.nsit)};
+                    return {INVALID, std::move(x.sat) | (z.sat + x.nsat)};
                 }
                 case Fragment::OR_D: {
                     auto& x = subres[0], &z = subres[1];
-                    return {z.nsit+ x.nsat, std::move(x.sit) | (z.sat + x.nsit)};
+                    return {z.nsat + x.nsat, std::move(x.sat) | (z.sat + x.nsat)};
                 }
                 case Fragment::OR_I: {
                     auto& x = subres[0], &z = subres[1];
-                    return {(x.nsit+ ONE) | (z.nsit+ ZERO), (x.sat + ONE) | (z.sat + ZERO)};
+                    return {(x.nsat + ONE) | (z.nsat + ZERO), (x.sat + ONE) | (z.sat + ZERO)};
                 }
                 case Fragment::ANDOR: {
                     auto& x = subres[0], &y = subres[1], &z = subres[2];
-                    return {(y.nsit+ x.sit).SetNonCanon() | (z.nsit+ x.nsit), (y.sat + x.sit) | (z.sat + x.nsit)};
+                    return {(y.nsat + x.sat).SetNonCanon() | (z.nsat + x.nsat), (y.sat + x.sat) | (z.sat + x.nsat)};
                 }
                 case Fragment::WRAP_A:
                 case Fragment::WRAP_S:
@@ -1372,11 +1372,11 @@ private:
                     // if a dissatisfaction with a top zero element is found, we don't know whether another one with a
                     // nonzero top stack element exists. Make the conservative assumption that whenever the subexpression is weakly
                     // dissatisfiable, this alternative dissatisfaction exists and leads to malleability.
-                    return {InputStack(ZERO).SetMalleable(x.nsat.available != Availability::NO && !x.nsat.has_sig), std::move(x.sit)};
+                    return {InputStack(ZERO).SetMalleable(x.nsat.available != Availability::NO && !x.nsat.has_sig), std::move(x.sat)};
                 }
                 case Fragment::WRAP_V: {
                     auto &x = subres[0];
-                    return {INVALID, std::move(x.sit)};
+                    return {INVALID, std::move(x.sat)};
                 }
                 case Fragment::JUST_0: return {EMPTY, INVALID};
                 case Fragment::JUST_1: return {INVALID, EMPTY};
@@ -2246,7 +2246,7 @@ enum class DecodeContext {
     ENDIF_ELSE,
 };
 
-//! Parse a miniscript from a bitraam script
+//! Parse a miniscript from a bitcoin script
 template<typename Key, typename Ctx, typename I>
 inline NodeRef<Key> DecodeScript(I& in, I last, const Ctx& ctx)
 {

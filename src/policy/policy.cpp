@@ -33,12 +33,12 @@ CAmount GetDustThreshold(const CTxOut& txout, const CFeeRate& dustRelayFeeIn)
     // need a CTxIn of at least 148 bytes to spend:
     // so dust is a spendable txout less than
     // 182*dustRelayFee/1000 (in sitashis).
-    // 546 sitashis at the default rate of 3000 sat/kvB.
+    // 546 sitashis at the default rate of 3000 sit/kvB.
     // A typical spendable segwit P2WPKH txout is 31 bytes big, and will
     // need a CTxIn of at least 67 bytes to spend:
     // so dust is a spendable txout less than
     // 98*dustRelayFee/1000 (in sitashis).
-    // 294 sitashis at the default rate of 3000 sat/kvB.
+    // 294 sitashis at the default rate of 3000 sit/kvB.
     if (txout.scriptPubKey.IsUnspendable())
         return 0;
 
