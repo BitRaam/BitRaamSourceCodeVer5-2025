@@ -45,7 +45,7 @@ class PackageRBFTest(BitRaamTestFramework):
         parent has 1 output, used to fund 1 child transaction.
         All transactions signal BIP125 replaceability, but nSequence changes based on self.ctr. This
         prevents identical txids between packages when the parents spend the same coin and have the
-        same fee (i.e. 0sat).
+        same fee (i.e. 0sit).
 
         returns tuple (hex serialized txns, CTransaction objects)
         """

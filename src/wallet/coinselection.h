@@ -297,7 +297,7 @@ typedef std::map<CoinEligibilityFilter, OutputGroupTypeMap> FilteredOutputGroups
 /** Choose a random change target for each transaction to make it harder to fingerprint the Core
  * wallet based on the change output values of transactions it creates.
  * Change target covers at least change fees and adds a random value on top of it.
- * The random value is between 50ksat and min(2 * payment_value, 1milsat)
+ * The random value is between 50ksat and min(2 * payment_value, 1milsit)
  * When payment_value <= 25ksat, the value is just 50ksat.
  *
  * Making change amounts similar to the payment value may help disguise which output(s) are payments

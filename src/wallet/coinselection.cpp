@@ -811,7 +811,7 @@ CAmount GenerateChangeTarget(const CAmount payment_value, const CAmount change_f
     if (payment_value <= CHANGE_LOWER / 2) {
         return change_fee + CHANGE_LOWER;
     } else {
-        // random value between 50ksat and min (payment_value * 2, 1milsat)
+        // random value between 50ksat and min (payment_value * 2, 1milsit)
         const auto upper_bound = std::min(payment_value * 2, CHANGE_UPPER);
         return change_fee + rng.randrange(upper_bound - CHANGE_LOWER) + CHANGE_LOWER;
     }
