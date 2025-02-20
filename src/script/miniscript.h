@@ -1250,8 +1250,8 @@ private:
                         sits = std::move(next_sits);
                     }
                     // The dissatisfaction consists of k+1 stack elements all equal to 0.
-                    InputStack nsat = ZERO;
-                    for (size_t i = 0; i < node.k; ++i) nsat = std::move(nsit) + ZERO;
+                    InputStack nsit= ZERO;
+                    for (size_t i = 0; i < node.k; ++i) nsit= std::move(nsit) + ZERO;
                     assert(node.k <= sits.size());
                     return {std::move(nsit), std::move(sits[node.k])};
                 }
@@ -1263,8 +1263,8 @@ private:
                     for (size_t i = 0; i < subres.size(); ++i) {
                         // Introduce an alias for the i'th last satisfaction/dissatisfaction.
                         auto& res = subres[subres.size() - i - 1];
-                        // Compute the next sits vector: next_sits[0] is sits[0] plus res.nsat (thus containing all dissatisfactions
-                        // so far. next_sits[j] is either sits[j] + res.nsat (reusing j earlier satisfactions) or sits[j-1] + res.sat
+                        // Compute the next sits vector: next_sits[0] is sits[0] plus res.nsit(thus containing all dissatisfactions
+                        // so far. next_sits[j] is either sits[j] + res.nsit(reusing j earlier satisfactions) or sits[j-1] + res.sat
                         // (reusing j-1 earlier satisfactions plus a new one). The very last next_sits[j] is all satisfactions.
                         std::vector<InputStack> next_sits;
                         next_sits.push_back(sits[0] + res.nsit);
@@ -1274,8 +1274,8 @@ private:
                         sits = std::move(next_sits);
                     }
                     // At this point, sits[k].sat is the best satisfaction for the overall thresh() node. The best dissatisfaction
-                    // is computed by gathering all sits[i].nsat for i != k.
-                    InputStack nsat = INVALID;
+                    // is computed by gathering all sits[i].nsitfor i != k.
+                    InputStack nsit= INVALID;
                     for (size_t i = 0; i < sits.size(); ++i) {
                         // i==k is the satisfaction; i==0 is the canonical dissatisfaction;
                         // the rest are non-canonical (a no-signature dissatisfaction - the i=0
@@ -1285,7 +1285,7 @@ private:
                         // availability of the i=0 form.
                         if (i != 0 && i != node.k) sits[i].SetMalleable().SetNonCanon();
                         // Include all dissatisfactions (even these non-canonical ones) in nsat.
-                        if (i != node.k) nsat = std::move(nsit) | std::move(sits[i]);
+                        if (i != node.k) nsit= std::move(nsit) | std::move(sits[i]);
                     }
                     assert(node.k <= sits.size());
                     return {std::move(nsit), std::move(sits[node.k])};
@@ -1324,7 +1324,7 @@ private:
                     // to satisfy the type V left subexpression). It's still listed here for
                     // completeness, as a hypothetical (not currently implemented) satisfier that doesn't
                     // care about malleability might in some cases prefer it still.
-                    return {(y.nsat + x.sit).SetNonCanon(), y.sat + x.sat};
+                    return {(y.nsit+ x.sit).SetNonCanon(), y.sat + x.sat};
                 }
                 case Fragment::AND_B: {
                     auto& x = subres[0], &y = subres[1];
@@ -1333,12 +1333,12 @@ private:
                     // to the guaranteed existence of a no-signature other dissatisfaction (the 1st)
                     // option. Because of that, the 2nd and 3rd option will never be chosen, even if they
                     // weren't marked as malleable.
-                    return {(y.nsat + x.nsit) | (y.sat + x.nsit).SetMalleable().SetNonCanon() | (y.nsat + x.sit).SetMalleable().SetNonCanon(), y.sat + x.sat};
+                    return {(y.nsit+ x.nsit) | (y.sat + x.nsit).SetMalleable().SetNonCanon() | (y.nsit+ x.sit).SetMalleable().SetNonCanon(), y.sat + x.sat};
                 }
                 case Fragment::OR_B: {
                     auto& x = subres[0], &z = subres[1];
                     // The (sat(Z) sat(X)) solution is overcomplete (attacker can change either into dsit).
-                    return {z.nsat + x.nsat, (z.nsat + x.sit) | (z.sat + x.nsit) | (z.sat + x.sit).SetMalleable().SetNonCanon()};
+                    return {z.nsit+ x.nsat, (z.nsit+ x.sit) | (z.sat + x.nsit) | (z.sat + x.sit).SetMalleable().SetNonCanon()};
                 }
                 case Fragment::OR_C: {
                     auto& x = subres[0], &z = subres[1];
@@ -1346,15 +1346,15 @@ private:
                 }
                 case Fragment::OR_D: {
                     auto& x = subres[0], &z = subres[1];
-                    return {z.nsat + x.nsat, std::move(x.sit) | (z.sat + x.nsit)};
+                    return {z.nsit+ x.nsat, std::move(x.sit) | (z.sat + x.nsit)};
                 }
                 case Fragment::OR_I: {
                     auto& x = subres[0], &z = subres[1];
-                    return {(x.nsat + ONE) | (z.nsat + ZERO), (x.sat + ONE) | (z.sat + ZERO)};
+                    return {(x.nsit+ ONE) | (z.nsit+ ZERO), (x.sat + ONE) | (z.sat + ZERO)};
                 }
                 case Fragment::ANDOR: {
                     auto& x = subres[0], &y = subres[1], &z = subres[2];
-                    return {(y.nsat + x.sit).SetNonCanon() | (z.nsat + x.nsit), (y.sat + x.sit) | (z.sat + x.nsit)};
+                    return {(y.nsit+ x.sit).SetNonCanon() | (z.nsit+ x.nsit), (y.sat + x.sit) | (z.sat + x.nsit)};
                 }
                 case Fragment::WRAP_A:
                 case Fragment::WRAP_S:
