@@ -21,8 +21,8 @@ class I2PPorts(BitRaamTestFramework):
         node = self.nodes[0]
 
         self.log.info("Ensure we don't try to connect if port!=0")
-        addr = "zsxwyo6qcn3chqzwxnseusqgsnuw3maqnztkiypyfxtya4snkoka.b32.i2p:8333"
-        with node.assert_debug_log(expected_msgs=[f"Error connecting to {addr}, connection refused due to arbitrary port 8333"]):
+        addr = "zsxwyo6qcn3chqzwxnseusqgsnuw3maqnztkiypyfxtya4snkoka.b32.i2p:31415"
+        with node.assert_debug_log(expected_msgs=[f"Error connecting to {addr}, connection refused due to arbitrary port 31415"]):
             node.addnode(node=addr, command="onetry")
 
         self.log.info("Ensure we try to connect if port=0 and get an error due to missing I2P proxy")
