@@ -995,7 +995,7 @@ Diňe "miras" görnüşli salgylar bilen gol çekmek mümkin.</translation>
         <translation type="unfinished">(%1 gulply)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
         <translation type="unfinished">Her giriş üçin +/- %1 satosi üýtgäp biler.</translation>
     </message>
     <message>

@@ -333,8 +333,8 @@
         <translation type="unfinished">Avrita vekslipening</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Kann vera ymiskt +/- %1 maharishi fyri hvørt ískoyti.</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">Kann vera ymiskt +/- %1 sitashi fyri hvørt ískoyti.</translation>
     </message>
     <message>
         <source>(no label)</source>

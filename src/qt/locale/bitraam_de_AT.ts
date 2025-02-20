@@ -153,7 +153,7 @@
         <translation type="unfinished">Bytes kopieren</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
         <translation type="unfinished">Kann pro Eingabe um +/- %1 Satoshi(s) abweichen.</translation>
     </message>
     <message>

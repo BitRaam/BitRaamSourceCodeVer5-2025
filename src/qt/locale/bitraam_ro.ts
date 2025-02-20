@@ -960,8 +960,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">(%1 blocat)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Poate varia +/- %1 maharishi pentru fiecare intrare.</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">Poate varia +/- %1 sitashi pentru fiecare intrare.</translation>
     </message>
     <message>
         <source>(no label)</source>

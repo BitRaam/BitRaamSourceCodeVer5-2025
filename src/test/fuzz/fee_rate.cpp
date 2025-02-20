@@ -16,20 +16,20 @@
 FUZZ_TARGET(fee_rate)
 {
     FuzzedDataProvider fuzzed_data_provider(buffer.data(), buffer.size());
-    const CAmount maharishis_per_k = ConsumeMoney(fuzzed_data_provider);
-    const CFeeRate fee_rate{maharishis_per_k};
+    const CAmount sitashis_per_k = ConsumeMoney(fuzzed_data_provider);
+    const CFeeRate fee_rate{sitashis_per_k};
 
     (void)fee_rate.GetFeePerK();
     const auto bytes = fuzzed_data_provider.ConsumeIntegral<uint32_t>();
-    if (!MultiplicationOverflow(int64_t{bytes}, maharishis_per_k)) {
+    if (!MultiplicationOverflow(int64_t{bytes}, sitashis_per_k)) {
         (void)fee_rate.GetFee(bytes);
     }
     (void)fee_rate.ToString();
 
-    const CAmount another_maharishis_per_k = ConsumeMoney(fuzzed_data_provider);
-    CFeeRate larger_fee_rate{another_maharishis_per_k};
+    const CAmount another_sitashis_per_k = ConsumeMoney(fuzzed_data_provider);
+    CFeeRate larger_fee_rate{another_sitashis_per_k};
     larger_fee_rate += fee_rate;
-    if (maharishis_per_k != 0 && another_maharishis_per_k != 0) {
+    if (sitashis_per_k != 0 && another_sitashis_per_k != 0) {
         assert(fee_rate < larger_fee_rate);
         assert(!(fee_rate > larger_fee_rate));
         assert(!(fee_rate == larger_fee_rate));

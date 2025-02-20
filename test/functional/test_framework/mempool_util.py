@@ -78,7 +78,7 @@ def fill_mempool(test_framework, node, *, tx_sync_fun=None):
         del confirmed_utxos[:tx_batch_size]
 
     # Increase the tx fee rate to give the subsequent transactions a higher priority in the mempool
-    # The tx has an approx. vsize of 65k, i.e. multiplying the previous fee rate (in sats/kvB)
+    # The tx has an approx. vsize of 65k, i.e. multiplying the previous fee rate (in sits/kvB)
     # by 130 should result in a fee that corresponds to 2x of that fee rate
     base_fee = relayfee * 130
     batch_fees = [(i + 1) * base_fee for i in range(num_of_batches)]

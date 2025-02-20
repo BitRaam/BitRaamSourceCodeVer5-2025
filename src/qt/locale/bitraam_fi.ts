@@ -1029,8 +1029,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">(%1 lukittu)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Saattaa vaihdella +/- %1 maharishia per syöte.</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">Saattaa vaihdella +/- %1 sitashia per syöte.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -3024,11 +3024,11 @@ Luo natiivin segwit-osoitteen (BIP-173). Jotkin vanhat lompakot eivät tue sitä
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 maharishis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 maharishis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 sitashis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 sitashis.</source>
         <translation type="unfinished">Määritä mukautettu maksu per kB (1 000 tavua) tapahtuman virtuaalikoosta.
 
-Huom: Koska maksu lasketaan per tavu, "100 maharishin per kB" maksunopeus 500 virtuaalitavun (puolet 1 kB
-) tapahtumakoolle johtaisi lopulta vain 50 maharishin maksuun.</translation>
+Huom: Koska maksu lasketaan per tavu, "100 sitashin per kB" maksunopeus 500 virtuaalitavun (puolet 1 kB
+) tapahtumakoolle johtaisi lopulta vain 50 sitashin maksuun.</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitraam transactions than the network can process.</source>

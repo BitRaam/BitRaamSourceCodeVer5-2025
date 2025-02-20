@@ -247,13 +247,13 @@ class MempoolLimitTest(BitRaamTestFramework):
         # evicted, making this test much less meaningful.
         approx_child_vsize = self.wallet.create_self_transfer_multi(utxos_to_spend=parent_utxos)["tx"].get_vsize()
         cpfp_fee = (mempoolmin_feerate / 1000) * (cpfp_parent["tx"].get_vsize() + approx_child_vsize) - cpfp_parent["fee"]
-        # Specific number of maharishis to fit within a small window. The parent_cpfp + child package needs to be
+        # Specific number of sitashis to fit within a small window. The parent_cpfp + child package needs to be
         # - When there is mid-package eviction, high enough feerate to meet the new mempoolminfee
         # - When there is no mid-package eviction, low enough feerate to be evicted immediately after submission.
-        magic_maharishis = 1200
-        cpfp_maharishis = int(cpfp_fee * COIN) + magic_maharishis
+        magic_sitashis = 1200
+        cpfp_sitashis = int(cpfp_fee * COIN) + magic_sitashis
 
-        child = self.wallet.create_self_transfer_multi(utxos_to_spend=parent_utxos, fee_per_output=cpfp_maharishis)
+        child = self.wallet.create_self_transfer_multi(utxos_to_spend=parent_utxos, fee_per_output=cpfp_sitashis)
         package_hex.append(child["hex"])
 
         # Package should be submitted, temporarily exceeding maxmempool, and then evicted.
@@ -411,9 +411,9 @@ class MempoolLimitTest(BitRaamTestFramework):
         target_vsize_each = 50000
         assert_greater_than(target_vsize_each * 2 * 3, node.getmempoolinfo()["maxmempool"] - node.getmempoolinfo()["bytes"])
         # Should be a true CPFP: parent's feerate is just below mempool min feerate
-        parent_feerate = mempoolmin_feerate - Decimal("0.000001")  # 0.1 sats/vbyte below min feerate
+        parent_feerate = mempoolmin_feerate - Decimal("0.000001")  # 0.1 sits/vbyte below min feerate
         # Parent + child is above mempool minimum feerate
-        child_feerate = (worst_feerate_brmvb * 1000) - Decimal("0.000001")  # 0.1 sats/vbyte below worst feerate
+        child_feerate = (worst_feerate_brmvb * 1000) - Decimal("0.000001")  # 0.1 sits/vbyte below worst feerate
         # However, when eviction is triggered, these transactions should be at the bottom.
         # This assertion assumes parent and child are the same size.
         miniwallet.rescan_utxos()

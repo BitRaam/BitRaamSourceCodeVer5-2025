@@ -972,8 +972,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">(%1已锁定)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">每个输入可能有 +/- %1 聪 (maharishi) 的误差。</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">每个输入可能有 +/- %1 聪 (sitashi) 的误差。</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2906,7 +2906,7 @@ For more information on using this console, type %6.
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 maharishis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 maharishis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 sitashis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 sitashis.</source>
         <translation type="unfinished">指定每千字節（1,000字節）交易虛擬大小的自訂手續費。
 
 注意：由於手續費是按每字節計算的，對於虛擬大小為500字節（半千字節）的交易，手續費率為「每千字節100聰」，最終將只收取50聰的手續費。</translation>

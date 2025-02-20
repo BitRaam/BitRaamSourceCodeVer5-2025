@@ -35,13 +35,13 @@ public:
     /** If allow empty is set to false the field will be set to the minimum allowed value if left empty. **/
     void SetAllowEmpty(bool allow);
 
-    /** Set the minimum value in maharishis **/
+    /** Set the minimum value in sitashis **/
     void SetMinValue(const CAmount& value);
 
-    /** Set the maximum value in maharishis **/
+    /** Set the maximum value in sitashis **/
     void SetMaxValue(const CAmount& value);
 
-    /** Set single step in maharishis **/
+    /** Set single step in sitashis **/
     void setSingleStep(const CAmount& step);
 
     /** Make read-only **/

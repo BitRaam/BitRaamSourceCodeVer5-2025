@@ -605,8 +605,8 @@
         <translation type="unfinished">(%1 zaszperowane)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Chwiyrŏ sie +/- %1 maharishi na wchōd.</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">Chwiyrŏ sie +/- %1 sitashi na wchōd.</translation>
     </message>
     <message>
         <source>(no label)</source>

@@ -23,7 +23,7 @@ from .authproxy import AuthServiceProxy, JSONRPCException
 from collections.abc import Callable
 from typing import Optional, Union
 
-SATOSHI_PRECISION = Decimal('0.00000001')
+SITASHI_PRECISION = Decimal('0.00000001')
 
 logger = logging.getLogger("TestFramework.utils")
 
@@ -226,8 +226,8 @@ def assert_array_result(object_array, to_match, expected, should_not_find=False)
 def check_json_precision():
     """Make sure json library being used does not lose precision converting BRM values"""
     n = Decimal("20000000.00000003")
-    maharishis = int(json.loads(json.dumps(float(n))) * 1.0e8)
-    if maharishis != 2000000000000003:
+    sitashis = int(json.loads(json.dumps(float(n))) * 1.0e8)
+    if sitashis != 2000000000000003:
         raise RuntimeError("JSON encode/decode loses precision")
 
 
@@ -263,9 +263,9 @@ def get_fee(tx_size, feerate_brm_kvb):
     return target_fee_sat / Decimal(1e8) # Return result in  BRM
 
 
-def maharishi_round(amount: Union[int, float, str], *, rounding: str) -> Decimal:
-    """Rounds a Decimal amount to the nearest maharishi using the specified rounding mode."""
-    return Decimal(amount).quantize(SATOSHI_PRECISION, rounding=rounding)
+def sitashi_round(amount: Union[int, float, str], *, rounding: str) -> Decimal:
+    """Rounds a Decimal amount to the nearest sitashi using the specified rounding mode."""
+    return Decimal(amount).quantize(SITASHI_PRECISION, rounding=rounding)
 
 
 def ensure_for(*, duration, f, check_interval=0.2):

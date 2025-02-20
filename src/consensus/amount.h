@@ -8,13 +8,13 @@
 
 #include <cstdint>
 
-/** Amount in maharishis (Can be negative) */
+/** Amount in sitashis (Can be negative) */
 typedef int64_t CAmount;
 
-/** The amount of maharishis in one BRM. */
+/** The amount of sitashis in one BRM. */
 static constexpr CAmount COIN = 100000000;
 
-/** No amount larger than this (in maharishi) is valid.
+/** No amount larger than this (in sitashi) is valid.
  *
  * Note that this constant is *not* the total money supply, which in BitRaam
  * currently happens to be less than 21,000,000 BRM for various reasons, but

@@ -959,7 +959,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation type="unfinished">(%1 zaklenjeno)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
         <translation type="unfinished">Lahko se razlikuje za +/- %1 sat na vhod.</translation>
     </message>
     <message>
@@ -2876,10 +2876,10 @@ Za več informacij glede uporabe konzole uporabite ukaz %6.
     <message>
         <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
 
-Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 maharishis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 maharishis.</source>
+Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 sitashis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 sitashis.</source>
         <translation type="unfinished">Določite poljubno provizijo na kB (1000 bajtov) navidezne velikosti transakcije.
 
-Opomba: Ker se provizija izračuna na bajt, bi provizija "100 maharishijev na kvB" za transakcijo velikosti 500 navideznih bajtov (polovica enega kvB) znašala le 50 satošijev.</translation>
+Opomba: Ker se provizija izračuna na bajt, bi provizija "100 sitashijev na kvB" za transakcijo velikosti 500 navideznih bajtov (polovica enega kvB) znašala le 50 satošijev.</translation>
     </message>
     <message>
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitraam transactions than the network can process.</source>

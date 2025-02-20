@@ -975,7 +975,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">(%1 లాక్ చేయబడింది)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
         <translation type="unfinished">ఒక్కో ఇన్‌పుట్‌కు +/- %1 సతోషి(లు) మారవచ్చు.</translation>
     </message>
     <message>

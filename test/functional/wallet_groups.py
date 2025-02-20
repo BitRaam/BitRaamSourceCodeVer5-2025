@@ -33,7 +33,7 @@ class WalletGroupTest(BitRaamTestFramework):
         ]
 
         for args in self.extra_args:
-            args.append(f"-paytxfee={20 * 1e3 / 1e8}")  # apply feerate of 20 sats/vB across all nodes
+            args.append(f"-paytxfee={20 * 1e3 / 1e8}")  # apply feerate of 20 sits/vB across all nodes
 
         self.rpc_timeout = 480
 
@@ -146,7 +146,7 @@ class WalletGroupTest(BitRaamTestFramework):
         assert_equal(2, len(tx5["vout"]))
 
         # Test wallet option maxapsfee with node 4, which sets maxapsfee
-        # 1 sat higher, crossing the threshold from non-grouped to grouped.
+        # 1 sit higher, crossing the threshold from non-grouped to grouped.
         self.log.info("Test wallet option maxapsfee threshold from non-grouped to grouped")
         addr_aps3 = self.nodes[4].getnewaddress()
         [self.nodes[0].sendtoaddress(addr_aps3, 1.0) for _ in range(5)]

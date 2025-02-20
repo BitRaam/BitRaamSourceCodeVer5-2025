@@ -929,8 +929,8 @@ Kirish faqat 'legacy' turidagi manzillar uchun.</translation>
         <translation type="unfinished">(%1 qulflangan)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Har bir kiruvchi +/- %1  maharishiga farq qilishi mumkin.</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">Har bir kiruvchi +/- %1  sitashiga farq qilishi mumkin.</translation>
     </message>
     <message>
         <source>(no label)</source>

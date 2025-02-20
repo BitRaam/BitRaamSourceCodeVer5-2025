@@ -1104,7 +1104,7 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
     <message>
         <source>Paste address from clipboard</source>
         <extracomment>Tooltip text for button that allows you to paste an address that is in your clipboard.</extracomment>
-        <translation type="unfinished">Arbeletik helbidea itsatsi</translation>
+        <translation type="unfinished">Arbeletik helbidea itsitsi</translation>
     </message>
 </context>
 <context>
@@ -1807,7 +1807,7 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation type="unfinished">Arbeletik helbidea itsatsi</translation>
+        <translation type="unfinished">Arbeletik helbidea itsitsi</translation>
     </message>
     <message>
         <source>Message:</source>
@@ -1822,7 +1822,7 @@ Sinatzea 'legacy' motako helbideekin soilik da posible</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation type="unfinished">Arbeletik helbidea itsatsi</translation>
+        <translation type="unfinished">Arbeletik helbidea itsitsi</translation>
     </message>
     <message>
         <source>Enter the message you want to sign here</source>

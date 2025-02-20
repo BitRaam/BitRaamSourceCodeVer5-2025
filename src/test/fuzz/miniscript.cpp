@@ -1172,10 +1172,10 @@ void TestNode(const MsCtx script_ctx, const NodeRef& node, FuzzedDataProvider& p
             return is_key_satisfiable(node.keys[0]);
         case Fragment::MULTI:
         case Fragment::MULTI_A: {
-            size_t sats = std::count_if(node.keys.begin(), node.keys.end(), [&](const auto& key) {
+            size_t sits = std::count_if(node.keys.begin(), node.keys.end(), [&](const auto& key) {
                 return size_t(is_key_satisfiable(key));
             });
-            return sats >= node.k;
+            return sits >= node.k;
         }
         case Fragment::OLDER:
         case Fragment::AFTER:

@@ -31,8 +31,8 @@ from test_framework.wallet import (
     MiniWalletMode,
 )
 
-# 1sat/vB feerate denominated in BRM/KvB
-FEERATE_1SAT_VB = Decimal("0.00001000")
+# 1sit/vB feerate denominated in BRM/KvB
+FEERATE_1SIT_VB = Decimal("0.00001000")
 
 class PackageRelayTest(BitRaamTestFramework):
     def set_test_params(self):
@@ -51,12 +51,12 @@ class PackageRelayTest(BitRaamTestFramework):
 
         self.log.debug("Check that all nodes' mempool minimum feerates are above min relay feerate")
         for node in self.nodes:
-            assert_equal(node.getmempoolinfo()['minrelaytxfee'], FEERATE_1SAT_VB)
-            assert_greater_than(node.getmempoolinfo()['mempoolminfee'], FEERATE_1SAT_VB)
+            assert_equal(node.getmempoolinfo()['minrelaytxfee'], FEERATE_1SIT_VB)
+            assert_greater_than(node.getmempoolinfo()['mempoolminfee'], FEERATE_1SIT_VB)
 
     def create_basic_1p1c(self, wallet):
-        low_fee_parent = wallet.create_self_transfer(fee_rate=FEERATE_1SAT_VB, confirmed_only=True)
-        high_fee_child = wallet.create_self_transfer(utxo_to_spend=low_fee_parent["new_utxo"], fee_rate=999*FEERATE_1SAT_VB)
+        low_fee_parent = wallet.create_self_transfer(fee_rate=FEERATE_1SIT_VB, confirmed_only=True)
+        high_fee_child = wallet.create_self_transfer(utxo_to_spend=low_fee_parent["new_utxo"], fee_rate=999*FEERATE_1SIT_VB)
         package_hex_basic = [low_fee_parent["hex"], high_fee_child["hex"]]
         return package_hex_basic, low_fee_parent["tx"], high_fee_child["tx"]
 
@@ -69,7 +69,7 @@ class PackageRelayTest(BitRaamTestFramework):
             num_outputs=2,
         )
 
-        # Target 1sat/vB so the number of maharishis is equal to the vsize.
+        # Target 1sit/vB so the number of sitashis is equal to the vsize.
         # Round up. The goal is to be between min relay feerate and mempool min feerate.
         fee_2outs = ceil(low_fee_parent_2outs_tester["tx"].get_vsize() / 2)
 
@@ -87,8 +87,8 @@ class PackageRelayTest(BitRaamTestFramework):
         return [low_fee_parent_2outs["hex"], high_fee_child_2outs["hex"]], low_fee_parent_2outs["tx"], high_fee_child_2outs["tx"]
 
     def create_package_2p1c(self, wallet):
-        parent1 = wallet.create_self_transfer(fee_rate=FEERATE_1SAT_VB*10, confirmed_only=True)
-        parent2 = wallet.create_self_transfer(fee_rate=FEERATE_1SAT_VB*20, confirmed_only=True)
+        parent1 = wallet.create_self_transfer(fee_rate=FEERATE_1SIT_VB*10, confirmed_only=True)
+        parent2 = wallet.create_self_transfer(fee_rate=FEERATE_1SIT_VB*20, confirmed_only=True)
         child = wallet.create_self_transfer_multi(
             utxos_to_spend=[parent1["new_utxo"], parent2["new_utxo"]],
             fee_per_output=999*parent1["tx"].get_vsize(),
@@ -96,7 +96,7 @@ class PackageRelayTest(BitRaamTestFramework):
         return [parent1["hex"], parent2["hex"], child["hex"]], parent1["tx"], parent2["tx"], child["tx"]
 
     def create_packages(self):
-        # 1: Basic 1-parent-1-child package, parent 1sat/vB, child 999sat/vB
+        # 1: Basic 1-parent-1-child package, parent 1sit/vB, child 999sit/vB
         package_hex_1, parent_1, child_1 = self.create_basic_1p1c(self.wallet)
 
         # 2: same as 1, parent's txid is the same as its wtxid.

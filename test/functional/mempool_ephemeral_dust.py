@@ -139,9 +139,9 @@ class EphemeralDustTest(BitRaamTestFramework):
 
         assert_equal(self.nodes[0].getrawmempool(), [])
 
-        sats_fee = 1
-        dusty_tx, sweep_tx = self.create_ephemeral_dust_package(tx_version=3, dust_tx_fee=sats_fee)
-        assert_equal(int(COIN * dusty_tx["fee"]), sats_fee) # has fees
+        sits_fee = 1
+        dusty_tx, sweep_tx = self.create_ephemeral_dust_package(tx_version=3, dust_tx_fee=sits_fee)
+        assert_equal(int(COIN * dusty_tx["fee"]), sits_fee) # has fees
         assert_greater_than(dusty_tx["tx"].vout[0].nValue, 330) # main output is not dust
         assert_equal(dusty_tx["tx"].vout[1].nValue, 0) # added one is dust
 
@@ -151,8 +151,8 @@ class EphemeralDustTest(BitRaamTestFramework):
         assert_equal(res["tx-results"][dusty_tx["wtxid"]]["error"], "dust, tx with dust output must be 0-fee")
 
         # Priority is ignored: rejected even if modified fee is 0
-        self.nodes[0].prioritisetransaction(txid=dusty_tx["txid"], dummy=0, fee_delta=-sats_fee)
-        self.nodes[1].prioritisetransaction(txid=dusty_tx["txid"], dummy=0, fee_delta=-sats_fee)
+        self.nodes[0].prioritisetransaction(txid=dusty_tx["txid"], dummy=0, fee_delta=-sits_fee)
+        self.nodes[1].prioritisetransaction(txid=dusty_tx["txid"], dummy=0, fee_delta=-sits_fee)
         res = self.nodes[0].submitpackage([dusty_tx["hex"], sweep_tx["hex"]])
         assert_equal(res["package_msg"], "transaction failed")
         assert_equal(res["tx-results"][dusty_tx["wtxid"]]["error"], "dust, tx with dust output must be 0-fee")
@@ -187,7 +187,7 @@ class EphemeralDustTest(BitRaamTestFramework):
         assert_equal(self.nodes[0].getrawmempool(), [])
 
     def test_nonzero_dust(self):
-        self.log.info("Test that a single output of any maharishi amount is allowed, not checking spending")
+        self.log.info("Test that a single output of any sitashi amount is allowed, not checking spending")
 
         # We aren't checking spending, allow it in with no fee
         self.restart_node(0, extra_args=["-minrelaytxfee=0"])

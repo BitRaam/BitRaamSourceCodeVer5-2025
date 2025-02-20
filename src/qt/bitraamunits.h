@@ -43,7 +43,7 @@ public:
         BRM,
         mBRM,
         uBRM,
-        SAT
+        SIT
     };
     Q_ENUM(Unit)
 

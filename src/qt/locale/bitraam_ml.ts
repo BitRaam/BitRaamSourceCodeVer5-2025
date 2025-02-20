@@ -830,7 +830,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">(%1 ലോക്ക് ആക്കിയിരിക്കുന്നു)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
         <translation type="unfinished">ഒരു ഇൻപുട്ടിന് +/-%1 സതോഷി(കൾ) വ്യത്യാസം ഉണ്ടാകാം.</translation>
     </message>
     <message>

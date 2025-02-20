@@ -286,7 +286,7 @@ class MempoolPackageLimitsTest(BitRaamTestFramework):
         node = self.nodes[0]
         parent_utxos = []
         target_vsize = 30_000
-        high_fee = 10 * target_vsize  # 10 sats/vB
+        high_fee = 10 * target_vsize  # 10 sits/vB
         self.log.info("Check that in-mempool and in-package ancestor size limits are calculated properly in packages")
         # Mempool transactions A and B
         for _ in range(2):
@@ -316,7 +316,7 @@ class MempoolPackageLimitsTest(BitRaamTestFramework):
         """
         node = self.nodes[0]
         target_vsize = 21_000
-        high_fee = 10 * target_vsize  # 10 sats/vB
+        high_fee = 10 * target_vsize  # 10 sits/vB
         self.log.info("Check that in-mempool and in-package descendant sizes are calculated properly in packages")
         # Top parent in mempool, Ma
         ma_tx = self.wallet.create_self_transfer_multi(num_outputs=2, fee_per_output=high_fee // 2, target_vsize=target_vsize)

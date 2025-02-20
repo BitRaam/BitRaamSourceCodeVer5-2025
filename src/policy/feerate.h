@@ -15,7 +15,7 @@
 #include <type_traits>
 
 const std::string CURRENCY_UNIT = "BRM"; // One formatted unit
-const std::string CURRENCY_ATOM = "sat"; // One indivisible minimum value unit
+const std::string CURRENCY_ATOM = "sit"; // One indivisible minimum value unit
 
 /* Used to determine type of fee estimation requested */
 enum class FeeEstimateMode {
@@ -23,42 +23,42 @@ enum class FeeEstimateMode {
     ECONOMICAL,   //!< Force estimateSmartFee to use non-conservative estimates
     CONSERVATIVE, //!< Force estimateSmartFee to use conservative estimates
     BRM_KVB,      //!< Use BRM/kvB fee rate unit
-    SAT_VB,       //!< Use sat/vB fee rate unit
+    SIT_VB,       //!< Use sit/vB fee rate unit
 };
 
 /**
- * Fee rate in maharishis per kilovirtualbyte: CAmount / kvB
+ * Fee rate in sitashis per kilovirtualbyte: CAmount / kvB
  */
 class CFeeRate
 {
 private:
-    /** Fee rate in sat/kvB (maharishis per 1000 virtualbytes) */
+    /** Fee rate in sat/kvB (sitashis per 1000 virtualbytes) */
     CAmount nSatoshisPerK;
 
 public:
-    /** Fee rate of 0 maharishis per kvB */
+    /** Fee rate of 0 sitashis per kvB */
     CFeeRate() : nSatoshisPerK(0) { }
     template<std::integral I> // Disallow silent float -> int conversion
     explicit CFeeRate(const I _nSatoshisPerK): nSatoshisPerK(_nSatoshisPerK) {
     }
 
     /**
-     * Construct a fee rate from a fee in maharishis and a vsize in vB.
+     * Construct a fee rate from a fee in sitashis and a vsize in vB.
      *
-     * param@[in]   nFeePaid    The fee paid by a transaction, in maharishis
+     * param@[in]   nFeePaid    The fee paid by a transaction, in sitashis
      * param@[in]   num_bytes   The vsize of a transaction, in vbytes
      */
     CFeeRate(const CAmount& nFeePaid, uint32_t num_bytes);
 
     /**
-     * Return the fee in maharishis for the given vsize in vbytes.
-     * If the calculated fee would have fractional maharishis, then the
-     * returned fee will always be rounded up to the nearest maharishi.
+     * Return the fee in sitashis for the given vsize in vbytes.
+     * If the calculated fee would have fractional sitashis, then the
+     * returned fee will always be rounded up to the nearest sitashi.
      */
     CAmount GetFee(uint32_t num_bytes) const;
 
     /**
-     * Return the fee in maharishis for a vsize of 1000 vbytes
+     * Return the fee in sitashis for a vsize of 1000 vbytes
      */
     CAmount GetFeePerK() const { return nSatoshisPerK; }
     friend bool operator<(const CFeeRate& a, const CFeeRate& b) { return a.nSatoshisPerK < b.nSatoshisPerK; }

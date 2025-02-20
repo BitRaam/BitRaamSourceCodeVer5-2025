@@ -985,8 +985,8 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">(%1'i kilitli)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Her girdi için +/- %1 maharishi değişebilir.</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">Her girdi için +/- %1 sitashi değişebilir.</translation>
     </message>
     <message>
         <source>(no label)</source>

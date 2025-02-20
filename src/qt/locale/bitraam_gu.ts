@@ -1029,7 +1029,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">(%1લોક કરેલ)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
         <translation type="unfinished">ઇનપુટ દીઠ +/-%1 સતોશી(ઓ) બદલાઈ શકે છે.</translation>
     </message>
     <message>

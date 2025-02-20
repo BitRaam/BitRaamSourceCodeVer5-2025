@@ -342,7 +342,7 @@ std::map<COutPoint, CAmount> MiniMiner::CalculateBumpFees(const CFeeRate& target
     //               │                 │
     //               │   Grandparent   │
     //               │    1700 vB      │
-    //               │    1700 sats    │                    Target feerate: 10    s/vB
+    //               │    1700 sits    │                    Target feerate: 10    s/vB
     //               │       1 s/vB    │    GP Ancestor Set Feerate (ASFR):  1    s/vB
     //               │                 │                           P1_ASFR:  9.84 s/vB
     //               └──────▲───▲──────┘                           P2_ASFR:  2.47 s/vB
@@ -351,7 +351,7 @@ std::map<COutPoint, CAmount> MiniMiner::CalculateBumpFees(const CFeeRate& target
     // │               ├────┘   └────┤              │             ⇒ C_FR < TFR < C_ASFR
     // │   Parent 1    │             │   Parent 2   │
     // │    200 vB     │             │    200 vB    │
-    // │  17000 sats   │             │   3000 sats  │
+    // │  17000 sits   │             │   3000 sits  │
     // │     85 s/vB   │             │     15 s/vB  │
     // │               │             │              │
     // └───────────▲───┘             └───▲──────────┘
@@ -360,7 +360,7 @@ std::map<COutPoint, CAmount> MiniMiner::CalculateBumpFees(const CFeeRate& target
     //             └────┤           ├────┘
     //                  │   Child   │
     //                  │  100 vB   │
-    //                  │  900 sats │
+    //                  │  900 sits │
     //                  │    9 s/vB │
     //                  │           │
     //                  └───────────┘

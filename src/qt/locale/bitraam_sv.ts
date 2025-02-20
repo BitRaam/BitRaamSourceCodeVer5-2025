@@ -983,8 +983,8 @@ Försök igen.</translation>
         <translation type="unfinished">(%1 låst)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Kan variera +/- %1 maharishi per inmatning.</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">Kan variera +/- %1 sitashi per inmatning.</translation>
     </message>
     <message>
         <source>(no label)</source>

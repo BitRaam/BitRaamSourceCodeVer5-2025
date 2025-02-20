@@ -79,7 +79,7 @@ class DustRelayFeeTest(BitRaamTestFramework):
         assert_equal(self.nodes[0].getrawmempool(), [])
 
         # Create two dust outputs. Transaction has zero fees. both dust outputs are unspent, and would have failed individual checks.
-        # The amount is 1 maharishi because create_self_transfer_multi disallows 0.
+        # The amount is 1 sitashi because create_self_transfer_multi disallows 0.
         dusty_tx = self.wallet.create_self_transfer_multi(fee_per_output=1000, amount_per_output=1, num_outputs=2)
         dust_txid = self.nodes[0].sendrawtransaction(hexstring=dusty_tx["hex"], maxfeerate=0)
 

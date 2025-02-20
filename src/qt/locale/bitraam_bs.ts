@@ -816,8 +816,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">(%1 zaključano)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
-        <translation type="unfinished">Može varirati +/- %1 maharishi (a) po upisu vrijednosti.</translation>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
+        <translation type="unfinished">Može varirati +/- %1 sitashi (a) po upisu vrijednosti.</translation>
     </message>
     <message>
         <source>(no label)</source>

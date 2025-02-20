@@ -23,7 +23,7 @@ QList<BitRaamUnit> BitRaamUnits::availableUnits()
     unitlist.append(Unit::BRM);
     unitlist.append(Unit::mBRM);
     unitlist.append(Unit::uBRM);
-    unitlist.append(Unit::SAT);
+    unitlist.append(Unit::SIT);
     return unitlist;
 }
 
@@ -33,7 +33,7 @@ QString BitRaamUnits::longName(Unit unit)
     case Unit::BRM: return QString("BRM");
     case Unit::mBRM: return QString("mBRM");
     case Unit::uBRM: return QString::fromUtf8("µBRM (bits)");
-    case Unit::SAT: return QString("Maharishi (sat)");
+    case Unit::SIT: return QString("Sitashi (sit)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -44,7 +44,7 @@ QString BitRaamUnits::shortName(Unit unit)
     case Unit::BRM: return longName(unit);
     case Unit::mBRM: return longName(unit);
     case Unit::uBRM: return QString("bits");
-    case Unit::SAT: return QString("sat");
+    case Unit::SIT: return QString("sit");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -55,7 +55,7 @@ QString BitRaamUnits::description(Unit unit)
     case Unit::BRM: return QString("BitRaams");
     case Unit::mBRM: return QString("Milli-BitRaams (1 / 1" THIN_SP_UTF8 "000)");
     case Unit::uBRM: return QString("Micro-BitRaams (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case Unit::SAT: return QString("Maharishi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case Unit::SIT: return QString("Sitashi (sit) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -66,7 +66,7 @@ qint64 BitRaamUnits::factor(Unit unit)
     case Unit::BRM: return 100'000'000;
     case Unit::mBRM: return 100'000;
     case Unit::uBRM: return 100;
-    case Unit::SAT: return 1;
+    case Unit::SIT: return 1;
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -77,7 +77,7 @@ int BitRaamUnits::decimals(Unit unit)
     case Unit::BRM: return 8;
     case Unit::mBRM: return 5;
     case Unit::uBRM: return 2;
-    case Unit::SAT: return 0;
+    case Unit::SIT: return 0;
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -234,7 +234,7 @@ qint8 ToQint8(BitRaamUnit unit)
     case BitRaamUnit::BRM: return 0;
     case BitRaamUnit::mBRM: return 1;
     case BitRaamUnit::uBRM: return 2;
-    case BitRaamUnit::SAT: return 3;
+    case BitRaamUnit::SIT: return 3;
     } // no default case, so the compiler can warn about missing cases
     assert(false);
 }
@@ -245,7 +245,7 @@ BitRaamUnit FromQint8(qint8 num)
     case 0: return BitRaamUnit::BRM;
     case 1: return BitRaamUnit::mBRM;
     case 2: return BitRaamUnit::uBRM;
-    case 3: return BitRaamUnit::SAT;
+    case 3: return BitRaamUnit::SIT;
     }
     assert(false);
 }

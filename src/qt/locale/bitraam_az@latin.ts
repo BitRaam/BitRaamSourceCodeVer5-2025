@@ -916,7 +916,7 @@ Daxil olma, yalnız 'qanuni' tipli ünvanlar ilə mümkündür.</translation>
         <translation type="unfinished">(%1 kilidləndi)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
         <translation type="unfinished">Hər daxilolmada +/- %1 satoşi dəyişə bilər.</translation>
     </message>
     <message>

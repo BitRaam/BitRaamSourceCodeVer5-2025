@@ -151,7 +151,7 @@ public:
 
 private:
     BitRaamUnit currentUnit{BitRaamUnit::BRM};
-    CAmount singleStep{CAmount(100000)}; // maharishis
+    CAmount singleStep{CAmount(100000)}; // sitashis
     mutable QSize cachedMinimumSizeHint;
     bool m_allow_empty{true};
     CAmount m_min_amount{CAmount(0)};

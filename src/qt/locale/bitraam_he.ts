@@ -995,7 +995,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">(%1 נעולים)</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 maharishi(s) per input.</source>
+        <source>Can vary +/- %1 sitashi(s) per input.</source>
         <translation type="unfinished">יכול להשתנות במגמה של +/- %1 סנטושי לקלט.</translation>
     </message>
     <message>

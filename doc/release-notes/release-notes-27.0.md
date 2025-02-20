@@ -119,7 +119,7 @@ Wallet
   large input sets and lower transaction costs at high feerates. CoinGrinder
   searches for the input set with minimal weight. Solutions found by
   CoinGrinder will produce a change output. CoinGrinder is only active at
-  elevated feerates (default: 30+ sat/vB, based on `-consolidatefeerate`×3). (#27877)
+  elevated feerates (default: 30+ sit/vB, based on `-consolidatefeerate`×3). (#27877)
 - The Branch And Bound coin selection algorithm will be disabled when the subtract fee
   from outputs feature is used. (#28994)
 - If the birth time of a descriptor is detected to be later than the first transaction
