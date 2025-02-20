@@ -1,6 +1,6 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Bitcoin Core in Unix.
+Some notes on how to build BitRaam Core in Unix.
 
 (For BSD specific instructions, see `build-*bsd.md` in this directory.)
 
@@ -20,7 +20,7 @@ distributions](#linux-distribution-specific-instructions), or the
 ## Memory Requirements
 
 C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
-memory available when compiling Bitcoin Core. On systems with less, gcc can be
+memory available when compiling BitRaam Core. On systems with less, gcc can be
 tuned to conserve memory with additional `CMAKE_CXX_FLAGS`:
 
 
@@ -58,7 +58,7 @@ Berkeley DB is only required for the legacy wallet. Ubuntu and Debian have their
 but these will install Berkeley DB 5.3 or later. This will break binary wallet compatibility with the distributed
 executables, which are based on BerkeleyDB 4.8. Otherwise, you can build Berkeley DB [yourself](#berkeley-db).
 
-To build Bitcoin Core without wallet, see [*Disable-wallet mode*](#disable-wallet-mode)
+To build BitRaam Core without wallet, see [*Disable-wallet mode*](#disable-wallet-mode)
 
 ZMQ dependencies (provides ZMQ API):
 
@@ -70,7 +70,7 @@ User-Space, Statically Defined Tracing (USDT) dependencies:
 
 GUI dependencies:
 
-Bitcoin Core includes a GUI built with the cross-platform Qt Framework. To compile the GUI, we need to install
+BitRaam Core includes a GUI built with the cross-platform Qt Framework. To compile the GUI, we need to install
 the necessary parts of Qt, the libqrencode and pass `-DBUILD_GUI=ON`. Skip if you don't intend to use the GUI.
 
     sudo apt-get install qtbase5-dev qttools5-dev qttools5-dev-tools
@@ -106,7 +106,7 @@ Berkeley DB is only required for the legacy wallet. Fedora releases have only `l
 Berkeley DB 5.3 or later. This will break binary wallet compatibility with the distributed executables, which
 are based on Berkeley DB 4.8. Otherwise, you can build Berkeley DB [yourself](#berkeley-db).
 
-To build Bitcoin Core without wallet, see [*Disable-wallet mode*](#disable-wallet-mode)
+To build BitRaam Core without wallet, see [*Disable-wallet mode*](#disable-wallet-mode)
 
 ZMQ dependencies (provides ZMQ API):
 
@@ -118,7 +118,7 @@ User-Space, Statically Defined Tracing (USDT) dependencies:
 
 GUI dependencies:
 
-Bitcoin Core includes a GUI built with the cross-platform Qt Framework. To compile the GUI, we need to install
+BitRaam Core includes a GUI built with the cross-platform Qt Framework. To compile the GUI, we need to install
 the necessary parts of Qt, the libqrencode and pass `-DBUILD_GUI=ON`. Skip if you don't intend to use the GUI.
 
     sudo dnf install qt5-qttools-devel qt5-qtbase-devel
@@ -162,7 +162,7 @@ cmake -B build -DBerkeleyDB_INCLUDE_DIR:PATH="${BDB_PREFIX}/include" -DWITH_BDB=
 
 Disable-wallet mode
 --------------------
-When the intention is to only run a P2P node, without a wallet, Bitcoin Core can
+When the intention is to only run a P2P node, without a wallet, BitRaam Core can
 be compiled in disable-wallet mode with:
 
     cmake -B build -DENABLE_WALLET=OFF

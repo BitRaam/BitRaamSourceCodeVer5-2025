@@ -9,7 +9,7 @@ import re
 
 from test_framework.blocktools import COINBASE_MATURITY
 from test_framework.netutil import test_ipv6_local
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_greater_than_or_equal,
@@ -72,7 +72,7 @@ def cli_get_info_string_to_dict(cli_get_info_string):
     return cli_get_info
 
 
-class TestBitcoinCli(BitcoinTestFramework):
+class TestBitcoinCli(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

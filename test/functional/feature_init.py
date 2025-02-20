@@ -7,7 +7,7 @@ from pathlib import Path
 import platform
 import shutil
 
-from test_framework.test_framework import BitcoinTestFramework, SkipTest
+from test_framework.test_framework import BitRaamTestFramework, SkipTest
 from test_framework.test_node import (
     BITCOIN_PID_FILENAME_DEFAULT,
     ErrorMatch,
@@ -15,7 +15,7 @@ from test_framework.test_node import (
 from test_framework.util import assert_equal
 
 
-class InitTest(BitcoinTestFramework):
+class InitTest(BitRaamTestFramework):
     """
     Ensure that initialization can be interrupted at a number of points and not impair
     subsequent starts.

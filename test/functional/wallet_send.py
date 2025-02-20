@@ -9,7 +9,7 @@ from itertools import product
 
 from test_framework.authproxy import JSONRPCException
 from test_framework.descriptors import descsum_create
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_fee_amount,
@@ -23,7 +23,7 @@ from test_framework.wallet_util import (
 )
 
 
-class WalletSendTest(BitcoinTestFramework):
+class WalletSendTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

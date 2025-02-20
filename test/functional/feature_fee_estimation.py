@@ -12,7 +12,7 @@ import time
 from test_framework.messages import (
     COIN,
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_greater_than,
@@ -137,7 +137,7 @@ def check_fee_estimates_btw_modes(node, expected_conservative, expected_economic
     assert_equal(fee_est_default, expected_economical)
 
 
-class EstimateFeeTest(BitcoinTestFramework):
+class EstimateFeeTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 3
         # whitelist peers to speed up tx relay / mempool sync

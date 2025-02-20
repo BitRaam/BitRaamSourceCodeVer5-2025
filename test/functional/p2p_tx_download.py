@@ -29,7 +29,7 @@ from test_framework.p2p import (
     TXID_RELAY_DELAY,
     OVERLOADED_PEER_TX_DELAY
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
 )
@@ -65,7 +65,7 @@ class ConnectionType(Enum):
     OUTBOUND = 1
     WHITELIST = 2
 
-class TxDownloadTest(BitcoinTestFramework):
+class TxDownloadTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.extra_args= [['-datacarriersize=100000', '-maxmempool=5', '-persistmempool=0']] * self.num_nodes

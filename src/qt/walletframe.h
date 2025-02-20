@@ -20,9 +20,9 @@ QT_END_NAMESPACE
 
 /**
  * A container for embedding all wallet-related
- * controls into BitcoinGUI. The purpose of this class is to allow future
+ * controls into BitRaamGUI. The purpose of this class is to allow future
  * refinements of the wallet controls with minimal need for further
- * modifications to BitcoinGUI, thus greatly simplifying merges while
+ * modifications to BitRaamGUI, thus greatly simplifying merges while
  * reducing the risk of breaking top-level stuff.
  */
 class WalletFrame : public QFrame
@@ -81,7 +81,7 @@ public Q_SLOTS:
     /** Show Sign/Verify Message dialog and switch to verify message tab */
     void gotoVerifyMessageTab(QString addr = "");
 
-    /** Load Partially Signed Bitcoin Transaction */
+    /** Load Partially Signed BitRaam Transaction */
     void gotoLoadPSBT(bool from_clipboard = false);
 
     /** Encrypt the wallet */

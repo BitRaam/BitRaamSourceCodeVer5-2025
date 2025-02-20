@@ -5,11 +5,11 @@
 """Tests around pruning rev and blk files on startup."""
 
 import platform
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import assert_equal
 
 
-class FeatureRemovePrunedFilesOnStartupTest(BitcoinTestFramework):
+class FeatureRemovePrunedFilesOnStartupTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.extra_args = [["-fastprune", "-prune=1"]]

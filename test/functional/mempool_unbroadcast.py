@@ -6,7 +6,7 @@
 to peers until a GETDATA is received."""
 
 from test_framework.p2p import P2PTxInvStore
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     ensure_for,
@@ -15,7 +15,7 @@ from test_framework.wallet import MiniWallet
 
 MAX_INITIAL_BROADCAST_DELAY = 15 * 60 # 15 minutes in seconds
 
-class MempoolUnbroadcastTest(BitcoinTestFramework):
+class MempoolUnbroadcastTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

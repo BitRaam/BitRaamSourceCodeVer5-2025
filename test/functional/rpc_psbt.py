@@ -35,7 +35,7 @@ from test_framework.psbt import (
 )
 from test_framework.script import CScript, OP_TRUE
 from test_framework.script_util import MIN_STANDARD_TX_NONWITNESS_SIZE
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_approx,
     assert_equal,
@@ -54,7 +54,7 @@ import json
 import os
 
 
-class PSBTTest(BitcoinTestFramework):
+class PSBTTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

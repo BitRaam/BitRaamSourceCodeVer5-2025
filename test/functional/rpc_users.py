@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test multiple RPC users."""
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     str_to_b64str,
@@ -34,7 +34,7 @@ def call_with_auth(node, user, password, method="getbestblockhash"):
     return resp
 
 
-class HTTPBasicsTest(BitcoinTestFramework):
+class HTTPBasicsTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.supports_cli = False

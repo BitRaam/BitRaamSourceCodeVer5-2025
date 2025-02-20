@@ -34,16 +34,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Bitcoin-Qt</string>
+  <string>BitRaam-Qt</string>
 
   <key>CFBundleName</key>
-  <string>Bitcoin-Qt</string>
+  <string>BitRaam-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.bitraamfoundation.Bitcoin-Qt</string>
+  <string>org.bitraamfoundation.BitRaam-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -51,7 +51,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.bitraam.BitcoinPayment</string>
+      <string>org.bitraam.BitRaamPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>bitraam</string>

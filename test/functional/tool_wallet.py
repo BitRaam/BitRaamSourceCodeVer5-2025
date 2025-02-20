@@ -16,7 +16,7 @@ from collections import OrderedDict
 
 from test_framework.bdb import dump_bdb_kv
 from test_framework.messages import ser_string
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_greater_than,
@@ -25,7 +25,7 @@ from test_framework.util import (
 from test_framework.wallet import getnewdestination
 
 
-class ToolWalletTest(BitcoinTestFramework):
+class ToolWalletTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
         parser.add_argument("--bdbro", action="store_true", help="Use the BerkeleyRO internal parser when dumping a Berkeley DB wallet file")
@@ -187,7 +187,7 @@ class ToolWalletTest(BitcoinTestFramework):
         self.assert_tool_output(load_output, *args)
         assert (self.nodes[0].wallets_path / wallet_name).is_dir()
 
-        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your Bitcoin, do not share the dumpfile.\n", '-wallet={}'.format(wallet_name), '-dumpfile={}'.format(rt_dumppath), 'dump')
+        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your BitRaam, do not share the dumpfile.\n", '-wallet={}'.format(wallet_name), '-dumpfile={}'.format(rt_dumppath), 'dump')
 
         rt_dump_data = self.read_dump(rt_dumppath)
         wallet_dat = self.nodes[0].wallets_path / wallet_name / "wallet.dat"
@@ -342,7 +342,7 @@ class ToolWalletTest(BitcoinTestFramework):
 
         self.log.info('Checking basic dump')
         wallet_dump = self.nodes[0].datadir_path / "wallet.dump"
-        self.assert_tool_output('The dumpfile may contain private keys. To ensure the safety of your Bitcoin, do not share the dumpfile.\n', '-wallet=todump', '-dumpfile={}'.format(wallet_dump), 'dump')
+        self.assert_tool_output('The dumpfile may contain private keys. To ensure the safety of your BitRaam, do not share the dumpfile.\n', '-wallet=todump', '-dumpfile={}'.format(wallet_dump), 'dump')
 
         dump_data = self.read_dump(wallet_dump)
         orig_dump = dump_data.copy()
@@ -476,7 +476,7 @@ class ToolWalletTest(BitcoinTestFramework):
         self.stop_node(0)
 
         wallet_dump = self.nodes[0].datadir_path / "endian.dump"
-        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your Bitcoin, do not share the dumpfile.\n", "-wallet=endian", f"-dumpfile={wallet_dump}", "dump")
+        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your BitRaam, do not share the dumpfile.\n", "-wallet=endian", f"-dumpfile={wallet_dump}", "dump")
         expected_dump = self.read_dump(wallet_dump)
 
         self.do_tool_createfromdump("native_endian", "endian.dump", "bdb")
@@ -515,7 +515,7 @@ class ToolWalletTest(BitcoinTestFramework):
         self.stop_node(0)
 
         wallet_dump = self.nodes[0].datadir_path / "bigrecords.dump"
-        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your Bitcoin, do not share the dumpfile.\n", "-wallet=bigrecords", f"-dumpfile={wallet_dump}", "dump")
+        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your BitRaam, do not share the dumpfile.\n", "-wallet=bigrecords", f"-dumpfile={wallet_dump}", "dump")
         dump = self.read_dump(wallet_dump)
         for k,v in dump.items():
             if tx["hex"] in v:
@@ -548,7 +548,7 @@ class ToolWalletTest(BitcoinTestFramework):
         self.start_node(0)
         self.nodes[0].loadwallet("unclean_lsn")
         self.stop_node(0)
-        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your Bitcoin, do not share the dumpfile.\n", "-wallet=unclean_lsn", f"-dumpfile={wallet_dump}", "dump")
+        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your BitRaam, do not share the dumpfile.\n", "-wallet=unclean_lsn", f"-dumpfile={wallet_dump}", "dump")
 
     def test_compare_legacy_dump_with_framework_bdb_parser(self):
         self.log.info("Verify that legacy wallet database dump matches the one from the test framework's BDB parser")
@@ -568,7 +568,7 @@ class ToolWalletTest(BitcoinTestFramework):
         self.stop_node(0)
 
         wallet_dumpfile = self.nodes[0].datadir_path / "bdb_ro_test.dump"
-        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your Bitcoin, do not share the dumpfile.\n", "-wallet={}".format(wallet_name), "-dumpfile={}".format(wallet_dumpfile), "dump")
+        self.assert_tool_output("The dumpfile may contain private keys. To ensure the safety of your BitRaam, do not share the dumpfile.\n", "-wallet={}".format(wallet_name), "-dumpfile={}".format(wallet_dumpfile), "dump")
 
         expected_dump = self.read_dump(wallet_dumpfile)
         # remove extra entries from wallet tool dump that are not actual key/value pairs from the database

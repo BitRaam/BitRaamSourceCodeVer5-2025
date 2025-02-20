@@ -6,7 +6,7 @@
 from test_framework.messages import (
     tx_from_hex,
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_raises_rpc_error,
@@ -16,7 +16,7 @@ from test_framework.blocktools import (
 )
 
 
-class CreateTxWalletTest(BitcoinTestFramework):
+class CreateTxWalletTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

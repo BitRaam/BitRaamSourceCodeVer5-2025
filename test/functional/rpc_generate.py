@@ -6,7 +6,7 @@
 
 from concurrent.futures import ThreadPoolExecutor
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.wallet import MiniWallet
 from test_framework.util import (
     assert_equal,
@@ -14,7 +14,7 @@ from test_framework.util import (
 )
 
 
-class RPCGenerateTest(BitcoinTestFramework):
+class RPCGenerateTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
 

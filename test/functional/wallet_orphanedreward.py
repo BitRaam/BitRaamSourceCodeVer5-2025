@@ -4,10 +4,10 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test orphaned block rewards in the wallet."""
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import assert_equal
 
-class OrphanedBlockRewardTest(BitcoinTestFramework):
+class OrphanedBlockRewardTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

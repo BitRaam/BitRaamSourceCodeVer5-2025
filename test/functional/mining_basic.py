@@ -33,7 +33,7 @@ from test_framework.messages import (
     WITNESS_SCALE_FACTOR
 )
 from test_framework.p2p import P2PDataStore
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_greater_than_or_equal,
@@ -62,7 +62,7 @@ def assert_template(node, block, expect, rehash=True):
     assert_equal(rsp, expect)
 
 
-class MiningTest(BitcoinTestFramework):
+class MiningTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 3
         self.extra_args = [

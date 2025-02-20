@@ -4,20 +4,20 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 import pathlib
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 
 
 class TestShell:
-    """Wrapper Class for BitcoinTestFramework.
+    """Wrapper Class for BitRaamTestFramework.
 
-    The TestShell class extends the BitcoinTestFramework
+    The TestShell class extends the BitRaamTestFramework
     rpc & daemon process management functionality to external
     python environments.
 
     It is a singleton class, which ensures that users only
     start a single TestShell at a time."""
 
-    class __TestShell(BitcoinTestFramework):
+    class __TestShell(BitRaamTestFramework):
         def add_options(self, parser):
             self.add_wallet_options(parser)
 
@@ -33,7 +33,7 @@ class TestShell:
                 return
 
             # Num_nodes parameter must be set
-            # by BitcoinTestFramework child class.
+            # by BitRaamTestFramework child class.
             self.num_nodes = 1
 
             # User parameters override default values.
@@ -69,7 +69,7 @@ class TestShell:
         # This implementation enforces singleton pattern, and will return the
         # previously initialized instance if available
         if not TestShell.instance:
-            # BitcoinTestFramework instances are supposed to be constructed with the path
+            # BitRaamTestFramework instances are supposed to be constructed with the path
             # of the calling test in order to find shared data like configuration and the
             # cache. Since TestShell is meant for interactive use, there is no concrete
             # test; passing a dummy name is fine though, as only the containing directory

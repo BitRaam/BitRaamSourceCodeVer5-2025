@@ -8,7 +8,7 @@ This module calls down into individual test cases via subprocess. It will
 forward all unrecognized arguments onto the individual test scripts.
 
 For a description of arguments recognized by test scripts, see
-`test/functional/test_framework/test_framework.py:BitcoinTestFramework.main`.
+`test/functional/test_framework/test_framework.py:BitRaamTestFramework.main`.
 
 """
 
@@ -612,7 +612,7 @@ def run_tests(*, test_list, build_dir, tmpdir, jobs=1, enable_coverage=False, ar
     # Warn if there is not enough space on the testing dir
     min_space = MIN_FREE_SPACE + (jobs - 1) * ADDITIONAL_SPACE_PER_JOB
     if shutil.disk_usage(tmpdir).free < min_space:
-        print(f"{BOLD[1]}WARNING!{BOLD[0]} There may be insufficient free space in {tmpdir} to run the Bitcoin functional test suite. "
+        print(f"{BOLD[1]}WARNING!{BOLD[0]} There may be insufficient free space in {tmpdir} to run the BitRaam functional test suite. "
               f"Running the test suite with fewer than {min_space // (1024 * 1024)} MB of free space might cause tests to fail.")
 
     tests_dir = f"{build_dir}/test/functional/"

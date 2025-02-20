@@ -15,7 +15,7 @@ import stat
 
 from test_framework.authproxy import JSONRPCException
 from test_framework.blocktools import COINBASE_MATURITY
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.test_node import ErrorMatch
 from test_framework.util import (
     assert_equal,
@@ -41,7 +41,7 @@ def test_load_unload(node, name):
                 return
 
 
-class MultiWalletTest(BitcoinTestFramework):
+class MultiWalletTest(BitRaamTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 2

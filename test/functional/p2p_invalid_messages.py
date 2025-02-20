@@ -26,7 +26,7 @@ from test_framework.p2p import (
     P2PDataStore,
     P2PInterface,
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
 )
@@ -54,7 +54,7 @@ class SenderOfAddrV2(P2PInterface):
         self.wait_until(lambda: 'sendaddrv2' in self.last_message)
 
 
-class InvalidMessagesTest(BitcoinTestFramework):
+class InvalidMessagesTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True

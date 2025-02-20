@@ -7,12 +7,12 @@
 import json
 
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.test_node import ErrorMatch
 from test_framework.util import assert_equal
 
 
-class SettingsTest(BitcoinTestFramework):
+class SettingsTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

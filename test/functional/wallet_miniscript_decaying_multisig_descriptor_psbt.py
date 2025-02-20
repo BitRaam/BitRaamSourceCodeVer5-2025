@@ -9,7 +9,7 @@ This is similar to `test/functional/wallet_multisig_descriptor_psbt.py`.
 """
 
 import random
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_approx,
     assert_equal,
@@ -17,7 +17,7 @@ from test_framework.util import (
 )
 
 
-class WalletMiniscriptDecayingMultisigDescriptorPSBTTest(BitcoinTestFramework):
+class WalletMiniscriptDecayingMultisigDescriptorPSBTTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser, legacy=False)
 

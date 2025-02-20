@@ -9,10 +9,10 @@
 import os
 import stat
 import subprocess
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 
 
-class BlockstoreReindexTest(BitcoinTestFramework):
+class BlockstoreReindexTest(BitRaamTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

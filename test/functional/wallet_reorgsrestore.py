@@ -16,13 +16,13 @@ disconnected.
 from decimal import Decimal
 import shutil
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
         assert_equal,
         assert_raises_rpc_error
 )
 
-class ReorgsRestoreTest(BitcoinTestFramework):
+class ReorgsRestoreTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

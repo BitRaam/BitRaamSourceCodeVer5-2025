@@ -12,7 +12,7 @@ try:
     from bcc import BPF, USDT # type: ignore[import]
 except ImportError:
     pass
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_greater_than,
@@ -96,7 +96,7 @@ int trace_aps_create_tx(struct pt_regs *ctx) {
 """
 
 
-class CoinSelectionTracepointTest(BitcoinTestFramework):
+class CoinSelectionTracepointTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

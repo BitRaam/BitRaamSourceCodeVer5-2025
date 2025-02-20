@@ -25,7 +25,7 @@ from test_framework.script import (
     OP_CHECKLOCKTIMEVERIFY,
     OP_DROP,
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import assert_equal
 from test_framework.wallet import (
     MiniWallet,
@@ -80,7 +80,7 @@ def cltv_validate(tx, height):
 CLTV_HEIGHT = 111
 
 
-class BIP65Test(BitcoinTestFramework):
+class BIP65Test(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         # whitelist peers to speed up tx relay / mempool sync

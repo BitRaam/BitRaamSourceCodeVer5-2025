@@ -5,7 +5,7 @@
 """Test indices in conjunction with prune."""
 import concurrent.futures
 import os
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_greater_than,
@@ -13,7 +13,7 @@ from test_framework.util import (
 )
 
 
-class FeatureIndexPruneTest(BitcoinTestFramework):
+class FeatureIndexPruneTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
         self.extra_args = [

@@ -20,7 +20,7 @@ using util::Join;
  * for both bitraamd and bitraam-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string UA_NAME("Satoshi");
+const std::string UA_NAME("Maharishi");
 
 
 #include <bitraam-build-info.h>
@@ -74,9 +74,9 @@ std::string CopyrightHolders(const std::string& strPrefix)
     const auto copyright_devs = strprintf(_(COPYRIGHT_HOLDERS), COPYRIGHT_HOLDERS_SUBSTITUTION).translated;
     std::string strCopyrightHolders = strPrefix + copyright_devs;
 
-    // Make sure Bitcoin Core copyright is not removed by accident
-    if (copyright_devs.find("Bitcoin Core") == std::string::npos) {
-        strCopyrightHolders += "\n" + strPrefix + "The Bitcoin Core developers";
+    // Make sure BitRaam Core copyright is not removed by accident
+    if (copyright_devs.find("BitRaam Core") == std::string::npos) {
+        strCopyrightHolders += "\n" + strPrefix + "The BitRaam Core developers";
     }
     return strCopyrightHolders;
 }

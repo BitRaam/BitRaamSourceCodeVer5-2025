@@ -87,9 +87,9 @@ OpenRC).
 ### macOS
 
     Binary:              /usr/local/bin/bitraamd
-    Configuration file:  ~/Library/Application Support/Bitcoin/bitraam.conf
-    Data directory:      ~/Library/Application Support/Bitcoin
-    Lock file:           ~/Library/Application Support/Bitcoin/.lock
+    Configuration file:  ~/Library/Application Support/BitRaam/bitraam.conf
+    Data directory:      ~/Library/Application Support/BitRaam
+    Lock file:           ~/Library/Application Support/BitRaam/.lock
 
 Installing Service Configuration
 -----------------------------------

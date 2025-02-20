@@ -8,14 +8,14 @@ Test the -port option and its interactions with
 """
 
 from test_framework.test_framework import (
-    BitcoinTestFramework,
+    BitRaamTestFramework,
 )
 from test_framework.util import (
     p2p_port,
 )
 
 
-class PortTest(BitcoinTestFramework):
+class PortTest(BitRaamTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         # Avoid any -bind= on the command line.

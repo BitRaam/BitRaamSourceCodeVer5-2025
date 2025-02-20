@@ -34,13 +34,13 @@ don't have test cases for.
   in order to reduce the possibility of potential merge conflicts.
 - Use a module-level docstring to describe what the test is testing, and how it
   is testing it.
-- When subclassing the BitcoinTestFramework, place overrides for the
+- When subclassing the BitRaamTestFramework, place overrides for the
   `set_test_params()`, `add_options()` and `setup_xxxx()` methods at the top of
   the subclass, then locally-defined helper methods, then the `run_test()` method.
 - Use `f'{x}'` for string formatting in preference to `'{}'.format(x)` or `'%s' % x`.
 - Use `platform.system()` for detecting the running operating system and `os.name` to
   check whether it's a POSIX system (see also the `skip_if_platform_not_{linux,posix}`
-  methods in the `BitcoinTestFramework` class, which can be used to skip a whole test
+  methods in the `BitRaamTestFramework` class, which can be used to skip a whole test
   depending on the platform).
 
 #### Naming guidelines
@@ -109,7 +109,7 @@ implements the test logic.
 
 - `P2PConnection` is the class used to connect to a bitraamd.  `P2PInterface`
 contains the higher level logic for processing P2P payloads and connecting to
-the Bitcoin Core node application logic. For custom behaviour, subclass the
+the BitRaam Core node application logic. For custom behaviour, subclass the
 P2PInterface object and override the callback methods.
 
 `P2PConnection`s can be used as such:
@@ -132,7 +132,7 @@ More examples can be found in [p2p_unrequested_blocks.py](p2p_unrequested_blocks
 
 #### Prototyping tests
 
-The [`TestShell`](test-shell.md) class exposes the BitcoinTestFramework
+The [`TestShell`](test-shell.md) class exposes the BitRaamTestFramework
 functionality to interactive Python3 environments and can be used to prototype
 tests. This may be especially useful in a REPL environment with session logging
 utilities, such as

@@ -244,7 +244,7 @@ mkdir -p "$DISTSRC"
           -DWITH_CCACHE=OFF \
           ${CONFIGFLAGS}
 
-    # Build Bitcoin Core
+    # Build BitRaam Core
     cmake --build build -j "$JOBS" ${V:+--verbose}
 
     # Perform basic security checks on a series of executables.
@@ -262,12 +262,12 @@ mkdir -p "$DISTSRC"
             ;;
     esac
 
-    # Setup the directory where our Bitcoin Core build for HOST will be
+    # Setup the directory where our BitRaam Core build for HOST will be
     # installed. This directory will also later serve as the input for our
     # binary tarballs.
     INSTALLPATH="${PWD}/installed/${DISTNAME}"
     mkdir -p "${INSTALLPATH}"
-    # Install built Bitcoin Core to $INSTALLPATH
+    # Install built BitRaam Core to $INSTALLPATH
     case "$HOST" in
         *darwin*)
             # This workaround can be dropped for CMake >= 3.27.
@@ -284,7 +284,7 @@ mkdir -p "$DISTSRC"
     case "$HOST" in
         *darwin*)
             cmake --build build --target deploy ${V:+--verbose}
-            mv build/dist/Bitcoin-Core.zip "${OUTDIR}/${DISTNAME}-${HOST}-unsigned.zip"
+            mv build/dist/BitRaam-Core.zip "${OUTDIR}/${DISTNAME}-${HOST}-unsigned.zip"
             mkdir -p "unsigned-app-${HOST}"
             cp  --target-directory="unsigned-app-${HOST}" \
                 contrib/macdeploy/detached-sig-create.sh

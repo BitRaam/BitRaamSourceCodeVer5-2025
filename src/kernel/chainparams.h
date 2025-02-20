@@ -75,7 +75,7 @@ struct ChainTxData {
 
 /**
  * CChainParams defines various tweakable parameters of a given instance of the
- * Bitcoin system.
+ * BitRaam system.
  */
 class CChainParams
 {

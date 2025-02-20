@@ -7,14 +7,14 @@
 This is meant to be documentation as much as functional tests, so it is kept as simple and readable as possible.
 """
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_approx,
     assert_equal,
 )
 
 
-class WalletMultisigDescriptorPSBTTest(BitcoinTestFramework):
+class WalletMultisigDescriptorPSBTTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser, legacy=False)
 

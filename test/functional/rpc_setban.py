@@ -5,13 +5,13 @@
 """Test the setban rpc call."""
 
 from contextlib import ExitStack
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     p2p_port,
     assert_equal,
 )
 
-class SetBanTests(BitcoinTestFramework):
+class SetBanTests(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.setup_clean_chain = True

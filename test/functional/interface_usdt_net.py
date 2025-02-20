@@ -16,7 +16,7 @@ except ImportError:
     pass
 from test_framework.messages import CBlockHeader, MAX_HEADERS_RESULTS, msg_headers, msg_version
 from test_framework.p2p import P2PInterface
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import assert_equal
 
 # Tor v3 addresses are 62 chars + 6 chars for the port (':12345').
@@ -229,7 +229,7 @@ class MisbehavingConnection(ctypes.Structure):
         return f"MisbehavingConnection(id={self.id}, message={self.message})"
 
 
-class NetTracepointTest(BitcoinTestFramework):
+class NetTracepointTest(BitRaamTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.extra_args = [[f'-maxconnections={MAX_CONNECTIONS}']]

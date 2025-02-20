@@ -5,7 +5,7 @@
 """
 A test for RPC users with restricted permissions
 """
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     str_to_b64str,
@@ -29,7 +29,7 @@ def get_permissions(whitelist):
     return [perm for perm in whitelist.replace(" ", "").split(",") if perm]
 
 
-class RPCWhitelistTest(BitcoinTestFramework):
+class RPCWhitelistTest(BitRaamTestFramework):
 
     def set_test_params(self):
         self.num_nodes = 1

@@ -11,7 +11,7 @@ from test_framework.blocktools import (
     create_block
 )
 from test_framework.blocktools import create_coinbase
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 
 from test_framework.script import (
     CScript,
@@ -19,7 +19,7 @@ from test_framework.script import (
     OP_TRUE,
 )
 
-class WalletPruningTest(BitcoinTestFramework):
+class WalletPruningTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser, descriptors=False)
 

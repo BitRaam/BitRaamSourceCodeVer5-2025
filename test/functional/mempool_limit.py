@@ -10,7 +10,7 @@ from test_framework.mempool_util import (
     fill_mempool,
 )
 from test_framework.p2p import P2PTxInvStore
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import (
     assert_equal,
     assert_fee_amount,
@@ -24,7 +24,7 @@ from test_framework.wallet import (
 )
 
 
-class MempoolLimitTest(BitcoinTestFramework):
+class MempoolLimitTest(BitRaamTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

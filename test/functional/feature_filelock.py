@@ -6,13 +6,13 @@
 import random
 import string
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.test_node import (
     BITCOIN_PID_FILENAME_DEFAULT,
     ErrorMatch,
 )
 
-class FilelockTest(BitcoinTestFramework):
+class FilelockTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

@@ -12,12 +12,12 @@ import tempfile
 import time
 
 from test_framework.netutil import UNREACHABLE_PROXY_ARG
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.test_node import ErrorMatch
 from test_framework import util
 
 
-class ConfArgsTest(BitcoinTestFramework):
+class ConfArgsTest(BitRaamTestFramework):
     def add_options(self, parser):
         self.add_wallet_options(parser)
 

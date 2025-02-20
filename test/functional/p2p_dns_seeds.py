@@ -8,10 +8,10 @@ import itertools
 
 from test_framework.netutil import UNREACHABLE_PROXY_ARG
 from test_framework.p2p import P2PInterface
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 
 
-class P2PDNSSeeds(BitcoinTestFramework):
+class P2PDNSSeeds(BitRaamTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

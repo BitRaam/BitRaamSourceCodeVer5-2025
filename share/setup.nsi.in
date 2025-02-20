@@ -52,7 +52,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-InstallDir $PROGRAMFILES64\Bitcoin
+InstallDir $PROGRAMFILES64\BitRaam
 CRCCheck force
 XPStyle on
 BrandingText " "
@@ -109,7 +109,7 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "@CLIENT_TARNAME@" "URL Protocol" ""
-    WriteRegStr HKCR "@CLIENT_TARNAME@" "" "URL:Bitcoin"
+    WriteRegStr HKCR "@CLIENT_TARNAME@" "" "URL:BitRaam"
     WriteRegStr HKCR "@CLIENT_TARNAME@\DefaultIcon" "" $INSTDIR\@BITCOIN_GUI_NAME@@EXEEXT@
     WriteRegStr HKCR "@CLIENT_TARNAME@\shell\open\command" "" '"$INSTDIR\@BITCOIN_GUI_NAME@@EXEEXT@" "%1"'
 SectionEnd
@@ -145,7 +145,7 @@ Section -un.post UNSEC0001
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\@CLIENT_NAME@ (testnet).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\@CLIENT_NAME@ (testnet4).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\@CLIENT_NAME@ (test signet).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Bitcoin.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\BitRaam.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log

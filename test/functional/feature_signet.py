@@ -6,7 +6,7 @@
 
 from decimal import Decimal
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import BitRaamTestFramework
 from test_framework.util import assert_equal
 
 SIGNET_DEFAULT_CHALLENGE = '512103ad5e0edad18cb1f0fc0d28a3d4f1f3e445640337489abb10404f2d1e086be430210359ef5021964fe22d6f8e05b2463c9540ce96883fe3b278760f048f5189f2e6c452ae'
@@ -33,7 +33,7 @@ class SignetParams:
             self.challenge = challenge
             self.shared_args = [f"-signetchallenge={challenge}"]
 
-class SignetBasicTest(BitcoinTestFramework):
+class SignetBasicTest(BitRaamTestFramework):
     def set_test_params(self):
         self.chain = "signet"
         self.num_nodes = 6
