@@ -75,7 +75,7 @@ int main(int argc, char* argv[])
     int num_test_failures{0};
 
     {
-        BitcoinApplication app;
+        BitRaamApplication app;
         app.createNode(*init);
 
         AppTests app_tests(app);

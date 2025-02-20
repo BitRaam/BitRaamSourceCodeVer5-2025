@@ -730,7 +730,7 @@ Changes for particular platforms
 - #14375 Correct misleading "overridden options" label (hebasto)
 - #15007 Notificator class refactoring (hebasto)
 - #14784 Use `WalletModel*` instead of the wallet name as map key (promag)
-- #11625 Add BitcoinApplication & RPCConsole tests (ryanofsky)
+- #11625 Add BitRaamApplication & RPCConsole tests (ryanofsky)
 - #14517 Fix start with the `-min` option (hebasto)
 - #13216 implements concept for different disk sizes on intro (marcoagner)
 - #15114 Replace remaining 0 with nullptr (Empact)
