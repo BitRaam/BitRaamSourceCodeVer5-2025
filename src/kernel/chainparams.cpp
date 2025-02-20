@@ -128,7 +128,7 @@ public:
         pchMessageStart[0] = 0xb0;
         pchMessageStart[1] = 0xfc;
         pchMessageStart[2] = 0xaf;
-        pchMessageStart[3] = 0xed;
+        pchMessageStart[3] = 0xef;
         nDefaultPort = 31415;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 620;
@@ -465,10 +465,10 @@ public:
         nDefaultPort = 331415;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1598918400, 52613770, 0x1e0377ae, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1598918400, 58802843, 0x1e0377ae, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256{"00000008819873e925422c1ff0f99f7cc9bbb232af63a077a480a3633bee1ef6"});
-        assert(genesis.hashMerkleRoot == uint256{"4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"});
+        assert(consensus.hashGenesisBlock == uint256{"00000142962945359e22e9418ac3d3864349fbd0d7434dc485c90cb4f936f3d4"});
+        assert(genesis.hashMerkleRoot == uint256{"2cec01a5fba766ee1d863fcdecec3695219008469eb0dbc1a8fa512bb5fe5127"});
 
         vFixedSeeds.clear();
 
@@ -573,8 +573,8 @@ public:
 
         genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256{"0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"});
-        assert(genesis.hashMerkleRoot == uint256{"4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"});
+        assert(consensus.hashGenesisBlock == uint256{"31f9532d2fed2d662375b5ef8ca460af13f591366038acc8d4f5c6467f2a96b5"});
+        assert(genesis.hashMerkleRoot == uint256{"2cec01a5fba766ee1d863fcdecec3695219008469eb0dbc1a8fa512bb5fe5127"});
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();
