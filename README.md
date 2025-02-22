@@ -9,7 +9,7 @@ https://bitraam.org/en/download/.
 What is BitRaam Core?
 ---------------------
 
-BiRaam Core connects to the BitRaam peer-to-peer network to download and fully
+BitRaam Core connects to the BitRaam peer-to-peer network to download and fully
 validate blocks and transactions. It also includes a wallet and graphical user
 interface, which can be optionally built.
 
