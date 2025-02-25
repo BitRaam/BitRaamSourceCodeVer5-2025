@@ -66,7 +66,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 {
     assert(pindexLast != nullptr);
     assert(pblock != nullptr);
-    unsigned int  bnPowLimit = UintToArith256(params.powLimit);
+    const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
 
     if (params.fPowNoRetargeting) {
         return bnPowLimit.GetCompact();
