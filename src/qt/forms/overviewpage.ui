@@ -368,6 +368,16 @@
          </property>
         </spacer>
        </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../bitraam.qrc">:/icons/bitraam</pixmap>
+         </property>
+        </widget>
+       </item>
       </layout>
      </item>
      <item>
