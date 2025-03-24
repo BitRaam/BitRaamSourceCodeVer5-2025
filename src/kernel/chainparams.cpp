@@ -323,7 +323,7 @@ public:
         pchMessageStart[1] = 0x16;
         pchMessageStart[2] = 0x3f;
         pchMessageStart[3] = 0x28;
-        nDefaultPort = 431415;
+        nDefaultPort = 41415;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 1;
         m_assumed_chain_state_size = 0;
@@ -462,7 +462,7 @@ public:
         uint256 hash = h.GetHash();
         std::copy_n(hash.begin(), 4, pchMessageStart.begin());
 
-        nDefaultPort = 331415;
+        nDefaultPort = 38415;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1598918400, 58802843, 0x1e0377ae, 1, 50 * COIN);
